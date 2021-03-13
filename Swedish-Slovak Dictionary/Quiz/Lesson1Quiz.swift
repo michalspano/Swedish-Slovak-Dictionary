@@ -48,6 +48,8 @@ class Lesson1Quiz: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("Lesson1 Quiz")
         editButtons()
         editWellDoneLabel()
         editRetryButton()
