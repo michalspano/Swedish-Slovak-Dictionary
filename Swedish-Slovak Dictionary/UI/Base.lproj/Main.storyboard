@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Menu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Swedish_Slovak_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="UtD-IU-OEp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you! :)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibg-z9-vj4" userLabel="ThankYouLabel">
+                                <rect key="frame" x="157.5" y="816" width="99" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swedish-Slovak  Dictionary" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3m-WT-OIF">
+                                <rect key="frame" x="64.5" y="74" width="285.5" height="95.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="285.5" id="6eq-xr-zse">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="250"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="95.5" id="jJy-Gx-Ks4">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="80"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                    <mask key="constraints">
+                                        <include reference="6eq-xr-zse"/>
+                                        <include reference="jJy-Gx-Ks4"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubi-mp-5CX" userLabel="StartNowButton">
+                                <rect key="frame" x="97" y="254.5" width="220" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="A2P-oP-vvV">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="44"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="220" id="ahS-jI-SFi">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="176"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Start now!">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                </variation>
+                                <connections>
+                                    <action selector="didTapStartNowButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bgK-LD-D3y"/>
+                                    <segue destination="0jc-3I-aGD" kind="presentation" identifier="fromMenuToLibrary" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="T4z-Ku-Jso"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZO-ov-nj5">
+                                <rect key="frame" x="97" y="359.5" width="220" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="2Pe-he-otW">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="44"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="220" id="cIu-mT-jz8">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="176"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Instructions">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                </variation>
+                                <connections>
+                                    <action selector="didTapInstructionsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FEf-bj-PL0"/>
+                                    <segue destination="Kpn-NO-acM" kind="presentation" identifier="fromMenuToInstructions" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="ThG-EJ-ioS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Joo-Iv-PBm">
+                                <rect key="frame" x="97" y="464.5" width="220" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="SRW-1Z-pli">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="176"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="55" id="r0s-yz-TCP">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="44"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Quiz">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                </variation>
+                                <connections>
+                                    <action selector="didTapQuizButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4p2-h0-mPD"/>
+                                    <segue destination="Urv-8b-Uzq" kind="presentation" identifier="fromMenuToQuiz" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Bxt-wp-Ig4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="557-iL-tlk" userLabel="InstagramButton">
+                                <rect key="frame" x="177" y="802" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="c8w-Ta-cIF"/>
+                                    <constraint firstAttribute="width" constant="60" id="tgf-Fe-wtP"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="InstagramIcon"/>
+                                <connections>
+                                    <action selector="didTapInstagramLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zQM-uM-pKP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eux-tN-PE9">
+                                <rect key="frame" x="97" y="569.5" width="220" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="SPy-Sg-hhy">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="176"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="55" id="fiK-5d-oyb">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="44"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Notes">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="KmR-KU-tyr" kind="presentation" identifier="fromMenuToNotes" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="gXn-Qk-5VW"/>
+                                </connections>
+                            </button>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6AP-aT-dM4" userLabel="fadeOutView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swedish-Slovak Dictionary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUM-18-f5V">
+                                <rect key="frame" x="110" y="543" width="194" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" systemColor="tertiarySystemFillColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="NB1-Pr-OU4" userLabel="fadeOutLogo">
+                                <rect key="frame" x="132" y="373" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="w6P-jT-WKS"/>
+                                    <constraint firstAttribute="width" constant="150" id="zu4-uO-tBI"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eux-tN-PE9" firstAttribute="top" secondItem="Joo-Iv-PBm" secondAttribute="bottom" constant="50" id="1J3-mT-VnF">
+                                <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="6AP-aT-dM4" secondAttribute="bottom" id="1N7-40-pUU"/>
+                            <constraint firstAttribute="bottom" secondItem="UtD-IU-OEp" secondAttribute="bottom" id="1ya-eT-WjW"/>
+                            <constraint firstItem="Joo-Iv-PBm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Gx-X9-V9X"/>
+                            <constraint firstItem="UtD-IU-OEp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3Zi-WT-hPp"/>
+                            <constraint firstItem="Ibg-z9-vj4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6fc-Uw-Hvb"/>
+                            <constraint firstItem="lUM-18-f5V" firstAttribute="top" secondItem="NB1-Pr-OU4" secondAttribute="bottom" constant="20" id="9dt-ud-YCc"/>
+                            <constraint firstItem="NB1-Pr-OU4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EGJ-xN-UMx"/>
+                            <constraint firstItem="lUM-18-f5V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Iim-5k-q2X"/>
+                            <constraint firstItem="6AP-aT-dM4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QOk-TV-co0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ibg-z9-vj4" secondAttribute="bottom" constant="25" id="SOu-OT-TfR"/>
+                            <constraint firstItem="557-iL-tlk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sci-uu-IWR"/>
+                            <constraint firstItem="NB1-Pr-OU4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TAU-Lj-8p0"/>
+                            <constraint firstAttribute="trailing" secondItem="UtD-IU-OEp" secondAttribute="trailing" id="UqU-Fo-HsF"/>
+                            <constraint firstItem="6AP-aT-dM4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VUs-SP-iee"/>
+                            <constraint firstItem="wZO-ov-nj5" firstAttribute="top" secondItem="Ubi-mp-5CX" secondAttribute="bottom" constant="50" id="X5D-y8-q9W">
+                                <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="s3m-WT-OIF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="YcV-2d-tYU">
+                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="6AP-aT-dM4" secondAttribute="trailing" id="Yrp-pr-XVy"/>
+                            <constraint firstItem="wZO-ov-nj5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZAO-1M-yIm"/>
+                            <constraint firstItem="Joo-Iv-PBm" firstAttribute="top" secondItem="wZO-ov-nj5" secondAttribute="bottom" constant="50" id="dSM-bO-I0N">
+                                <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="557-iL-tlk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="eN7-IC-UgJ">
+                                <variation key="heightClass=compact-widthClass=regular" constant="15"/>
+                            </constraint>
+                            <constraint firstItem="Ubi-mp-5CX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iAP-Df-dc1"/>
+                            <constraint firstItem="UtD-IU-OEp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jx9-Sc-ds9"/>
+                            <constraint firstItem="s3m-WT-OIF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mdf-Lu-fp8"/>
+                            <constraint firstItem="eux-tN-PE9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pQY-g7-lnr"/>
+                            <constraint firstItem="Ubi-mp-5CX" firstAttribute="top" secondItem="s3m-WT-OIF" secondAttribute="bottom" constant="85" id="uQO-cf-S4a">
+                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fadeOutLabel" destination="lUM-18-f5V" id="7qm-bn-7i0"/>
+                        <outlet property="fadeOutLogo" destination="NB1-Pr-OU4" id="8i1-9X-47o"/>
+                        <outlet property="fadeOutView" destination="6AP-aT-dM4" id="9Ik-GK-e3Z"/>
+                        <outlet property="instagramButton" destination="557-iL-tlk" id="CIb-CI-KWs"/>
+                        <outlet property="instructionsButton" destination="wZO-ov-nj5" id="zSK-eg-XYv"/>
+                        <outlet property="mainTitle" destination="s3m-WT-OIF" id="NcS-nG-rhR"/>
+                        <outlet property="notesButton" destination="eux-tN-PE9" id="FI1-i8-608"/>
+                        <outlet property="quizButton" destination="Joo-Iv-PBm" id="Apr-mr-t7I"/>
+                        <outlet property="startNowButton" destination="Ubi-mp-5CX" id="cdy-M0-gLS"/>
+                        <outlet property="thankYouLabel" destination="Ibg-z9-vj4" id="Td2-wP-5Px"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197.10144927536234" y="138.61607142857142"/>
+        </scene>
+        <!--LibraryVC-->
+        <scene sceneID="9Q5-nP-YfM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Library" referencedIdentifier="LibraryVC" id="0jc-3I-aGD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fBN-bk-q65"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4yi-j9-3sA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="337" y="32"/>
+        </scene>
+        <!--InstructionsVC-->
+        <scene sceneID="UtM-l2-YSn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Instructions" referencedIdentifier="InstructionsVC" id="Kpn-NO-acM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yj8-Cr-ssc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YyD-TY-pki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357" y="123"/>
+        </scene>
+        <!--QuizVC-->
+        <scene sceneID="reV-1a-AXI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Quiz" referencedIdentifier="QuizVC" id="Urv-8b-Uzq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Gdv-dA-zWu"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dbh-T3-gAC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="248"/>
+        </scene>
+        <!--NotesInitialVC-->
+        <scene sceneID="wsq-6J-sRS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Notes" referencedIdentifier="NotesInitialVC" id="KmR-KU-tyr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="nYZ-LY-laW"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s3Z-SP-igH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="356" y="354"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AppLogo" width="200" height="200"/>
+        <image name="Background" width="414" height="896"/>
+        <image name="InstagramIcon" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemFillColor">
+            <color red="0.46274509803921571" green="0.46274509803921571" blue="0.50196078431372548" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

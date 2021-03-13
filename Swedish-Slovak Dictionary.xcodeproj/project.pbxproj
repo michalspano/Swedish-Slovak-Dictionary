@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F50C76A7257E966B00750E69 /* SwipeBackSoundEffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F50C76A5257E966A00750E69 /* SwipeBackSoundEffect.mp3 */; };
+		F50C76A8257E966B00750E69 /* SwipeNextSoundEffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F50C76A6257E966B00750E69 /* SwipeNextSoundEffect.mp3 */; };
+		F50FE0B225BEFD0F00B81122 /* Lesson3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FE0B125BEFD0F00B81122 /* Lesson3ViewController.swift */; };
+		F50FE0B625BEFE2000B81122 /* GradientViewLesson3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FE0B525BEFE2000B81122 /* GradientViewLesson3.swift */; };
+		F50FE0B925BF155200B81122 /* Lesson3Part1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FE0B825BF155200B81122 /* Lesson3Part1ViewController.swift */; };
+		F50FE0BC25BF1D4800B81122 /* Lesson3SlovakData.txt in Resources */ = {isa = PBXBuildFile; fileRef = F50FE0BB25BF1D4800B81122 /* Lesson3SlovakData.txt */; };
+		F50FE0C025BF1D5E00B81122 /* Lesson3SwedishData.txt in Resources */ = {isa = PBXBuildFile; fileRef = F50FE0BF25BF1D5E00B81122 /* Lesson3SwedishData.txt */; };
+		F517881D25D9A54C006209BC /* coreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F517881B25D9A54C006209BC /* coreDataModel.xcdatamodeld */; };
+		F51D6660256A7C4E002BB749 /* Library.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51D665F256A7C4E002BB749 /* Library.storyboard */; };
+		F528588A2592101A0095C169 /* correctAnswerSoundEffect.wav in Resources */ = {isa = PBXBuildFile; fileRef = F52858882592101A0095C169 /* correctAnswerSoundEffect.wav */; };
+		F528588B2592101A0095C169 /* wrongAnswerSoundEffect.wav in Resources */ = {isa = PBXBuildFile; fileRef = F52858892592101A0095C169 /* wrongAnswerSoundEffect.wav */; };
+		F52A797A259F415D00C9F967 /* Lesson2EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A7979259F415D00C9F967 /* Lesson2EndViewController.swift */; };
+		F52A797D259F6ECF00C9F967 /* Lesson2Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A797C259F6ECF00C9F967 /* Lesson2Quiz.swift */; };
+		F5341A9425E27D4600897ACE /* ToDoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5341A9325E27D4500897ACE /* ToDoDetailsViewController.swift */; };
+		F5341A9725E2C0A200897ACE /* empty.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5341A9625E2C0A200897ACE /* empty.mp3 */; };
+		F5341A9A25E2CEFB00897ACE /* NotesGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5341A9925E2CEFB00897ACE /* NotesGradientView.swift */; };
+		F5367EE825697FE800E4E06F /* Lesson1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5367EE725697FE800E4E06F /* Lesson1.storyboard */; };
+		F5367EEC2569828900E4E06F /* Lesson1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5367EEB2569828900E4E06F /* Lesson1ViewController.swift */; };
+		F554370B258E5F0A0058758E /* AnimationSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = F554370A258E5F0A0058758E /* AnimationSuccess.json */; };
+		F554370F258E5FE00058758E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F554370E258E5FE00058758E /* Lottie */; };
+		F5661DD12590DF4E0030F8F4 /* SwiftGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5661DD02590DF4E0030F8F4 /* SwiftGif.swift */; };
+		F5661DD52590DF710030F8F4 /* CelebrationEmoji.gif in Resources */ = {isa = PBXBuildFile; fileRef = F5661DD42590DF710030F8F4 /* CelebrationEmoji.gif */; };
+		F5661DDA2590F0BB0030F8F4 /* QuizLibraryGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5661DD92590F0BB0030F8F4 /* QuizLibraryGradientView.swift */; };
+		F5661DDF259108F60030F8F4 /* Lesson1Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5661DDE259108F60030F8F4 /* Lesson1Quiz.swift */; };
+		F56C163525ED419A0035BF3B /* Lesson3EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56C163425ED419A0035BF3B /* Lesson3EndViewController.swift */; };
+		F5728A67259DF01D00467A49 /* Lesson2Part1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5728A66259DF01D00467A49 /* Lesson2Part1ViewController.swift */; };
+		F576E5CB25A8CBD000CD97FD /* Slovakien.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F576E5C325A8CBD000CD97FD /* Slovakien.m4a */; };
+		F576E5CC25A8CBD000CD97FD /* Sverige.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F576E5C425A8CBD000CD97FD /* Sverige.m4a */; };
+		F576E5CD25A8CBD000CD97FD /* Norge.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F576E5C525A8CBD000CD97FD /* Norge.m4a */; };
+		F576E5CE25A8CBD000CD97FD /* Tjeckien.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F576E5C625A8CBD000CD97FD /* Tjeckien.m4a */; };
+		F576E5CF25A8CBD000CD97FD /* Ungern.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F576E5C725A8CBD000CD97FD /* Ungern.m4a */; };
+		F576E5D025A8CBD000CD97FD /* Tyskland.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F576E5C825A8CBD000CD97FD /* Tyskland.m4a */; };
+		F576E5D125A8CBD000CD97FD /* Frankrike.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F576E5C925A8CBD000CD97FD /* Frankrike.m4a */; };
+		F576E5D225A8CBD000CD97FD /* Ryssland.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F576E5CA25A8CBD000CD97FD /* Ryssland.m4a */; };
+		F576E5D625A8DAC400CD97FD /* Polen.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F576E5D425A8DAC400CD97FD /* Polen.m4a */; };
+		F576E5D725A8DAC400CD97FD /* Finland.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F576E5D525A8DAC400CD97FD /* Finland.m4a */; };
+		F577C35D259A2E6D00A2322E /* Lesson2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F577C35C259A2E6D00A2322E /* Lesson2.storyboard */; };
+		F577C360259A400300A2322E /* Lesson2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F577C35F259A400300A2322E /* Lesson2ViewController.swift */; };
+		F577C363259A420100A2322E /* GradientViewLesson2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F577C362259A420100A2322E /* GradientViewLesson2.swift */; };
+		F588B1FD2598C1C0005FA233 /* startupSoundEffect.wav in Resources */ = {isa = PBXBuildFile; fileRef = F588B1FC2598C1C0005FA233 /* startupSoundEffect.wav */; };
+		F588B2052598C9A3005FA233 /* QuizLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F588B2042598C9A3005FA233 /* QuizLibraryViewController.swift */; };
+		F599BC93258529B400F85829 /* Varsagod.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F599BC89258529B300F85829 /* Varsagod.m4a */; };
+		F599BC94258529B400F85829 /* GodNatt!.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F599BC8A258529B300F85829 /* GodNatt!.m4a */; };
+		F599BC95258529B400F85829 /* GodAfton!.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F599BC8B258529B300F85829 /* GodAfton!.m4a */; };
+		F599BC96258529B400F85829 /* Tjäna!.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F599BC8C258529B300F85829 /* Tjäna!.m4a */; };
+		F599BC97258529B400F85829 /* GodDag!.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F599BC8D258529B400F85829 /* GodDag!.m4a */; };
+		F599BC98258529B400F85829 /* Hej!.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F599BC8E258529B400F85829 /* Hej!.m4a */; };
+		F599BC99258529B400F85829 /* Adjo!.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F599BC8F258529B400F85829 /* Adjo!.m4a */; };
+		F599BC9A258529B400F85829 /* Hejda!.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F599BC90258529B400F85829 /* Hejda!.m4a */; };
+		F599BC9B258529B400F85829 /* Tack!.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F599BC91258529B400F85829 /* Tack!.m4a */; };
+		F599BC9C258529B400F85829 /* GodMorgon!.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F599BC92258529B400F85829 /* GodMorgon!.m4a */; };
+		F5A1A58925A07D510073091C /* Lesson2SwedishData.txt in Resources */ = {isa = PBXBuildFile; fileRef = F5A1A58825A07D510073091C /* Lesson2SwedishData.txt */; };
+		F5A1A58C25A080A50073091C /* Lesson1SlovakData.txt in Resources */ = {isa = PBXBuildFile; fileRef = F5A1A58B25A080A50073091C /* Lesson1SlovakData.txt */; };
+		F5A1A58F25A080F10073091C /* Lesson1SwedishData.txt in Resources */ = {isa = PBXBuildFile; fileRef = F5A1A58E25A080F10073091C /* Lesson1SwedishData.txt */; };
+		F5A1A59225A0AEBF0073091C /* Lesson2QuizEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A1A59125A0AEBF0073091C /* Lesson2QuizEndViewController.swift */; };
+		F5A242412559B06A00BBE672 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A242402559B06A00BBE672 /* AppDelegate.swift */; };
+		F5A242432559B06A00BBE672 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A242422559B06A00BBE672 /* SceneDelegate.swift */; };
+		F5A242452559B06A00BBE672 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A242442559B06A00BBE672 /* ViewController.swift */; };
+		F5A242482559B06A00BBE672 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A242462559B06A00BBE672 /* Main.storyboard */; };
+		F5A2424A2559B06D00BBE672 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A242492559B06D00BBE672 /* Assets.xcassets */; };
+		F5A2424D2559B06D00BBE672 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A2424B2559B06D00BBE672 /* LaunchScreen.storyboard */; };
+		F5A28025256AB3E0001B9C8F /* Instructions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A28024256AB3E0001B9C8F /* Instructions.storyboard */; };
+		F5B79E58258F645A00AFEC40 /* SuccessSoundEffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5B79E57258F645A00AFEC40 /* SuccessSoundEffect.mp3 */; };
+		F5C0E7782573F5E1002C6E39 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C0E7772573F5E1002C6E39 /* LibraryViewController.swift */; };
+		F5C0E77B2573F6EF002C6E39 /* VideoBG.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F5F9B8FC2573D3D900AB286F /* VideoBG.mp4 */; };
+		F5C0E77E257411AA002C6E39 /* Lesson1Part1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C0E77D257411A9002C6E39 /* Lesson1Part1ViewController.swift */; };
+		F5C6B4A025949B6B009F7ADB /* AnimatedIcon.gif in Resources */ = {isa = PBXBuildFile; fileRef = F5C6B49F25949B6B009F7ADB /* AnimatedIcon.gif */; };
+		F5CFDA0A25A3756600C9B0C6 /* lessonCompletion.txt in Resources */ = {isa = PBXBuildFile; fileRef = F5CFDA0625A36F0400C9B0C6 /* lessonCompletion.txt */; };
+		F5D5A1B12583E860008CA8F3 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D5A1B02583E860008CA8F3 /* GradientView.swift */; };
+		F5D5A1BA2583FAAF008CA8F3 /* Lesson1EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D5A1B92583FAAF008CA8F3 /* Lesson1EndViewController.swift */; };
+		F5D6619A257C14A800303BA9 /* Lesson2SlovakData.txt in Resources */ = {isa = PBXBuildFile; fileRef = F5D66199257C14A800303BA9 /* Lesson2SlovakData.txt */; };
+		F5D6EEC425978B06006A1382 /* successSoundEffect.wav in Resources */ = {isa = PBXBuildFile; fileRef = F5D6EEC025978AF3006A1382 /* successSoundEffect.wav */; };
+		F5DA673D25D0456400A1D8BC /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DA673C25D0456400A1D8BC /* NotesTableViewController.swift */; };
+		F5DA674025D04B7000A1D8BC /* NotesToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DA673F25D04B7000A1D8BC /* NotesToDoViewController.swift */; };
+		F5DFE6C8258FD16300CE6950 /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5DFE6C7258FD16300CE6950 /* Quiz.storyboard */; };
+		F5E6938F2597B39D0083B1DC /* successAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = F5E6938E2597B39D0083B1DC /* successAnimation.gif */; };
+		F5E693922597BBAA0083B1DC /* popSoundEffect.wav in Resources */ = {isa = PBXBuildFile; fileRef = F5E693912597BBAA0083B1DC /* popSoundEffect.wav */; };
+		F5EB671E25AB125B00A8A1B6 /* Lesson3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5EB671D25AB125B00A8A1B6 /* Lesson3.storyboard */; };
+		F5EB672225AB12A000A8A1B6 /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5EB672125AB12A000A8A1B6 /* Notes.storyboard */; };
+		F5EB672825AB155100A8A1B6 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EB672725AB155100A8A1B6 /* NotesViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F50C76A5257E966A00750E69 /* SwipeBackSoundEffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SwipeBackSoundEffect.mp3; sourceTree = "<group>"; };
+		F50C76A6257E966B00750E69 /* SwipeNextSoundEffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SwipeNextSoundEffect.mp3; sourceTree = "<group>"; };
+		F50FE0B125BEFD0F00B81122 /* Lesson3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson3ViewController.swift; sourceTree = "<group>"; };
+		F50FE0B525BEFE2000B81122 /* GradientViewLesson3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewLesson3.swift; sourceTree = "<group>"; };
+		F50FE0B825BF155200B81122 /* Lesson3Part1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson3Part1ViewController.swift; sourceTree = "<group>"; };
+		F50FE0BB25BF1D4800B81122 /* Lesson3SlovakData.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Lesson3SlovakData.txt; sourceTree = "<group>"; };
+		F50FE0BF25BF1D5E00B81122 /* Lesson3SwedishData.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Lesson3SwedishData.txt; sourceTree = "<group>"; };
+		F517881C25D9A54C006209BC /* coreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		F51D665F256A7C4E002BB749 /* Library.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Library.storyboard; sourceTree = "<group>"; };
+		F527045625A639A500C469A9 /* Swedish-Slovak Dictionary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Swedish-Slovak Dictionary.entitlements"; sourceTree = "<group>"; };
+		F52858882592101A0095C169 /* correctAnswerSoundEffect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = correctAnswerSoundEffect.wav; sourceTree = "<group>"; };
+		F52858892592101A0095C169 /* wrongAnswerSoundEffect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wrongAnswerSoundEffect.wav; sourceTree = "<group>"; };
+		F52A7979259F415D00C9F967 /* Lesson2EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson2EndViewController.swift; sourceTree = "<group>"; };
+		F52A797C259F6ECF00C9F967 /* Lesson2Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson2Quiz.swift; sourceTree = "<group>"; };
+		F5341A9325E27D4500897ACE /* ToDoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDetailsViewController.swift; sourceTree = "<group>"; };
+		F5341A9625E2C0A200897ACE /* empty.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = empty.mp3; sourceTree = "<group>"; };
+		F5341A9925E2CEFB00897ACE /* NotesGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesGradientView.swift; sourceTree = "<group>"; };
+		F5367EE725697FE800E4E06F /* Lesson1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lesson1.storyboard; sourceTree = "<group>"; };
+		F5367EEB2569828900E4E06F /* Lesson1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson1ViewController.swift; sourceTree = "<group>"; };
+		F554370A258E5F0A0058758E /* AnimationSuccess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AnimationSuccess.json; sourceTree = "<group>"; };
+		F5661DD02590DF4E0030F8F4 /* SwiftGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGif.swift; sourceTree = "<group>"; };
+		F5661DD42590DF710030F8F4 /* CelebrationEmoji.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CelebrationEmoji.gif; sourceTree = "<group>"; };
+		F5661DD92590F0BB0030F8F4 /* QuizLibraryGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizLibraryGradientView.swift; sourceTree = "<group>"; };
+		F5661DDE259108F60030F8F4 /* Lesson1Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson1Quiz.swift; sourceTree = "<group>"; };
+		F56C163425ED419A0035BF3B /* Lesson3EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson3EndViewController.swift; sourceTree = "<group>"; };
+		F5728A66259DF01D00467A49 /* Lesson2Part1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson2Part1ViewController.swift; sourceTree = "<group>"; };
+		F576E5C325A8CBD000CD97FD /* Slovakien.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Slovakien.m4a; sourceTree = "<group>"; };
+		F576E5C425A8CBD000CD97FD /* Sverige.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sverige.m4a; sourceTree = "<group>"; };
+		F576E5C525A8CBD000CD97FD /* Norge.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Norge.m4a; sourceTree = "<group>"; };
+		F576E5C625A8CBD000CD97FD /* Tjeckien.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tjeckien.m4a; sourceTree = "<group>"; };
+		F576E5C725A8CBD000CD97FD /* Ungern.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ungern.m4a; sourceTree = "<group>"; };
+		F576E5C825A8CBD000CD97FD /* Tyskland.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tyskland.m4a; sourceTree = "<group>"; };
+		F576E5C925A8CBD000CD97FD /* Frankrike.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Frankrike.m4a; sourceTree = "<group>"; };
+		F576E5CA25A8CBD000CD97FD /* Ryssland.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ryssland.m4a; sourceTree = "<group>"; };
+		F576E5D425A8DAC400CD97FD /* Polen.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Polen.m4a; sourceTree = "<group>"; };
+		F576E5D525A8DAC400CD97FD /* Finland.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Finland.m4a; sourceTree = "<group>"; };
+		F577C35C259A2E6D00A2322E /* Lesson2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lesson2.storyboard; sourceTree = "<group>"; };
+		F577C35F259A400300A2322E /* Lesson2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson2ViewController.swift; sourceTree = "<group>"; };
+		F577C362259A420100A2322E /* GradientViewLesson2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewLesson2.swift; sourceTree = "<group>"; };
+		F588B1FC2598C1C0005FA233 /* startupSoundEffect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = startupSoundEffect.wav; sourceTree = "<group>"; };
+		F588B2042598C9A3005FA233 /* QuizLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizLibraryViewController.swift; sourceTree = "<group>"; };
+		F599BC89258529B300F85829 /* Varsagod.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Varsagod.m4a; sourceTree = "<group>"; };
+		F599BC8A258529B300F85829 /* GodNatt!.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GodNatt!.m4a"; sourceTree = "<group>"; };
+		F599BC8B258529B300F85829 /* GodAfton!.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GodAfton!.m4a"; sourceTree = "<group>"; };
+		F599BC8C258529B300F85829 /* Tjäna!.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tjäna!.m4a"; sourceTree = "<group>"; };
+		F599BC8D258529B400F85829 /* GodDag!.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GodDag!.m4a"; sourceTree = "<group>"; };
+		F599BC8E258529B400F85829 /* Hej!.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hej!.m4a"; sourceTree = "<group>"; };
+		F599BC8F258529B400F85829 /* Adjo!.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adjo!.m4a"; sourceTree = "<group>"; };
+		F599BC90258529B400F85829 /* Hejda!.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hejda!.m4a"; sourceTree = "<group>"; };
+		F599BC91258529B400F85829 /* Tack!.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tack!.m4a"; sourceTree = "<group>"; };
+		F599BC92258529B400F85829 /* GodMorgon!.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GodMorgon!.m4a"; sourceTree = "<group>"; };
+		F5A1A58825A07D510073091C /* Lesson2SwedishData.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Lesson2SwedishData.txt; sourceTree = "<group>"; };
+		F5A1A58B25A080A50073091C /* Lesson1SlovakData.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Lesson1SlovakData.txt; sourceTree = "<group>"; };
+		F5A1A58E25A080F10073091C /* Lesson1SwedishData.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Lesson1SwedishData.txt; sourceTree = "<group>"; };
+		F5A1A59125A0AEBF0073091C /* Lesson2QuizEndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson2QuizEndViewController.swift; sourceTree = "<group>"; };
+		F5A2423D2559B06A00BBE672 /* Swedish-Slovak Dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swedish-Slovak Dictionary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A242402559B06A00BBE672 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5A242422559B06A00BBE672 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F5A242442559B06A00BBE672 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5A242472559B06A00BBE672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5A242492559B06D00BBE672 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5A2424C2559B06D00BBE672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5A2424E2559B06D00BBE672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5A28024256AB3E0001B9C8F /* Instructions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Instructions.storyboard; sourceTree = "<group>"; };
+		F5B79E57258F645A00AFEC40 /* SuccessSoundEffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SuccessSoundEffect.mp3; sourceTree = "<group>"; };
+		F5C0E7772573F5E1002C6E39 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		F5C0E77D257411A9002C6E39 /* Lesson1Part1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson1Part1ViewController.swift; sourceTree = "<group>"; };
+		F5C6B49F25949B6B009F7ADB /* AnimatedIcon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = AnimatedIcon.gif; sourceTree = "<group>"; };
+		F5CFDA0625A36F0400C9B0C6 /* lessonCompletion.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lessonCompletion.txt; sourceTree = "<group>"; };
+		F5D5A1B02583E860008CA8F3 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		F5D5A1B92583FAAF008CA8F3 /* Lesson1EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson1EndViewController.swift; sourceTree = "<group>"; };
+		F5D66199257C14A800303BA9 /* Lesson2SlovakData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Lesson2SlovakData.txt; sourceTree = "<group>"; };
+		F5D6EEC025978AF3006A1382 /* successSoundEffect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = successSoundEffect.wav; sourceTree = "<group>"; };
+		F5DA673C25D0456400A1D8BC /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
+		F5DA673F25D04B7000A1D8BC /* NotesToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesToDoViewController.swift; sourceTree = "<group>"; };
+		F5DFE6C7258FD16300CE6950 /* Quiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
+		F5E6938E2597B39D0083B1DC /* successAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = successAnimation.gif; sourceTree = "<group>"; };
+		F5E693912597BBAA0083B1DC /* popSoundEffect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = popSoundEffect.wav; sourceTree = "<group>"; };
+		F5EB671D25AB125B00A8A1B6 /* Lesson3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lesson3.storyboard; sourceTree = "<group>"; };
+		F5EB672125AB12A000A8A1B6 /* Notes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notes.storyboard; sourceTree = "<group>"; };
+		F5EB672725AB155100A8A1B6 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		F5F9B8FC2573D3D900AB286F /* VideoBG.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = VideoBG.mp4; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5A2423A2559B06A00BBE672 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F554370F258E5FE00058758E /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F50C769E257E95DE00750E69 /* SoundUI */ = {
+			isa = PBXGroup;
+			children = (
+				F5341A9625E2C0A200897ACE /* empty.mp3 */,
+				F588B1FC2598C1C0005FA233 /* startupSoundEffect.wav */,
+				F50C76A5257E966A00750E69 /* SwipeBackSoundEffect.mp3 */,
+				F50C76A6257E966B00750E69 /* SwipeNextSoundEffect.mp3 */,
+			);
+			path = SoundUI;
+			sourceTree = "<group>";
+		};
+		F52B55E425618C5000BB2335 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F5661DD72590F0720030F8F4 /* GradientViews */,
+				F5A242462559B06A00BBE672 /* Main.storyboard */,
+				F5A28024256AB3E0001B9C8F /* Instructions.storyboard */,
+				F5A2424B2559B06D00BBE672 /* LaunchScreen.storyboard */,
+				F51D665F256A7C4E002BB749 /* Library.storyboard */,
+				F5DFE6C7258FD16300CE6950 /* Quiz.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F5543709258E5EEE0058758E /* CheckAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				F554370A258E5F0A0058758E /* AnimationSuccess.json */,
+				F5B79E57258F645A00AFEC40 /* SuccessSoundEffect.mp3 */,
+			);
+			path = CheckAnimation;
+			sourceTree = "<group>";
+		};
+		F5661DCF2590DF2E0030F8F4 /* SwiftGIfLib */ = {
+			isa = PBXGroup;
+			children = (
+				F5E693912597BBAA0083B1DC /* popSoundEffect.wav */,
+				F5E6938E2597B39D0083B1DC /* successAnimation.gif */,
+				F5C6B49F25949B6B009F7ADB /* AnimatedIcon.gif */,
+				F5661DD42590DF710030F8F4 /* CelebrationEmoji.gif */,
+				F5661DD02590DF4E0030F8F4 /* SwiftGif.swift */,
+			);
+			path = SwiftGIfLib;
+			sourceTree = "<group>";
+		};
+		F5661DD72590F0720030F8F4 /* GradientViews */ = {
+			isa = PBXGroup;
+			children = (
+				F5D5A1B02583E860008CA8F3 /* GradientView.swift */,
+				F5661DD92590F0BB0030F8F4 /* QuizLibraryGradientView.swift */,
+				F577C362259A420100A2322E /* GradientViewLesson2.swift */,
+				F50FE0B525BEFE2000B81122 /* GradientViewLesson3.swift */,
+				F5341A9925E2CEFB00897ACE /* NotesGradientView.swift */,
+			);
+			path = GradientViews;
+			sourceTree = "<group>";
+		};
+		F5661DDD259108B60030F8F4 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				F5D6EEC025978AF3006A1382 /* successSoundEffect.wav */,
+				F52858882592101A0095C169 /* correctAnswerSoundEffect.wav */,
+				F588B2042598C9A3005FA233 /* QuizLibraryViewController.swift */,
+				F52858892592101A0095C169 /* wrongAnswerSoundEffect.wav */,
+				F5661DDE259108F60030F8F4 /* Lesson1Quiz.swift */,
+				F52A797C259F6ECF00C9F967 /* Lesson2Quiz.swift */,
+				F5A1A59125A0AEBF0073091C /* Lesson2QuizEndViewController.swift */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		F5661DE225911BCA0030F8F4 /* AnimatedVideoForLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				F5F9B8FC2573D3D900AB286F /* VideoBG.mp4 */,
+			);
+			path = AnimatedVideoForLibrary;
+			sourceTree = "<group>";
+		};
+		F576E5C225A8CBBA00CD97FD /* Lesson 2 Voice Samples */ = {
+			isa = PBXGroup;
+			children = (
+				F576E5D525A8DAC400CD97FD /* Finland.m4a */,
+				F576E5D425A8DAC400CD97FD /* Polen.m4a */,
+				F576E5C925A8CBD000CD97FD /* Frankrike.m4a */,
+				F576E5C525A8CBD000CD97FD /* Norge.m4a */,
+				F576E5CA25A8CBD000CD97FD /* Ryssland.m4a */,
+				F576E5C325A8CBD000CD97FD /* Slovakien.m4a */,
+				F576E5C425A8CBD000CD97FD /* Sverige.m4a */,
+				F576E5C625A8CBD000CD97FD /* Tjeckien.m4a */,
+				F576E5C825A8CBD000CD97FD /* Tyskland.m4a */,
+				F576E5C725A8CBD000CD97FD /* Ungern.m4a */,
+			);
+			path = "Lesson 2 Voice Samples";
+			sourceTree = "<group>";
+		};
+		F577C35B259A2E0900A2322E /* Lesson2 */ = {
+			isa = PBXGroup;
+			children = (
+				F576E5C225A8CBBA00CD97FD /* Lesson 2 Voice Samples */,
+				F577C35C259A2E6D00A2322E /* Lesson2.storyboard */,
+				F577C35F259A400300A2322E /* Lesson2ViewController.swift */,
+				F5728A66259DF01D00467A49 /* Lesson2Part1ViewController.swift */,
+				F52A7979259F415D00C9F967 /* Lesson2EndViewController.swift */,
+			);
+			path = Lesson2;
+			sourceTree = "<group>";
+		};
+		F599BC882585299700F85829 /* Lesson 1 Voice Samples */ = {
+			isa = PBXGroup;
+			children = (
+				F599BC8F258529B400F85829 /* Adjo!.m4a */,
+				F599BC8B258529B300F85829 /* GodAfton!.m4a */,
+				F599BC8D258529B400F85829 /* GodDag!.m4a */,
+				F599BC92258529B400F85829 /* GodMorgon!.m4a */,
+				F599BC8A258529B300F85829 /* GodNatt!.m4a */,
+				F599BC8E258529B400F85829 /* Hej!.m4a */,
+				F599BC90258529B400F85829 /* Hejda!.m4a */,
+				F599BC91258529B400F85829 /* Tack!.m4a */,
+				F599BC8C258529B300F85829 /* Tjäna!.m4a */,
+				F599BC89258529B300F85829 /* Varsagod.m4a */,
+			);
+			path = "Lesson 1 Voice Samples";
+			sourceTree = "<group>";
+		};
+		F5A242342559B06A00BBE672 = {
+			isa = PBXGroup;
+			children = (
+				F5A2423F2559B06A00BBE672 /* Swedish-Slovak Dictionary */,
+				F5A2423E2559B06A00BBE672 /* Products */,
+			);
+			sourceTree = "<group>";
+			wrapsLines = 1;
+		};
+		F5A2423E2559B06A00BBE672 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5A2423D2559B06A00BBE672 /* Swedish-Slovak Dictionary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5A2423F2559B06A00BBE672 /* Swedish-Slovak Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				F527045625A639A500C469A9 /* Swedish-Slovak Dictionary.entitlements */,
+				F52B55E425618C5000BB2335 /* UI */,
+				F5661DDD259108B60030F8F4 /* Quiz */,
+				F5C0E7772573F5E1002C6E39 /* LibraryViewController.swift */,
+				F5EB671925AB11D600A8A1B6 /* Lobby */,
+				F5661DE225911BCA0030F8F4 /* AnimatedVideoForLibrary */,
+				F5D5A1B72583F9A7008CA8F3 /* Lesson 1 */,
+				F577C35B259A2E0900A2322E /* Lesson2 */,
+				F5EB671B25AB123000A8A1B6 /* Lesson 3 */,
+				F5EB672025AB127900A8A1B6 /* Notes */,
+				F5D66194257C10C000303BA9 /* DataStructure */,
+				F5543709258E5EEE0058758E /* CheckAnimation */,
+				F50C769E257E95DE00750E69 /* SoundUI */,
+				F5661DCF2590DF2E0030F8F4 /* SwiftGIfLib */,
+				F5A242422559B06A00BBE672 /* SceneDelegate.swift */,
+				F5A242402559B06A00BBE672 /* AppDelegate.swift */,
+				F5A242492559B06D00BBE672 /* Assets.xcassets */,
+				F5A2424E2559B06D00BBE672 /* Info.plist */,
+				F517881B25D9A54C006209BC /* coreDataModel.xcdatamodeld */,
+			);
+			path = "Swedish-Slovak Dictionary";
+			sourceTree = "<group>";
+		};
+		F5D5A1B72583F9A7008CA8F3 /* Lesson 1 */ = {
+			isa = PBXGroup;
+			children = (
+				F599BC882585299700F85829 /* Lesson 1 Voice Samples */,
+				F5367EE725697FE800E4E06F /* Lesson1.storyboard */,
+				F5367EEB2569828900E4E06F /* Lesson1ViewController.swift */,
+				F5D5A1B92583FAAF008CA8F3 /* Lesson1EndViewController.swift */,
+				F5C0E77D257411A9002C6E39 /* Lesson1Part1ViewController.swift */,
+			);
+			path = "Lesson 1";
+			sourceTree = "<group>";
+		};
+		F5D66194257C10C000303BA9 /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				F5A1A58B25A080A50073091C /* Lesson1SlovakData.txt */,
+				F5A1A58E25A080F10073091C /* Lesson1SwedishData.txt */,
+				F5D66199257C14A800303BA9 /* Lesson2SlovakData.txt */,
+				F5A1A58825A07D510073091C /* Lesson2SwedishData.txt */,
+				F5CFDA0625A36F0400C9B0C6 /* lessonCompletion.txt */,
+				F50FE0BB25BF1D4800B81122 /* Lesson3SlovakData.txt */,
+				F50FE0BF25BF1D5E00B81122 /* Lesson3SwedishData.txt */,
+			);
+			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		F5EB671925AB11D600A8A1B6 /* Lobby */ = {
+			isa = PBXGroup;
+			children = (
+				F5A242442559B06A00BBE672 /* ViewController.swift */,
+			);
+			path = Lobby;
+			sourceTree = "<group>";
+		};
+		F5EB671B25AB123000A8A1B6 /* Lesson 3 */ = {
+			isa = PBXGroup;
+			children = (
+				F5EB671C25AB123D00A8A1B6 /* Lesson 3 Voice Samples */,
+				F5EB671D25AB125B00A8A1B6 /* Lesson3.storyboard */,
+				F50FE0B125BEFD0F00B81122 /* Lesson3ViewController.swift */,
+				F50FE0B825BF155200B81122 /* Lesson3Part1ViewController.swift */,
+				F56C163425ED419A0035BF3B /* Lesson3EndViewController.swift */,
+			);
+			path = "Lesson 3";
+			sourceTree = "<group>";
+		};
+		F5EB671C25AB123D00A8A1B6 /* Lesson 3 Voice Samples */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Lesson 3 Voice Samples";
+			sourceTree = "<group>";
+		};
+		F5EB672025AB127900A8A1B6 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				F5EB672125AB12A000A8A1B6 /* Notes.storyboard */,
+				F5EB672725AB155100A8A1B6 /* NotesViewController.swift */,
+				F5DA673C25D0456400A1D8BC /* NotesTableViewController.swift */,
+				F5DA673F25D04B7000A1D8BC /* NotesToDoViewController.swift */,
+				F5341A9325E27D4500897ACE /* ToDoDetailsViewController.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5A2423C2559B06A00BBE672 /* Swedish-Slovak Dictionary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5A242512559B06E00BBE672 /* Build configuration list for PBXNativeTarget "Swedish-Slovak Dictionary" */;
+			buildPhases = (
+				F5A242392559B06A00BBE672 /* Sources */,
+				F5A2423A2559B06A00BBE672 /* Frameworks */,
+				F5A2423B2559B06A00BBE672 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swedish-Slovak Dictionary";
+			packageProductDependencies = (
+				F554370E258E5FE00058758E /* Lottie */,
+			);
+			productName = "Swedish-Slovak Dictionary";
+			productReference = F5A2423D2559B06A00BBE672 /* Swedish-Slovak Dictionary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5A242352559B06A00BBE672 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					F5A2423C2559B06A00BBE672 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = F5A242382559B06A00BBE672 /* Build configuration list for PBXProject "Swedish-Slovak Dictionary" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5A242342559B06A00BBE672;
+			packageReferences = (
+				F554370D258E5FE00058758E /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
+			productRefGroup = F5A2423E2559B06A00BBE672 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5A2423C2559B06A00BBE672 /* Swedish-Slovak Dictionary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5A2423B2559B06A00BBE672 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5EB672225AB12A000A8A1B6 /* Notes.storyboard in Resources */,
+				F599BC98258529B400F85829 /* Hej!.m4a in Resources */,
+				F576E5CE25A8CBD000CD97FD /* Tjeckien.m4a in Resources */,
+				F599BC93258529B400F85829 /* Varsagod.m4a in Resources */,
+				F5A2424D2559B06D00BBE672 /* LaunchScreen.storyboard in Resources */,
+				F576E5D225A8CBD000CD97FD /* Ryssland.m4a in Resources */,
+				F554370B258E5F0A0058758E /* AnimationSuccess.json in Resources */,
+				F50C76A8257E966B00750E69 /* SwipeNextSoundEffect.mp3 in Resources */,
+				F599BC9C258529B400F85829 /* GodMorgon!.m4a in Resources */,
+				F5A28025256AB3E0001B9C8F /* Instructions.storyboard in Resources */,
+				F599BC95258529B400F85829 /* GodAfton!.m4a in Resources */,
+				F588B1FD2598C1C0005FA233 /* startupSoundEffect.wav in Resources */,
+				F599BC97258529B400F85829 /* GodDag!.m4a in Resources */,
+				F576E5CC25A8CBD000CD97FD /* Sverige.m4a in Resources */,
+				F5C0E77B2573F6EF002C6E39 /* VideoBG.mp4 in Resources */,
+				F5A2424A2559B06D00BBE672 /* Assets.xcassets in Resources */,
+				F50FE0C025BF1D5E00B81122 /* Lesson3SwedishData.txt in Resources */,
+				F599BC99258529B400F85829 /* Adjo!.m4a in Resources */,
+				F5C6B4A025949B6B009F7ADB /* AnimatedIcon.gif in Resources */,
+				F576E5D725A8DAC400CD97FD /* Finland.m4a in Resources */,
+				F5D6EEC425978B06006A1382 /* successSoundEffect.wav in Resources */,
+				F577C35D259A2E6D00A2322E /* Lesson2.storyboard in Resources */,
+				F576E5CF25A8CBD000CD97FD /* Ungern.m4a in Resources */,
+				F5D6619A257C14A800303BA9 /* Lesson2SlovakData.txt in Resources */,
+				F5A1A58F25A080F10073091C /* Lesson1SwedishData.txt in Resources */,
+				F576E5D125A8CBD000CD97FD /* Frankrike.m4a in Resources */,
+				F599BC9B258529B400F85829 /* Tack!.m4a in Resources */,
+				F50FE0BC25BF1D4800B81122 /* Lesson3SlovakData.txt in Resources */,
+				F599BC96258529B400F85829 /* Tjäna!.m4a in Resources */,
+				F5E693922597BBAA0083B1DC /* popSoundEffect.wav in Resources */,
+				F5A1A58C25A080A50073091C /* Lesson1SlovakData.txt in Resources */,
+				F5B79E58258F645A00AFEC40 /* SuccessSoundEffect.mp3 in Resources */,
+				F51D6660256A7C4E002BB749 /* Library.storyboard in Resources */,
+				F5CFDA0A25A3756600C9B0C6 /* lessonCompletion.txt in Resources */,
+				F5367EE825697FE800E4E06F /* Lesson1.storyboard in Resources */,
+				F5A242482559B06A00BBE672 /* Main.storyboard in Resources */,
+				F528588A2592101A0095C169 /* correctAnswerSoundEffect.wav in Resources */,
+				F50C76A7257E966B00750E69 /* SwipeBackSoundEffect.mp3 in Resources */,
+				F576E5CB25A8CBD000CD97FD /* Slovakien.m4a in Resources */,
+				F5661DD52590DF710030F8F4 /* CelebrationEmoji.gif in Resources */,
+				F5DFE6C8258FD16300CE6950 /* Quiz.storyboard in Resources */,
+				F5A1A58925A07D510073091C /* Lesson2SwedishData.txt in Resources */,
+				F576E5CD25A8CBD000CD97FD /* Norge.m4a in Resources */,
+				F5EB671E25AB125B00A8A1B6 /* Lesson3.storyboard in Resources */,
+				F5341A9725E2C0A200897ACE /* empty.mp3 in Resources */,
+				F576E5D625A8DAC400CD97FD /* Polen.m4a in Resources */,
+				F599BC9A258529B400F85829 /* Hejda!.m4a in Resources */,
+				F599BC94258529B400F85829 /* GodNatt!.m4a in Resources */,
+				F5E6938F2597B39D0083B1DC /* successAnimation.gif in Resources */,
+				F576E5D025A8CBD000CD97FD /* Tyskland.m4a in Resources */,
+				F528588B2592101A0095C169 /* wrongAnswerSoundEffect.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5A242392559B06A00BBE672 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C0E77E257411AA002C6E39 /* Lesson1Part1ViewController.swift in Sources */,
+				F577C363259A420100A2322E /* GradientViewLesson2.swift in Sources */,
+				F5A1A59225A0AEBF0073091C /* Lesson2QuizEndViewController.swift in Sources */,
+				F5A242452559B06A00BBE672 /* ViewController.swift in Sources */,
+				F50FE0B625BEFE2000B81122 /* GradientViewLesson3.swift in Sources */,
+				F5C0E7782573F5E1002C6E39 /* LibraryViewController.swift in Sources */,
+				F5661DDA2590F0BB0030F8F4 /* QuizLibraryGradientView.swift in Sources */,
+				F52A797A259F415D00C9F967 /* Lesson2EndViewController.swift in Sources */,
+				F50FE0B925BF155200B81122 /* Lesson3Part1ViewController.swift in Sources */,
+				F5A242412559B06A00BBE672 /* AppDelegate.swift in Sources */,
+				F517881D25D9A54C006209BC /* coreDataModel.xcdatamodeld in Sources */,
+				F577C360259A400300A2322E /* Lesson2ViewController.swift in Sources */,
+				F50FE0B225BEFD0F00B81122 /* Lesson3ViewController.swift in Sources */,
+				F5661DDF259108F60030F8F4 /* Lesson1Quiz.swift in Sources */,
+				F5728A67259DF01D00467A49 /* Lesson2Part1ViewController.swift in Sources */,
+				F5341A9425E27D4600897ACE /* ToDoDetailsViewController.swift in Sources */,
+				F52A797D259F6ECF00C9F967 /* Lesson2Quiz.swift in Sources */,
+				F5341A9A25E2CEFB00897ACE /* NotesGradientView.swift in Sources */,
+				F5DA674025D04B7000A1D8BC /* NotesToDoViewController.swift in Sources */,
+				F5661DD12590DF4E0030F8F4 /* SwiftGif.swift in Sources */,
+				F5DA673D25D0456400A1D8BC /* NotesTableViewController.swift in Sources */,
+				F5D5A1BA2583FAAF008CA8F3 /* Lesson1EndViewController.swift in Sources */,
+				F56C163525ED419A0035BF3B /* Lesson3EndViewController.swift in Sources */,
+				F5D5A1B12583E860008CA8F3 /* GradientView.swift in Sources */,
+				F5EB672825AB155100A8A1B6 /* NotesViewController.swift in Sources */,
+				F5367EEC2569828900E4E06F /* Lesson1ViewController.swift in Sources */,
+				F588B2052598C9A3005FA233 /* QuizLibraryViewController.swift in Sources */,
+				F5A242432559B06A00BBE672 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F5A242462559B06A00BBE672 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5A242472559B06A00BBE672 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5A2424B2559B06D00BBE672 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5A2424C2559B06D00BBE672 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5A2424F2559B06D00BBE672 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5A242502559B06D00BBE672 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5A242522559B06E00BBE672 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Swedish-Slovak Dictionary/Swedish-Slovak Dictionary.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 98LXWPV5FF;
+				INFOPLIST_FILE = "Swedish-Slovak Dictionary/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.michalspano.Swedish-Slovak-Dictionary";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5A242532559B06E00BBE672 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Swedish-Slovak Dictionary/Swedish-Slovak Dictionary.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 98LXWPV5FF;
+				INFOPLIST_FILE = "Swedish-Slovak Dictionary/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.michalspano.Swedish-Slovak-Dictionary";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5A242382559B06A00BBE672 /* Build configuration list for PBXProject "Swedish-Slovak Dictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5A2424F2559B06D00BBE672 /* Debug */,
+				F5A242502559B06D00BBE672 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5A242512559B06E00BBE672 /* Build configuration list for PBXNativeTarget "Swedish-Slovak Dictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5A242522559B06E00BBE672 /* Debug */,
+				F5A242532559B06E00BBE672 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F554370D258E5FE00058758E /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F554370E258E5FE00058758E /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F554370D258E5FE00058758E /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		F517881B25D9A54C006209BC /* coreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F517881C25D9A54C006209BC /* coreDataModel.xcdatamodel */,
+			);
+			currentVersion = F517881C25D9A54C006209BC /* coreDataModel.xcdatamodel */;
+			path = coreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F5A242352559B06A00BBE672 /* Project object */;
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lesson1VC-->
+        <scene sceneID="xZf-Ni-NW5">
+            <objects>
+                <viewController storyboardIdentifier="Lesson1UI" title="Lesson1VC" id="4QK-0s-WAE" userLabel="Lesson1VC" customClass="Lesson1VC" customModule="Swedish_Slovak_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PQk-F6-NeM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundScheme1" translatesAutoresizingMaskIntoConstraints="NO" id="emo-6s-EG9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="czM-1X-Fm5" userLabel="ButtonStack">
+                                <rect key="frame" x="178" y="494" width="58" height="108"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8K-Nm-miA">
+                                        <rect key="frame" x="0.0" y="0.0" width="58" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="NEXT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="0I6-Xj-Y8C" kind="show" id="tZy-6O-agV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9S-xB-3S9">
+                                        <rect key="frame" x="0.0" y="36" width="58" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="BACK">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="4yo-gV-PTN" kind="show" id="aK3-YX-UWp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smz-tH-UKK">
+                                        <rect key="frame" x="0.0" y="72" width="58" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="HOME">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="4yo-gV-PTN" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="6Er-1q-mLB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ufD-ja-RFD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="emo-6s-EG9" firstAttribute="leading" secondItem="PQk-F6-NeM" secondAttribute="leading" id="8zA-a9-0BD"/>
+                            <constraint firstAttribute="bottom" secondItem="emo-6s-EG9" secondAttribute="bottom" id="QtY-as-yaZ"/>
+                            <constraint firstItem="emo-6s-EG9" firstAttribute="top" secondItem="PQk-F6-NeM" secondAttribute="top" id="Tnw-P8-6GD"/>
+                            <constraint firstItem="czM-1X-Fm5" firstAttribute="centerY" secondItem="PQk-F6-NeM" secondAttribute="centerY" constant="100" id="bfl-Z2-zqs"/>
+                            <constraint firstAttribute="trailing" secondItem="emo-6s-EG9" secondAttribute="trailing" id="llB-9J-cx3"/>
+                            <constraint firstItem="czM-1X-Fm5" firstAttribute="centerX" secondItem="PQk-F6-NeM" secondAttribute="centerX" id="pJf-Nx-jXb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TVw-wT-NEE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="241" y="144"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="VRD-sA-i9O">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="Menu" id="4yo-gV-PTN" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pfh-JF-Uec"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IYh-P2-mGO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="755" y="220"/>
+        </scene>
+        <!--Lesson2VC-->
+        <scene sceneID="Itw-xM-JuK">
+            <objects>
+                <viewController id="0I6-Xj-Y8C" userLabel="Lesson2VC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6WV-wa-QII">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundScheme2" translatesAutoresizingMaskIntoConstraints="NO" id="J0n-rP-Epq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="djn-aF-q2c"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="J0n-rP-Epq" firstAttribute="leading" secondItem="6WV-wa-QII" secondAttribute="leading" id="B4f-U6-Zsr"/>
+                            <constraint firstItem="J0n-rP-Epq" firstAttribute="top" secondItem="6WV-wa-QII" secondAttribute="top" id="EE1-l5-agz"/>
+                            <constraint firstAttribute="bottom" secondItem="J0n-rP-Epq" secondAttribute="bottom" id="LoL-xd-NN5"/>
+                            <constraint firstAttribute="trailing" secondItem="J0n-rP-Epq" secondAttribute="trailing" id="NWp-fU-PLB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ieJ-bT-rQC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ija-8E-i2N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1107" y="144"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6Er-1q-mLB"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="BackgroundScheme1" width="414" height="896"/>
+        <image name="BackgroundScheme2" width="414" height="896"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Library View Controller-->
+        <scene sceneID="Eww-wU-DuP">
+            <objects>
+                <viewController storyboardIdentifier="LibraryVC" id="kxE-PD-ZY3" customClass="LibraryViewController" customModule="Swedish_Slovak_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kdy-K5-avG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SiD-8S-gDw" userLabel="videoBackground">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view clipsSubviews="YES" alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7r-Zb-zqs" userLabel="dimView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="PKC-J2-J55" userLabel="lessonLabelsStackView">
+                                <rect key="frame" x="195" y="213" width="159" height="500"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Greetings!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z45-3y-98c" userLabel="Lesson1Label">
+                                        <rect key="frame" x="0.0" y="0.0" width="159" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Countries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vls-BJ-b3c" userLabel="Lesson2Label">
+                                        <rect key="frame" x="0.0" y="116" width="155" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Colours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TR7-vV-U2K" userLabel="lesson3Label">
+                                        <rect key="frame" x="0.0" y="232" width="130" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. Lesson 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1A-3g-U6P" userLabel="lesson4Label">
+                                        <rect key="frame" x="0.0" y="348" width="148.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5. Lesson 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0u-X2-EWe" userLabel="lesson5Label">
+                                        <rect key="frame" x="0.0" y="464" width="147.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal" spacing="15"/>
+                            </stackView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Library" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjD-j0-XaR" userLabel="mainLabel">
+                                <rect key="frame" x="141" y="74" width="132.5" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="H3B-33-SfQ" userLabel="CH1LessonsStackView">
+                                <rect key="frame" x="60" y="183" width="100" height="560"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPv-7i-cRc">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                        <state key="normal" title="L1" backgroundImage="Lesson1Icon">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapLesson1Button:" destination="kxE-PD-ZY3" eventType="touchUpInside" id="Txh-gH-Ift"/>
+                                            <segue destination="mHI-dl-Ei9" kind="presentation" identifier="fromLibraryToLesson1" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="fR3-Or-pID"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbD-Lx-557">
+                                        <rect key="frame" x="0.0" y="115" width="100" height="100"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                        <state key="normal" title="L2" backgroundImage="Lesson2Icon">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapLesson2BUtton:" destination="kxE-PD-ZY3" eventType="touchUpInside" id="zo8-QF-5xb"/>
+                                            <segue destination="8oa-OE-E7m" kind="presentation" identifier="fromLibraryToLesson2" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="laB-tT-9xv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZv-7n-rg7">
+                                        <rect key="frame" x="0.0" y="230" width="100" height="100"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                        <state key="normal" title="L3" backgroundImage="Lesson3Icon">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapLesson3Button:" destination="kxE-PD-ZY3" eventType="touchDragInside" id="rFn-Cz-Ss4"/>
+                                            <action selector="didTapLesson3Button:" destination="kxE-PD-ZY3" eventType="touchUpInside" id="vQJ-J2-KJh"/>
+                                            <segue destination="w4q-3r-lat" kind="presentation" identifier="fromLibraryToLesson3" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="MdF-5r-I8G"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTo-kB-eH4">
+                                        <rect key="frame" x="0.0" y="345" width="100" height="100"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                        <state key="normal" title="L4" backgroundImage="Lesson4Icon">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapLesson4Button:" destination="kxE-PD-ZY3" eventType="touchUpInside" id="Uf1-Vd-dHL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1K-yp-cEZ">
+                                        <rect key="frame" x="0.0" y="460" width="100" height="100"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                        <state key="normal" title="L5" backgroundImage="Lesson5Icon">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapLesson5Button:" destination="kxE-PD-ZY3" eventType="touchUpInside" id="50l-3a-bwV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trb-91-6cl">
+                                <rect key="frame" x="173.5" y="820" width="67.5" height="22"/>
+                                <state key="normal" title="Home" image="chevron.backward.square.fill" catalog="system"/>
+                                <connections>
+                                    <segue destination="aYJ-6l-Zai" kind="presentation" identifier="fromLibraryToMenu" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="HOb-Oi-h5t"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tYz-Pc-WiD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tYz-Pc-WiD" firstAttribute="bottom" secondItem="Trb-91-6cl" secondAttribute="bottom" constant="20" id="0Lt-Pz-gkI"/>
+                            <constraint firstItem="SiD-8S-gDw" firstAttribute="centerY" secondItem="Kdy-K5-avG" secondAttribute="centerY" id="20j-KW-3Yo"/>
+                            <constraint firstItem="h7r-Zb-zqs" firstAttribute="leading" secondItem="Kdy-K5-avG" secondAttribute="leading" id="3UF-3Y-Ted"/>
+                            <constraint firstItem="SiD-8S-gDw" firstAttribute="leading" secondItem="h7r-Zb-zqs" secondAttribute="leading" id="3uq-lg-AQA"/>
+                            <constraint firstItem="PKC-J2-J55" firstAttribute="top" secondItem="mjD-j0-XaR" secondAttribute="bottom" constant="85" id="6dJ-h1-i0B">
+                                <variation key="heightClass=compact-widthClass=regular" constant="150"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="SiD-8S-gDw" secondAttribute="bottom" id="6jU-ca-Fqm"/>
+                            <constraint firstItem="mjD-j0-XaR" firstAttribute="top" secondItem="tYz-Pc-WiD" secondAttribute="top" constant="30" id="8gx-mz-1d7"/>
+                            <constraint firstItem="SiD-8S-gDw" firstAttribute="centerX" secondItem="Kdy-K5-avG" secondAttribute="centerX" id="G96-Wa-nhs"/>
+                            <constraint firstItem="SiD-8S-gDw" firstAttribute="top" secondItem="h7r-Zb-zqs" secondAttribute="top" id="Ho4-k5-Acr"/>
+                            <constraint firstItem="tYz-Pc-WiD" firstAttribute="trailing" secondItem="PKC-J2-J55" secondAttribute="trailing" constant="60" id="KSI-5D-HSp">
+                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="SiD-8S-gDw" secondAttribute="trailing" id="SMu-ac-hkT"/>
+                            <constraint firstItem="h7r-Zb-zqs" firstAttribute="top" secondItem="Kdy-K5-avG" secondAttribute="top" id="Vv7-pS-dDQ"/>
+                            <constraint firstItem="SiD-8S-gDw" firstAttribute="leading" secondItem="Kdy-K5-avG" secondAttribute="leading" id="Xru-Y3-m38"/>
+                            <constraint firstItem="H3B-33-SfQ" firstAttribute="top" secondItem="mjD-j0-XaR" secondAttribute="bottom" constant="55" id="YVT-j6-7lY">
+                                <variation key="heightClass=compact-widthClass=regular" constant="30"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="h7r-Zb-zqs" secondAttribute="bottom" id="cbP-UZ-d7e"/>
+                            <constraint firstItem="Trb-91-6cl" firstAttribute="centerX" secondItem="Kdy-K5-avG" secondAttribute="centerX" id="ecT-db-AhT"/>
+                            <constraint firstItem="H3B-33-SfQ" firstAttribute="leading" secondItem="tYz-Pc-WiD" secondAttribute="leading" constant="60" id="j2G-wT-AW5"/>
+                            <constraint firstItem="mjD-j0-XaR" firstAttribute="centerX" secondItem="Kdy-K5-avG" secondAttribute="centerX" id="kjW-47-0HG"/>
+                            <constraint firstItem="SiD-8S-gDw" firstAttribute="top" secondItem="Kdy-K5-avG" secondAttribute="top" id="pg5-1o-EsD"/>
+                            <constraint firstItem="h7r-Zb-zqs" firstAttribute="trailing" secondItem="Kdy-K5-avG" secondAttribute="trailing" id="qKS-sI-j3g"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="20j-KW-3Yo"/>
+                                <exclude reference="3uq-lg-AQA"/>
+                                <exclude reference="G96-Wa-nhs"/>
+                                <exclude reference="Ho4-k5-Acr"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="20j-KW-3Yo"/>
+                                <include reference="3uq-lg-AQA"/>
+                                <exclude reference="6jU-ca-Fqm"/>
+                                <include reference="G96-Wa-nhs"/>
+                                <include reference="Ho4-k5-Acr"/>
+                                <exclude reference="SMu-ac-hkT"/>
+                                <exclude reference="Xru-Y3-m38"/>
+                                <exclude reference="pg5-1o-EsD"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="dimView" destination="h7r-Zb-zqs" id="gpR-0J-eFo"/>
+                        <outlet property="homeButton" destination="Trb-91-6cl" id="Urf-Ld-B99"/>
+                        <outlet property="lesson1Button" destination="ZPv-7i-cRc" id="Y3H-8e-f4F"/>
+                        <outlet property="lesson1Label" destination="z45-3y-98c" id="BSV-eC-bTk"/>
+                        <outlet property="lesson2Button" destination="ZbD-Lx-557" id="3UT-jn-rwM"/>
+                        <outlet property="lesson2Label" destination="vls-BJ-b3c" id="Ui5-tc-Jlf"/>
+                        <outlet property="lesson3Button" destination="SZv-7n-rg7" id="vsx-XL-Fu4"/>
+                        <outlet property="lesson3Label" destination="TR7-vV-U2K" id="ba4-4C-SjI"/>
+                        <outlet property="lesson4Button" destination="xTo-kB-eH4" id="OHg-UN-lsT"/>
+                        <outlet property="lesson4Label" destination="d1A-3g-U6P" id="uGi-pP-YKQ"/>
+                        <outlet property="lesson5Button" destination="x1K-yp-cEZ" id="qT7-CV-dFV"/>
+                        <outlet property="lesson5Label" destination="W0u-X2-EWe" id="7e2-gI-pBN"/>
+                        <outlet property="lessonButtonsStackView" destination="H3B-33-SfQ" id="9Nz-Ze-tPi"/>
+                        <outlet property="libraryLabel" destination="mjD-j0-XaR" id="e1z-32-IcM"/>
+                        <outlet property="mainView" destination="Kdy-K5-avG" id="u2Q-7R-s3S"/>
+                        <outlet property="videoLayer" destination="SiD-8S-gDw" id="yPW-xG-RCA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="buc-nP-2WC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="174.77678571428569"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="dT7-cS-b9v">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="Menu" id="aYJ-6l-Zai" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="CGo-jE-X3F"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bY1-o6-mlH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="609"/>
+        </scene>
+        <!--Lesson1Lobby-->
+        <scene sceneID="lP7-hf-N8h">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Lesson1" referencedIdentifier="Lesson1Lobby" id="mHI-dl-Ei9" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1gS-90-dIY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7eX-Lb-Ipv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="681" y="62"/>
+        </scene>
+        <!--Lesson2Lobby-->
+        <scene sceneID="Caa-6d-bmz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Lesson2" referencedIdentifier="Lesson2Lobby" id="8oa-OE-E7m" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uKi-bi-vM8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765" y="175"/>
+        </scene>
+        <!--Lesson3Lobby-->
+        <scene sceneID="ymj-vY-IrQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Lesson3" referencedIdentifier="Lesson3Lobby" id="w4q-3r-lat" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="p9q-K0-gAG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0px-Bz-AwL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="684" y="283"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Lesson1Icon" width="100" height="100"/>
+        <image name="Lesson2Icon" width="100" height="100"/>
+        <image name="Lesson3Icon" width="100" height="100"/>
+        <image name="Lesson4Icon" width="100" height="100"/>
+        <image name="Lesson5Icon" width="100" height="100"/>
+        <image name="chevron.backward.square.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

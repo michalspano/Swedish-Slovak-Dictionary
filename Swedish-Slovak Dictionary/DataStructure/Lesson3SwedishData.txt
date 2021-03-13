@@ -1,0 +1,10 @@
+röd
+gul
+orange
+grön
+blå
+lila
+brun
+svart
+vit
+grå
