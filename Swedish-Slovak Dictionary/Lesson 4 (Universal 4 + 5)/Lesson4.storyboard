@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lesson4 View Controller-->
+        <scene sceneID="ys7-VB-8K9">
+            <objects>
+                <viewController storyboardIdentifier="Lesson4Lobby" useStoryboardIdentifierAsRestorationIdentifier="YES" id="858-eU-kYg" customClass="Lesson4ViewController" customModule="Swedish_Slovak_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cdW-92-dvC" customClass="GradientViewLesson4" customModule="Swedish_Slovak_Dictionary" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hj4-6O-UQJ">
+                                <rect key="frame" x="169.5" y="820" width="75" height="22"/>
+                                <state key="normal" title="Library" image="chevron.backward.square.fill" catalog="system">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="U06-Kr-UO7" kind="presentation" identifier="fromLesson4ToLibrary" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="9VY-xD-iF0"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lesson1Icon" translatesAutoresizingMaskIntoConstraints="NO" id="LPG-4M-SMq">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="RV7-39-hVQ">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="175"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="200" id="iSH-fZ-JgV">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="175"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmk-cF-TND">
+                                <rect key="frame" x="160.5" y="402" width="93" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="Wwz-An-Btw">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="87"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="75" id="vT4-Mc-haB">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="87"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="77"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Wwz-An-Btw"/>
+                                        <exclude reference="vT4-Mc-haB"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="74"/>
+                                    <mask key="constraints">
+                                        <include reference="Wwz-An-Btw"/>
+                                        <include reference="vT4-Mc-haB"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to start!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hF-ni-mHx" userLabel="SwipeUptoStart">
+                                <rect key="frame" x="73.5" y="727" width="267" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Lesson 4! In this lesson you will learn animals in Swedish." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7J-YU-tX3">
+                                <rect key="frame" x="38" y="164" width="338" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lesson Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAq-Na-0Iy" userLabel="mainLabel">
+                                <rect key="frame" x="67" y="74" width="280" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MeS-Y9-kpc"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Hj4-6O-UQJ" firstAttribute="top" secondItem="1hF-ni-mHx" secondAttribute="bottom" constant="50" id="AMC-XD-gja">
+                                <variation key="heightClass=compact-widthClass=regular" constant="15"/>
+                            </constraint>
+                            <constraint firstItem="Hj4-6O-UQJ" firstAttribute="centerX" secondItem="cdW-92-dvC" secondAttribute="centerX" id="Ioj-uw-tHd"/>
+                            <constraint firstItem="oAq-Na-0Iy" firstAttribute="centerX" secondItem="cdW-92-dvC" secondAttribute="centerX" id="Ke6-18-yxe"/>
+                            <constraint firstItem="nmk-cF-TND" firstAttribute="centerX" secondItem="cdW-92-dvC" secondAttribute="centerX" id="M7v-9U-3J0"/>
+                            <constraint firstItem="MeS-Y9-kpc" firstAttribute="bottom" secondItem="Hj4-6O-UQJ" secondAttribute="bottom" constant="20" id="MyH-vx-1ve">
+                                <variation key="heightClass=compact-widthClass=regular" constant="5"/>
+                            </constraint>
+                            <constraint firstItem="LPG-4M-SMq" firstAttribute="centerY" secondItem="cdW-92-dvC" secondAttribute="centerY" id="VsT-WE-t9V">
+                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="LPG-4M-SMq" firstAttribute="centerX" secondItem="cdW-92-dvC" secondAttribute="centerX" id="WKc-Vm-05Q"/>
+                            <constraint firstItem="1hF-ni-mHx" firstAttribute="centerX" secondItem="cdW-92-dvC" secondAttribute="centerX" id="f2M-nc-1tB"/>
+                            <constraint firstItem="Q7J-YU-tX3" firstAttribute="top" secondItem="oAq-Na-0Iy" secondAttribute="bottom" constant="30" id="k69-jp-inS">
+                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="nmk-cF-TND" firstAttribute="centerY" secondItem="cdW-92-dvC" secondAttribute="centerY" id="xX6-HS-ib6">
+                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="Q7J-YU-tX3" firstAttribute="centerX" secondItem="cdW-92-dvC" secondAttribute="centerX" id="xdX-BF-Qe0"/>
+                            <constraint firstItem="oAq-Na-0Iy" firstAttribute="top" secondItem="MeS-Y9-kpc" secondAttribute="top" constant="30" id="xqH-Im-Ax6">
+                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                            </constraint>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="JNG-cs-y45" appends="YES" id="X8Q-UR-EF6"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="4yA-ES-Fj9"/>
+                    <connections>
+                        <outlet property="lessonLabel" destination="nmk-cF-TND" id="Ijs-9G-1CR"/>
+                        <outlet property="lessonView" destination="LPG-4M-SMq" id="shm-Ul-Iot"/>
+                        <outlet property="libraryButton" destination="Hj4-6O-UQJ" id="DSa-pX-GKT"/>
+                        <outlet property="lowerLabel" destination="Q7J-YU-tX3" id="LOt-tQ-PDP"/>
+                        <outlet property="mainLabel" destination="oAq-Na-0Iy" id="tld-FW-KJS"/>
+                        <outlet property="swipeUpLabel" destination="1hF-ni-mHx" id="3uc-Jn-B7r"/>
+                        <segue destination="SlP-th-Rib" kind="presentation" identifier="fromLessonInitialToLesson" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Uzj-6S-WSK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d1T-oy-GTl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="JNG-cs-y45">
+                    <connections>
+                        <action selector="didSwipeUp:" destination="858-eU-kYg" id="f5z-AQ-nsV"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-122" y="38"/>
+        </scene>
+        <!--Lesson4 Part1 View Controller-->
+        <scene sceneID="MIq-KH-0Ia">
+            <objects>
+                <viewController id="SlP-th-Rib" customClass="Lesson4Part1ViewController" customModule="Swedish_Slovak_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bc7-d6-hcP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lesson Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ws8-fa-IOD" userLabel="mainLabel">
+                                <rect key="frame" x="94.5" y="69" width="225" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hfz-Sv-eTB" userLabel="RoundView">
+                                <rect key="frame" x="57" y="254" width="300" height="388"/>
+                                <color key="backgroundColor" name="darkModeLessonRoundView"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="388" id="QeW-Un-oOm">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="725"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="300" id="cnE-ss-DJC">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="725"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="212" id="pAj-hF-8G0"/>
+                                    <constraint firstAttribute="width" constant="406" id="wEW-kq-SOY"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="pAj-hF-8G0"/>
+                                        <exclude reference="wEW-kq-SOY"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="QeW-Un-oOm"/>
+                                        <exclude reference="cnE-ss-DJC"/>
+                                        <include reference="pAj-hF-8G0"/>
+                                        <include reference="wEW-kq-SOY"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lbj-Pz-OvT" userLabel="PhotoView">
+                                <rect key="frame" x="82" y="323" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="KTj-5G-A2a">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="150"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="500"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="250" id="h1O-3J-Oyt">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="150"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="500"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AU4-eX-0c6" userLabel="loadingView">
+                                <rect key="frame" x="107" y="697" width="200" height="14"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="FUl-qu-N7e"/>
+                                    <constraint firstAttribute="width" constant="200" id="ITc-FD-mj3"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TH7-YK-r3m" userLabel="playSoundButton">
+                                <rect key="frame" x="172" y="667" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="to3-pg-oYZ"/>
+                                    <constraint firstAttribute="width" constant="70" id="ucJ-TI-t5D"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="playButton"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapPlaySoundButton:" destination="SlP-th-Rib" eventType="touchUpInside" id="a7X-nV-Gh5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1i-bI-LKF" userLabel="wordCount">
+                                <rect key="frame" x="176" y="137" width="62" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtM-JC-gVR" userLabel="Label1">
+                                <rect key="frame" x="164.5" y="272" width="85" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" name="darkModeLessonText"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                </variation>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swipeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="HQh-dh-lPb">
+                                <rect key="frame" x="147" y="745" width="120" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="JY9-Dv-ews">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="95"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="120" id="byV-AS-MSk">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="100"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nff-i7-Tnr" userLabel="animationLabel">
+                                <rect key="frame" x="138.5" y="854" width="137" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="darkModeSwipeText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQZ-hx-zcX" userLabel="Label2">
+                                <rect key="frame" x="163" y="585" width="88.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" name="darkModeLessonText"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IFr-MT-fMn"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Nff-i7-Tnr" firstAttribute="top" secondItem="HQh-dh-lPb" secondAttribute="bottom" constant="4" id="67J-1c-IRR">
+                                <variation key="heightClass=compact-widthClass=regular" constant="-10"/>
+                            </constraint>
+                            <constraint firstItem="IFr-MT-fMn" firstAttribute="bottom" secondItem="HQh-dh-lPb" secondAttribute="bottom" constant="12" id="7Tw-xr-KJZ">
+                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="AU4-eX-0c6" firstAttribute="centerX" secondItem="Bc7-d6-hcP" secondAttribute="centerX" id="8Ka-T8-7lI">
+                                <variation key="heightClass=compact-widthClass=regular" constant="310"/>
+                            </constraint>
+                            <constraint firstItem="Lbj-Pz-OvT" firstAttribute="top" secondItem="NtM-JC-gVR" secondAttribute="bottom" constant="12" id="D0M-hD-5Xe"/>
+                            <constraint firstItem="IFr-MT-fMn" firstAttribute="trailing" secondItem="AU4-eX-0c6" secondAttribute="trailing" constant="107" id="I1k-vT-ysJ"/>
+                            <constraint firstItem="Hfz-Sv-eTB" firstAttribute="centerX" secondItem="Bc7-d6-hcP" secondAttribute="centerX" id="IyR-N3-0aQ"/>
+                            <constraint firstItem="AU4-eX-0c6" firstAttribute="leading" secondItem="IFr-MT-fMn" secondAttribute="leading" constant="107" id="MzC-03-Ywk"/>
+                            <constraint firstItem="TH7-YK-r3m" firstAttribute="centerY" secondItem="Bc7-d6-hcP" secondAttribute="centerY" id="N2j-zI-8Ka"/>
+                            <constraint firstItem="T1i-bI-LKF" firstAttribute="centerX" secondItem="Bc7-d6-hcP" secondAttribute="centerX" id="NyA-PG-h9n">
+                                <variation key="heightClass=compact-widthClass=regular" constant="-300"/>
+                            </constraint>
+                            <constraint firstItem="NtM-JC-gVR" firstAttribute="centerX" secondItem="Bc7-d6-hcP" secondAttribute="centerX" id="Qpn-IV-rHW"/>
+                            <constraint firstItem="HQZ-hx-zcX" firstAttribute="top" secondItem="Lbj-Pz-OvT" secondAttribute="bottom" constant="12" id="TqN-Jx-qyZ">
+                                <variation key="heightClass=compact-widthClass=regular" constant="2"/>
+                            </constraint>
+                            <constraint firstItem="NtM-JC-gVR" firstAttribute="top" secondItem="ws8-fa-IOD" secondAttribute="bottom" constant="155" id="YYJ-6w-6kB">
+                                <variation key="heightClass=compact-widthClass=regular" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="AU4-eX-0c6" firstAttribute="centerY" secondItem="Bc7-d6-hcP" secondAttribute="centerY" id="Z0c-aq-uaC"/>
+                            <constraint firstItem="TH7-YK-r3m" firstAttribute="centerX" secondItem="Bc7-d6-hcP" secondAttribute="centerX" id="act-iQ-LID">
+                                <variation key="heightClass=compact-widthClass=regular" constant="300"/>
+                            </constraint>
+                            <constraint firstItem="Lbj-Pz-OvT" firstAttribute="centerY" secondItem="Bc7-d6-hcP" secondAttribute="centerY" id="alb-wd-IQu"/>
+                            <constraint firstItem="Hfz-Sv-eTB" firstAttribute="leading" secondItem="Bc7-d6-hcP" secondAttribute="leading" constant="245" id="cbb-f1-ISM"/>
+                            <constraint firstItem="Hfz-Sv-eTB" firstAttribute="centerY" secondItem="Bc7-d6-hcP" secondAttribute="centerY" id="dci-Bf-v5z"/>
+                            <constraint firstItem="Nff-i7-Tnr" firstAttribute="centerX" secondItem="Bc7-d6-hcP" secondAttribute="centerX" id="du6-OM-s26"/>
+                            <constraint firstItem="T1i-bI-LKF" firstAttribute="top" secondItem="ws8-fa-IOD" secondAttribute="bottom" constant="20" id="gnT-Z2-WGT">
+                                <variation key="heightClass=compact-widthClass=regular" constant="100"/>
+                            </constraint>
+                            <constraint firstItem="ws8-fa-IOD" firstAttribute="centerX" secondItem="Bc7-d6-hcP" secondAttribute="centerX" id="h8H-BE-cCP"/>
+                            <constraint firstItem="HQZ-hx-zcX" firstAttribute="centerX" secondItem="Bc7-d6-hcP" secondAttribute="centerX" id="iBc-1R-otx"/>
+                            <constraint firstItem="AU4-eX-0c6" firstAttribute="top" secondItem="Hfz-Sv-eTB" secondAttribute="bottom" constant="55" id="isM-UB-hYt"/>
+                            <constraint firstItem="IFr-MT-fMn" firstAttribute="bottom" secondItem="Hfz-Sv-eTB" secondAttribute="bottom" constant="80" id="lT8-y0-SSj"/>
+                            <constraint firstItem="TH7-YK-r3m" firstAttribute="top" secondItem="Hfz-Sv-eTB" secondAttribute="bottom" constant="25" id="lWX-re-X30"/>
+                            <constraint firstItem="HQh-dh-lPb" firstAttribute="centerX" secondItem="Bc7-d6-hcP" secondAttribute="centerX" id="q2U-VY-r54"/>
+                            <constraint firstItem="ws8-fa-IOD" firstAttribute="top" secondItem="Bc7-d6-hcP" secondAttribute="topMargin" constant="25" id="rLU-UB-pYk"/>
+                            <constraint firstItem="Lbj-Pz-OvT" firstAttribute="centerX" secondItem="Bc7-d6-hcP" secondAttribute="centerX" id="x2I-16-fL7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="lT8-y0-SSj"/>
+                                <exclude reference="cbb-f1-ISM"/>
+                                <exclude reference="D0M-hD-5Xe"/>
+                                <exclude reference="N2j-zI-8Ka"/>
+                                <exclude reference="Z0c-aq-uaC"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="I1k-vT-ysJ"/>
+                                <include reference="lT8-y0-SSj"/>
+                                <include reference="cbb-f1-ISM"/>
+                                <include reference="N2j-zI-8Ka"/>
+                                <exclude reference="lWX-re-X30"/>
+                                <exclude reference="MzC-03-Ywk"/>
+                                <include reference="Z0c-aq-uaC"/>
+                                <exclude reference="isM-UB-hYt"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="YYJ-6w-6kB"/>
+                                <include reference="D0M-hD-5Xe"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="4ki-zb-UfH" appends="YES" id="8nK-hQ-k81"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="ipq-77-NA5"/>
+                    <connections>
+                        <outlet property="animationLabel" destination="Nff-i7-Tnr" id="sZL-14-fJf"/>
+                        <outlet property="label1" destination="NtM-JC-gVR" id="hId-WR-Znf"/>
+                        <outlet property="label2" destination="HQZ-hx-zcX" id="fo0-cd-9Ge"/>
+                        <outlet property="loaderView" destination="AU4-eX-0c6" id="7uI-oq-Fzp"/>
+                        <outlet property="mainLabel" destination="ws8-fa-IOD" id="3xW-iW-3bd"/>
+                        <outlet property="photoView" destination="Lbj-Pz-OvT" id="990-QQ-sw5"/>
+                        <outlet property="playSoundButton" destination="TH7-YK-r3m" id="76i-jv-i03"/>
+                        <outlet property="roundViewBox" destination="Hfz-Sv-eTB" id="SnW-TK-0hR"/>
+                        <outlet property="swipeIcon" destination="HQh-dh-lPb" id="tdh-kN-aTw"/>
+                        <outlet property="wordCountLabel" destination="T1i-bI-LKF" id="1bF-MW-6HK"/>
+                        <segue destination="858-eU-kYg" kind="presentation" identifier="retreatFromLessonInitialToLesson" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="WzL-uz-iKy"/>
+                        <segue destination="eWS-LX-aSg" kind="presentation" identifier="finishLesson" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Lru-qn-nBU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nta-MX-xja" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="4ki-zb-UfH">
+                    <connections>
+                        <action selector="didSwipeRetreat:" destination="SlP-th-Rib" id="kDe-XW-y1R"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="820" y="38"/>
+        </scene>
+        <!--Lesson4 End View Controller-->
+        <scene sceneID="cz9-MX-XGh">
+            <objects>
+                <viewController id="eWS-LX-aSg" customClass="Lesson4EndViewController" customModule="Swedish_Slovak_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vu9-Lt-8Qi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVg-Im-SPJ">
+                                <rect key="frame" x="65.5" y="74" width="283" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ol8-Jy-0FR" userLabel="LibraryButton">
+                                <rect key="frame" x="169" y="820" width="76" height="22"/>
+                                <state key="normal" title="Library" image="chevron.backward.square.fill" catalog="system">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vQ2-Yt-9YI" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="yHz-wv-dTb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H05-vV-t5b" userLabel="continueLabel">
+                                <rect key="frame" x="145" y="855.5" width="124" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Completion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Kc-vi-5E3" userLabel="passLabel">
+                                <rect key="frame" x="161" y="140" width="92.5" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBY-0c-Ty1" userLabel="gradientView" customClass="GradientViewLesson4" customModule="Swedish_Slovak_Dictionary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="viq-5U-79w" userLabel="gifView">
+                                <rect key="frame" x="82" y="323" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="iok-oR-yAC">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="175"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="250" id="vks-89-JXS">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="175"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKV-co-T5w" userLabel="Quiz Button">
+                                <rect key="frame" x="107" y="656" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.66274509800000003" green="0.86274509799999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="L2P-ap-ZfL"/>
+                                    <constraint firstAttribute="width" constant="200" id="QR4-T7-EtT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Lesson Quiz Button">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                    <color key="titleShadowColor" systemColor="linkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapQuizButton:" destination="eWS-LX-aSg" eventType="touchUpInside" id="t7A-fR-Ho8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Eop-8T-mEc"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ol8-Jy-0FR" firstAttribute="top" secondItem="UKV-co-T5w" secondAttribute="bottom" constant="85" id="0Q1-dA-ZCa"/>
+                            <constraint firstItem="0Kc-vi-5E3" firstAttribute="centerX" secondItem="vu9-Lt-8Qi" secondAttribute="centerX" id="1X4-29-36i"/>
+                            <constraint firstItem="H05-vV-t5b" firstAttribute="centerX" secondItem="vu9-Lt-8Qi" secondAttribute="centerX" id="2ia-mj-fWT"/>
+                            <constraint firstAttribute="trailing" secondItem="oBY-0c-Ty1" secondAttribute="trailing" id="3DD-x1-hxg"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="H05-vV-t5b" secondAttribute="bottom" constant="-15" id="3Z0-XY-m3x"/>
+                            <constraint firstAttribute="bottom" secondItem="oBY-0c-Ty1" secondAttribute="bottom" id="BT6-8F-ztm"/>
+                            <constraint firstItem="viq-5U-79w" firstAttribute="centerX" secondItem="vu9-Lt-8Qi" secondAttribute="centerX" id="DyG-bO-f5i"/>
+                            <constraint firstItem="oBY-0c-Ty1" firstAttribute="leading" secondItem="Eop-8T-mEc" secondAttribute="leading" id="GGr-H7-ifj"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ol8-Jy-0FR" secondAttribute="bottom" constant="20" id="KUt-ni-s32">
+                                <variation key="heightClass=compact-widthClass=regular" constant="-15"/>
+                            </constraint>
+                            <constraint firstItem="KVg-Im-SPJ" firstAttribute="top" secondItem="vu9-Lt-8Qi" secondAttribute="topMargin" constant="30" id="TA5-CI-RaE">
+                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="ol8-Jy-0FR" firstAttribute="centerX" secondItem="vu9-Lt-8Qi" secondAttribute="centerX" id="Vay-LS-0Tt"/>
+                            <constraint firstItem="viq-5U-79w" firstAttribute="centerY" secondItem="vu9-Lt-8Qi" secondAttribute="centerY" id="WpW-yN-7hJ"/>
+                            <constraint firstItem="UKV-co-T5w" firstAttribute="centerY" secondItem="vu9-Lt-8Qi" secondAttribute="centerY" id="ZhC-cY-s42"/>
+                            <constraint firstItem="oBY-0c-Ty1" firstAttribute="top" secondItem="Eop-8T-mEc" secondAttribute="top" id="ch4-xG-801"/>
+                            <constraint firstAttribute="trailing" secondItem="oBY-0c-Ty1" secondAttribute="trailing" id="dEa-oc-FMo"/>
+                            <constraint firstAttribute="bottom" secondItem="oBY-0c-Ty1" secondAttribute="bottom" id="dno-4J-Tuh"/>
+                            <constraint firstItem="UKV-co-T5w" firstAttribute="top" secondItem="viq-5U-79w" secondAttribute="bottom" constant="83" id="ecQ-dN-sHu"/>
+                            <constraint firstItem="KVg-Im-SPJ" firstAttribute="centerX" secondItem="vu9-Lt-8Qi" secondAttribute="centerX" id="icA-we-KqY"/>
+                            <constraint firstItem="UKV-co-T5w" firstAttribute="centerX" secondItem="vu9-Lt-8Qi" secondAttribute="centerX" id="mZ0-5u-JPG"/>
+                            <constraint firstItem="oBY-0c-Ty1" firstAttribute="top" secondItem="vu9-Lt-8Qi" secondAttribute="top" id="q4x-6u-gyb"/>
+                            <constraint firstItem="oBY-0c-Ty1" firstAttribute="leading" secondItem="vu9-Lt-8Qi" secondAttribute="leading" id="yas-ze-WPP"/>
+                            <constraint firstItem="0Kc-vi-5E3" firstAttribute="top" secondItem="KVg-Im-SPJ" secondAttribute="bottom" constant="18" id="zv2-mr-Im3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ch4-xG-801"/>
+                                <exclude reference="dEa-oc-FMo"/>
+                                <exclude reference="dno-4J-Tuh"/>
+                                <exclude reference="yas-ze-WPP"/>
+                                <exclude reference="ZhC-cY-s42"/>
+                                <exclude reference="0Q1-dA-ZCa"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="GGr-H7-ifj"/>
+                                <include reference="ch4-xG-801"/>
+                                <include reference="dEa-oc-FMo"/>
+                                <include reference="dno-4J-Tuh"/>
+                                <include reference="yas-ze-WPP"/>
+                                <exclude reference="ZhC-cY-s42"/>
+                                <exclude reference="ecQ-dN-sHu"/>
+                                <include reference="0Q1-dA-ZCa"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="JLU-R9-Y7f" appends="YES" id="Ydp-Ym-icX"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="EYJ-cf-Qpt"/>
+                    <connections>
+                        <outlet property="congratsLabel" destination="KVg-Im-SPJ" id="tQ6-76-zqu"/>
+                        <outlet property="continueLabel" destination="H05-vV-t5b" id="abp-D8-8R6"/>
+                        <outlet property="gifView" destination="viq-5U-79w" id="MdU-in-aqZ"/>
+                        <outlet property="gradientView" destination="oBY-0c-Ty1" id="2W0-yI-h9p"/>
+                        <outlet property="label2" destination="0Kc-vi-5E3" id="bhY-4T-gmR"/>
+                        <outlet property="libraryButton" destination="ol8-Jy-0FR" id="Sc3-lM-Hqv"/>
+                        <outlet property="quizButton" destination="UKV-co-T5w" id="6iu-xl-3mg"/>
+                        <segue destination="MD2-Dz-V2R" kind="presentation" identifier="QuizLesson4" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="2v4-kp-p4t"/>
+                        <segue destination="qfK-Ez-CVO" kind="presentation" identifier="QuizLesson5" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="7aa-e2-vJS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pRM-PY-EUA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="JLU-R9-Y7f">
+                    <connections>
+                        <action selector="didTapContinue:" destination="eWS-LX-aSg" id="PyH-Wq-CGe"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1703" y="38"/>
+        </scene>
+        <!--QuizLesson1-->
+        <scene sceneID="l1n-ot-UA5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Quiz" referencedIdentifier="QuizLesson1" id="qfK-Ez-CVO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="VJx-Y6-A5i"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="roz-a9-GRe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2309" y="19"/>
+        </scene>
+        <!--QuizLesson2-->
+        <scene sceneID="5Ji-tv-mUC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Quiz" referencedIdentifier="QuizLesson2" id="MD2-Dz-V2R" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="G1z-8V-4rZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kDq-ff-F7X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2252" y="-81"/>
+        </scene>
+        <!--LibraryVC-->
+        <scene sceneID="2nP-A5-Ccp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Library" referencedIdentifier="LibraryVC" id="vQ2-Yt-9YI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="G9t-7J-TkR"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HRB-t2-Zy8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2241" y="106"/>
+        </scene>
+        <!--LibraryVC-->
+        <scene sceneID="2RD-Lx-kRy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Library" referencedIdentifier="LibraryVC" id="U06-Kr-UO7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="kRo-4V-bbj"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dbt-ZJ-q5o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="415" y="147"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="WzL-uz-iKy"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Lesson1Icon" width="100" height="100"/>
+        <image name="chevron.backward.square.fill" catalog="system" width="128" height="114"/>
+        <image name="playButton" width="200" height="200"/>
+        <image name="swipeIcon" width="200" height="200"/>
+        <namedColor name="darkModeLessonRoundView">
+            <color red="0.97600001096725464" green="0.97600001096725464" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="darkModeLessonText">
+            <color red="0.14900000393390656" green="0.14100000262260437" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="darkModeSwipeText">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

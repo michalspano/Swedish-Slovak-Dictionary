@@ -12,10 +12,20 @@ class NotesToDoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        checkMode()
         editElements()
         initialDisplacement()
         animateElements()
 
+    }
+    func checkMode() {
+        if UserDefaults.standard.bool(forKey: "darkMode") == true {
+            overrideUserInterfaceStyle = .dark
+        }
+        else {
+            overrideUserInterfaceStyle = .light
+        }
     }
     
     func editElements() {

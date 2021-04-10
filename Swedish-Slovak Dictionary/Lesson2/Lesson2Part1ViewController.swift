@@ -43,6 +43,7 @@ class Lesson2Part1ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        checkMode()
         initilDisplacement()
         editLoadingBar()
         editElements()
@@ -97,6 +98,14 @@ class Lesson2Part1ViewController: UIViewController {
             Lesson2Sound10.prepareToPlay()
         } catch {}
     
+    }
+    func checkMode() {
+        if UserDefaults.standard.bool(forKey: "darkMode") == true {
+            overrideUserInterfaceStyle = .dark
+        }
+        else {
+            overrideUserInterfaceStyle = .light
+        }
     }
     //to move to EndViewController
     func moveToEndViewController(){
@@ -333,7 +342,6 @@ class Lesson2Part1ViewController: UIViewController {
             }
             
             if SlovakDataCount >= 10 && SwedishDataCount >= 10 && PhotoViewCount >= 11 {
-                print("You passed Lesson 2.")
                 SlovakDataCount = 9
                 SwedishDataCount = 9
                 PhotoViewCount = 10
@@ -377,7 +385,6 @@ class Lesson2Part1ViewController: UIViewController {
         
     }
     @IBAction func didTapPlaySoundButton(_ sender: Any) {
-        print("Did tap playSoundButton")
         switch SoundSampleCount {
         case 0:
             Lesson2Sound1.play()
@@ -426,7 +433,6 @@ class Lesson2Part1ViewController: UIViewController {
     func animateDurationForSoundSample() {
         loaderView.frame.size.width = 0.0
         loaderView.alpha = 0.5
-        print(soundSampleDuration)
         UIButton.animate(withDuration: soundSampleDuration, delay: 0.5, animations: {
             self.playSoundButton.transform = CGAffineTransform(scaleX: 0, y: 0)
         })

@@ -27,11 +27,13 @@
 		F5367EEC2569828900E4E06F /* Lesson1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5367EEB2569828900E4E06F /* Lesson1ViewController.swift */; };
 		F554370B258E5F0A0058758E /* AnimationSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = F554370A258E5F0A0058758E /* AnimationSuccess.json */; };
 		F554370F258E5FE00058758E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F554370E258E5FE00058758E /* Lottie */; };
+		F561E3C726077B310017414B /* Lesson4EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F561E3C626077B310017414B /* Lesson4EndViewController.swift */; };
 		F5661DD12590DF4E0030F8F4 /* SwiftGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5661DD02590DF4E0030F8F4 /* SwiftGif.swift */; };
 		F5661DD52590DF710030F8F4 /* CelebrationEmoji.gif in Resources */ = {isa = PBXBuildFile; fileRef = F5661DD42590DF710030F8F4 /* CelebrationEmoji.gif */; };
 		F5661DDA2590F0BB0030F8F4 /* QuizLibraryGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5661DD92590F0BB0030F8F4 /* QuizLibraryGradientView.swift */; };
 		F5661DDF259108F60030F8F4 /* Lesson1Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5661DDE259108F60030F8F4 /* Lesson1Quiz.swift */; };
 		F56C163525ED419A0035BF3B /* Lesson3EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56C163425ED419A0035BF3B /* Lesson3EndViewController.swift */; };
+		F56FB512261A0E54004E5E65 /* instViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56FB511261A0E54004E5E65 /* instViewController.swift */; };
 		F5728A67259DF01D00467A49 /* Lesson2Part1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5728A66259DF01D00467A49 /* Lesson2Part1ViewController.swift */; };
 		F576E5CB25A8CBD000CD97FD /* Slovakien.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F576E5C325A8CBD000CD97FD /* Slovakien.m4a */; };
 		F576E5CC25A8CBD000CD97FD /* Sverige.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F576E5C425A8CBD000CD97FD /* Sverige.m4a */; };
@@ -58,6 +60,11 @@
 		F599BC9A258529B400F85829 /* Hejda!.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F599BC90258529B400F85829 /* Hejda!.m4a */; };
 		F599BC9B258529B400F85829 /* Tack!.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F599BC91258529B400F85829 /* Tack!.m4a */; };
 		F599BC9C258529B400F85829 /* GodMorgon!.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F599BC92258529B400F85829 /* GodMorgon!.m4a */; };
+		F59E846D2606644D007F1B57 /* Lesson4SlovakData.txt in Resources */ = {isa = PBXBuildFile; fileRef = F59E846C2606644D007F1B57 /* Lesson4SlovakData.txt */; };
+		F59E847126066466007F1B57 /* Lesson4SwedishData.txt in Resources */ = {isa = PBXBuildFile; fileRef = F59E847026066466007F1B57 /* Lesson4SwedishData.txt */; };
+		F59E84742606657F007F1B57 /* Lesson5SlovakData.txt in Resources */ = {isa = PBXBuildFile; fileRef = F59E84732606657F007F1B57 /* Lesson5SlovakData.txt */; };
+		F59E8477260665C4007F1B57 /* Lesson5SwedishData.txt in Resources */ = {isa = PBXBuildFile; fileRef = F59E8476260665C4007F1B57 /* Lesson5SwedishData.txt */; };
+		F59E847A2606685D007F1B57 /* Lesson4Part1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59E84792606685D007F1B57 /* Lesson4Part1ViewController.swift */; };
 		F5A1A58925A07D510073091C /* Lesson2SwedishData.txt in Resources */ = {isa = PBXBuildFile; fileRef = F5A1A58825A07D510073091C /* Lesson2SwedishData.txt */; };
 		F5A1A58C25A080A50073091C /* Lesson1SlovakData.txt in Resources */ = {isa = PBXBuildFile; fileRef = F5A1A58B25A080A50073091C /* Lesson1SlovakData.txt */; };
 		F5A1A58F25A080F10073091C /* Lesson1SwedishData.txt in Resources */ = {isa = PBXBuildFile; fileRef = F5A1A58E25A080F10073091C /* Lesson1SwedishData.txt */; };
@@ -69,11 +76,45 @@
 		F5A2424A2559B06D00BBE672 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A242492559B06D00BBE672 /* Assets.xcassets */; };
 		F5A2424D2559B06D00BBE672 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A2424B2559B06D00BBE672 /* LaunchScreen.storyboard */; };
 		F5A28025256AB3E0001B9C8F /* Instructions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A28024256AB3E0001B9C8F /* Instructions.storyboard */; };
+		F5AEF9982621F4E900E0B1B0 /* blå.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF98E2621F4E900E0B1B0 /* blå.m4a */; };
+		F5AEF9992621F4E900E0B1B0 /* grön.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF98F2621F4E900E0B1B0 /* grön.m4a */; };
+		F5AEF99A2621F4E900E0B1B0 /* vit.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9902621F4E900E0B1B0 /* vit.m4a */; };
+		F5AEF99D2621F4E900E0B1B0 /* grå.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9932621F4E900E0B1B0 /* grå.m4a */; };
+		F5AEF99F2621F4E900E0B1B0 /* svart.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9952621F4E900E0B1B0 /* svart.m4a */; };
+		F5AEF9A42621F82B00E0B1B0 /* röd.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9A32621F82B00E0B1B0 /* röd.m4a */; };
+		F5AEF9A82621F89300E0B1B0 /* orange.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9A72621F89300E0B1B0 /* orange.m4a */; };
+		F5AEF9AC2621F93B00E0B1B0 /* brun.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9AB2621F93B00E0B1B0 /* brun.m4a */; };
+		F5AEF9B02621F98F00E0B1B0 /* lila.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9AF2621F98F00E0B1B0 /* lila.m4a */; };
+		F5AEF9B42621FA1400E0B1B0 /* gul.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9B32621FA1400E0B1B0 /* gul.m4a */; };
+		F5AEF9C32622088700E0B1B0 /* fågel.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9B92622088600E0B1B0 /* fågel.m4a */; };
+		F5AEF9C42622088700E0B1B0 /* fisk.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9BA2622088600E0B1B0 /* fisk.m4a */; };
+		F5AEF9C52622088700E0B1B0 /* katt.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9BB2622088700E0B1B0 /* katt.m4a */; };
+		F5AEF9C62622088700E0B1B0 /* får.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9BC2622088700E0B1B0 /* får.m4a */; };
+		F5AEF9C72622088700E0B1B0 /* hund.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9BD2622088700E0B1B0 /* hund.m4a */; };
+		F5AEF9C82622088700E0B1B0 /* häst.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9BE2622088700E0B1B0 /* häst.m4a */; };
+		F5AEF9C92622088700E0B1B0 /* ko.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9BF2622088700E0B1B0 /* ko.m4a */; };
+		F5AEF9CA2622088700E0B1B0 /* gris.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9C02622088700E0B1B0 /* gris.m4a */; };
+		F5AEF9D026220C1A00E0B1B0 /* spindel.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9CE26220C1A00E0B1B0 /* spindel.m4a */; };
+		F5AEF9D126220C1A00E0B1B0 /* varg.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9CF26220C1A00E0B1B0 /* varg.m4a */; };
+		F5AEF9DD2622103E00E0B1B0 /* Strand.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9D32622103D00E0B1B0 /* Strand.m4a */; };
+		F5AEF9DE2622103E00E0B1B0 /* Kyrka.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9D42622103D00E0B1B0 /* Kyrka.m4a */; };
+		F5AEF9DF2622103E00E0B1B0 /* Tågstation.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9D52622103D00E0B1B0 /* Tågstation.m4a */; };
+		F5AEF9E02622103E00E0B1B0 /* Skola.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9D62622103D00E0B1B0 /* Skola.m4a */; };
+		F5AEF9E22622103E00E0B1B0 /* Mataffär.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9D82622103D00E0B1B0 /* Mataffär.m4a */; };
+		F5AEF9E32622103E00E0B1B0 /* Polisstation.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9D92622103D00E0B1B0 /* Polisstation.m4a */; };
+		F5AEF9E42622103E00E0B1B0 /* Bibliotek.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9DA2622103E00E0B1B0 /* Bibliotek.m4a */; };
+		F5AEF9E52622103E00E0B1B0 /* Posten.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9DB2622103E00E0B1B0 /* Posten.m4a */; };
+		F5AEF9E62622103E00E0B1B0 /* Sjukhus.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9DC2622103E00E0B1B0 /* Sjukhus.m4a */; };
+		F5AEF9EA262211A400E0B1B0 /* Djurpark.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F5AEF9E9262211A400E0B1B0 /* Djurpark.m4a */; };
 		F5B79E58258F645A00AFEC40 /* SuccessSoundEffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5B79E57258F645A00AFEC40 /* SuccessSoundEffect.mp3 */; };
 		F5C0E7782573F5E1002C6E39 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C0E7772573F5E1002C6E39 /* LibraryViewController.swift */; };
-		F5C0E77B2573F6EF002C6E39 /* VideoBG.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F5F9B8FC2573D3D900AB286F /* VideoBG.mp4 */; };
 		F5C0E77E257411AA002C6E39 /* Lesson1Part1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C0E77D257411A9002C6E39 /* Lesson1Part1ViewController.swift */; };
 		F5C6B4A025949B6B009F7ADB /* AnimatedIcon.gif in Resources */ = {isa = PBXBuildFile; fileRef = F5C6B49F25949B6B009F7ADB /* AnimatedIcon.gif */; };
+		F5CE6CB6260615AF0068ACE2 /* VideoBG.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F5F9B8FC2573D3D900AB286F /* VideoBG.mp4 */; };
+		F5CE6CBB260616DE0068ACE2 /* Lesson4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5CE6CBA260616DE0068ACE2 /* Lesson4.storyboard */; };
+		F5CE6CBE260617500068ACE2 /* Lesson4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CE6CBD260617500068ACE2 /* Lesson4ViewController.swift */; };
+		F5CE6CC1260617820068ACE2 /* GradientViewLesson4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CE6CC0260617820068ACE2 /* GradientViewLesson4.swift */; };
+		F5CE6CC526062E950068ACE2 /* README!.txt in Resources */ = {isa = PBXBuildFile; fileRef = F5CE6CC426062E950068ACE2 /* README!.txt */; };
 		F5CFDA0A25A3756600C9B0C6 /* lessonCompletion.txt in Resources */ = {isa = PBXBuildFile; fileRef = F5CFDA0625A36F0400C9B0C6 /* lessonCompletion.txt */; };
 		F5D5A1B12583E860008CA8F3 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D5A1B02583E860008CA8F3 /* GradientView.swift */; };
 		F5D5A1BA2583FAAF008CA8F3 /* Lesson1EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D5A1B92583FAAF008CA8F3 /* Lesson1EndViewController.swift */; };
@@ -110,11 +151,13 @@
 		F5367EE725697FE800E4E06F /* Lesson1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lesson1.storyboard; sourceTree = "<group>"; };
 		F5367EEB2569828900E4E06F /* Lesson1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson1ViewController.swift; sourceTree = "<group>"; };
 		F554370A258E5F0A0058758E /* AnimationSuccess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AnimationSuccess.json; sourceTree = "<group>"; };
+		F561E3C626077B310017414B /* Lesson4EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson4EndViewController.swift; sourceTree = "<group>"; };
 		F5661DD02590DF4E0030F8F4 /* SwiftGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGif.swift; sourceTree = "<group>"; };
 		F5661DD42590DF710030F8F4 /* CelebrationEmoji.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CelebrationEmoji.gif; sourceTree = "<group>"; };
 		F5661DD92590F0BB0030F8F4 /* QuizLibraryGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizLibraryGradientView.swift; sourceTree = "<group>"; };
 		F5661DDE259108F60030F8F4 /* Lesson1Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson1Quiz.swift; sourceTree = "<group>"; };
 		F56C163425ED419A0035BF3B /* Lesson3EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson3EndViewController.swift; sourceTree = "<group>"; };
+		F56FB511261A0E54004E5E65 /* instViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instViewController.swift; sourceTree = "<group>"; };
 		F5728A66259DF01D00467A49 /* Lesson2Part1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson2Part1ViewController.swift; sourceTree = "<group>"; };
 		F576E5C325A8CBD000CD97FD /* Slovakien.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Slovakien.m4a; sourceTree = "<group>"; };
 		F576E5C425A8CBD000CD97FD /* Sverige.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sverige.m4a; sourceTree = "<group>"; };
@@ -141,6 +184,11 @@
 		F599BC90258529B400F85829 /* Hejda!.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hejda!.m4a"; sourceTree = "<group>"; };
 		F599BC91258529B400F85829 /* Tack!.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tack!.m4a"; sourceTree = "<group>"; };
 		F599BC92258529B400F85829 /* GodMorgon!.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GodMorgon!.m4a"; sourceTree = "<group>"; };
+		F59E846C2606644D007F1B57 /* Lesson4SlovakData.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Lesson4SlovakData.txt; sourceTree = "<group>"; };
+		F59E847026066466007F1B57 /* Lesson4SwedishData.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Lesson4SwedishData.txt; sourceTree = "<group>"; };
+		F59E84732606657F007F1B57 /* Lesson5SlovakData.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Lesson5SlovakData.txt; sourceTree = "<group>"; };
+		F59E8476260665C4007F1B57 /* Lesson5SwedishData.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Lesson5SwedishData.txt; sourceTree = "<group>"; };
+		F59E84792606685D007F1B57 /* Lesson4Part1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson4Part1ViewController.swift; sourceTree = "<group>"; };
 		F5A1A58825A07D510073091C /* Lesson2SwedishData.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Lesson2SwedishData.txt; sourceTree = "<group>"; };
 		F5A1A58B25A080A50073091C /* Lesson1SlovakData.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Lesson1SlovakData.txt; sourceTree = "<group>"; };
 		F5A1A58E25A080F10073091C /* Lesson1SwedishData.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Lesson1SwedishData.txt; sourceTree = "<group>"; };
@@ -154,10 +202,44 @@
 		F5A2424C2559B06D00BBE672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5A2424E2559B06D00BBE672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5A28024256AB3E0001B9C8F /* Instructions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Instructions.storyboard; sourceTree = "<group>"; };
+		F5AEF98E2621F4E900E0B1B0 /* blå.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "blå.m4a"; sourceTree = "<group>"; };
+		F5AEF98F2621F4E900E0B1B0 /* grön.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "grön.m4a"; sourceTree = "<group>"; };
+		F5AEF9902621F4E900E0B1B0 /* vit.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = vit.m4a; sourceTree = "<group>"; };
+		F5AEF9932621F4E900E0B1B0 /* grå.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "grå.m4a"; sourceTree = "<group>"; };
+		F5AEF9952621F4E900E0B1B0 /* svart.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = svart.m4a; sourceTree = "<group>"; };
+		F5AEF9A32621F82B00E0B1B0 /* röd.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "röd.m4a"; sourceTree = "<group>"; };
+		F5AEF9A72621F89300E0B1B0 /* orange.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = orange.m4a; sourceTree = "<group>"; };
+		F5AEF9AB2621F93B00E0B1B0 /* brun.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = brun.m4a; sourceTree = "<group>"; };
+		F5AEF9AF2621F98F00E0B1B0 /* lila.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = lila.m4a; sourceTree = "<group>"; };
+		F5AEF9B32621FA1400E0B1B0 /* gul.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gul.m4a; sourceTree = "<group>"; };
+		F5AEF9B92622088600E0B1B0 /* fågel.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fågel.m4a"; sourceTree = "<group>"; };
+		F5AEF9BA2622088600E0B1B0 /* fisk.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = fisk.m4a; sourceTree = "<group>"; };
+		F5AEF9BB2622088700E0B1B0 /* katt.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = katt.m4a; sourceTree = "<group>"; };
+		F5AEF9BC2622088700E0B1B0 /* får.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "får.m4a"; sourceTree = "<group>"; };
+		F5AEF9BD2622088700E0B1B0 /* hund.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = hund.m4a; sourceTree = "<group>"; };
+		F5AEF9BE2622088700E0B1B0 /* häst.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "häst.m4a"; sourceTree = "<group>"; };
+		F5AEF9BF2622088700E0B1B0 /* ko.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = ko.m4a; sourceTree = "<group>"; };
+		F5AEF9C02622088700E0B1B0 /* gris.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gris.m4a; sourceTree = "<group>"; };
+		F5AEF9CE26220C1A00E0B1B0 /* spindel.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = spindel.m4a; sourceTree = "<group>"; };
+		F5AEF9CF26220C1A00E0B1B0 /* varg.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = varg.m4a; sourceTree = "<group>"; };
+		F5AEF9D32622103D00E0B1B0 /* Strand.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Strand.m4a; sourceTree = "<group>"; };
+		F5AEF9D42622103D00E0B1B0 /* Kyrka.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kyrka.m4a; sourceTree = "<group>"; };
+		F5AEF9D52622103D00E0B1B0 /* Tågstation.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tågstation.m4a"; sourceTree = "<group>"; };
+		F5AEF9D62622103D00E0B1B0 /* Skola.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Skola.m4a; sourceTree = "<group>"; };
+		F5AEF9D82622103D00E0B1B0 /* Mataffär.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mataffär.m4a"; sourceTree = "<group>"; };
+		F5AEF9D92622103D00E0B1B0 /* Polisstation.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Polisstation.m4a; sourceTree = "<group>"; };
+		F5AEF9DA2622103E00E0B1B0 /* Bibliotek.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bibliotek.m4a; sourceTree = "<group>"; };
+		F5AEF9DB2622103E00E0B1B0 /* Posten.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Posten.m4a; sourceTree = "<group>"; };
+		F5AEF9DC2622103E00E0B1B0 /* Sjukhus.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sjukhus.m4a; sourceTree = "<group>"; };
+		F5AEF9E9262211A400E0B1B0 /* Djurpark.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Djurpark.m4a; sourceTree = "<group>"; };
 		F5B79E57258F645A00AFEC40 /* SuccessSoundEffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SuccessSoundEffect.mp3; sourceTree = "<group>"; };
 		F5C0E7772573F5E1002C6E39 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		F5C0E77D257411A9002C6E39 /* Lesson1Part1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson1Part1ViewController.swift; sourceTree = "<group>"; };
 		F5C6B49F25949B6B009F7ADB /* AnimatedIcon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = AnimatedIcon.gif; sourceTree = "<group>"; };
+		F5CE6CBA260616DE0068ACE2 /* Lesson4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lesson4.storyboard; sourceTree = "<group>"; };
+		F5CE6CBD260617500068ACE2 /* Lesson4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson4ViewController.swift; sourceTree = "<group>"; };
+		F5CE6CC0260617820068ACE2 /* GradientViewLesson4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewLesson4.swift; sourceTree = "<group>"; };
+		F5CE6CC426062E950068ACE2 /* README!.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "README!.txt"; sourceTree = "<group>"; };
 		F5CFDA0625A36F0400C9B0C6 /* lessonCompletion.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lessonCompletion.txt; sourceTree = "<group>"; };
 		F5D5A1B02583E860008CA8F3 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		F5D5A1B92583FAAF008CA8F3 /* Lesson1EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson1EndViewController.swift; sourceTree = "<group>"; };
@@ -238,6 +320,7 @@
 				F5661DD92590F0BB0030F8F4 /* QuizLibraryGradientView.swift */,
 				F577C362259A420100A2322E /* GradientViewLesson2.swift */,
 				F50FE0B525BEFE2000B81122 /* GradientViewLesson3.swift */,
+				F5CE6CC0260617820068ACE2 /* GradientViewLesson4.swift */,
 				F5341A9925E2CEFB00897ACE /* NotesGradientView.swift */,
 			);
 			path = GradientViews;
@@ -335,11 +418,13 @@
 				F52B55E425618C5000BB2335 /* UI */,
 				F5661DDD259108B60030F8F4 /* Quiz */,
 				F5C0E7772573F5E1002C6E39 /* LibraryViewController.swift */,
+				F56FB511261A0E54004E5E65 /* instViewController.swift */,
 				F5EB671925AB11D600A8A1B6 /* Lobby */,
 				F5661DE225911BCA0030F8F4 /* AnimatedVideoForLibrary */,
 				F5D5A1B72583F9A7008CA8F3 /* Lesson 1 */,
 				F577C35B259A2E0900A2322E /* Lesson2 */,
 				F5EB671B25AB123000A8A1B6 /* Lesson 3 */,
+				F5CE6CB8260616BB0068ACE2 /* Lesson 4 (Universal 4 + 5) */,
 				F5EB672025AB127900A8A1B6 /* Notes */,
 				F5D66194257C10C000303BA9 /* DataStructure */,
 				F5543709258E5EEE0058758E /* CheckAnimation */,
@@ -347,11 +432,59 @@
 				F5661DCF2590DF2E0030F8F4 /* SwiftGIfLib */,
 				F5A242422559B06A00BBE672 /* SceneDelegate.swift */,
 				F5A242402559B06A00BBE672 /* AppDelegate.swift */,
-				F5A242492559B06D00BBE672 /* Assets.xcassets */,
 				F5A2424E2559B06D00BBE672 /* Info.plist */,
 				F517881B25D9A54C006209BC /* coreDataModel.xcdatamodeld */,
+				F5A242492559B06D00BBE672 /* Assets.xcassets */,
 			);
 			path = "Swedish-Slovak Dictionary";
+			sourceTree = "<group>";
+		};
+		F5AEF9B62622085E00E0B1B0 /* Lesson 5 Voice Samples */ = {
+			isa = PBXGroup;
+			children = (
+				F5AEF9DA2622103E00E0B1B0 /* Bibliotek.m4a */,
+				F5AEF9D42622103D00E0B1B0 /* Kyrka.m4a */,
+				F5AEF9E9262211A400E0B1B0 /* Djurpark.m4a */,
+				F5AEF9D82622103D00E0B1B0 /* Mataffär.m4a */,
+				F5AEF9D92622103D00E0B1B0 /* Polisstation.m4a */,
+				F5AEF9DB2622103E00E0B1B0 /* Posten.m4a */,
+				F5AEF9DC2622103E00E0B1B0 /* Sjukhus.m4a */,
+				F5AEF9D62622103D00E0B1B0 /* Skola.m4a */,
+				F5AEF9D32622103D00E0B1B0 /* Strand.m4a */,
+				F5AEF9D52622103D00E0B1B0 /* Tågstation.m4a */,
+			);
+			path = "Lesson 5 Voice Samples";
+			sourceTree = "<group>";
+		};
+		F5CE6CB8260616BB0068ACE2 /* Lesson 4 (Universal 4 + 5) */ = {
+			isa = PBXGroup;
+			children = (
+				F5CE6CC426062E950068ACE2 /* README!.txt */,
+				F5CE6CB9260616C60068ACE2 /* Lesson 4 Voice Samples */,
+				F5AEF9B62622085E00E0B1B0 /* Lesson 5 Voice Samples */,
+				F5CE6CBA260616DE0068ACE2 /* Lesson4.storyboard */,
+				F5CE6CBD260617500068ACE2 /* Lesson4ViewController.swift */,
+				F59E84792606685D007F1B57 /* Lesson4Part1ViewController.swift */,
+				F561E3C626077B310017414B /* Lesson4EndViewController.swift */,
+			);
+			path = "Lesson 4 (Universal 4 + 5)";
+			sourceTree = "<group>";
+		};
+		F5CE6CB9260616C60068ACE2 /* Lesson 4 Voice Samples */ = {
+			isa = PBXGroup;
+			children = (
+				F5AEF9B92622088600E0B1B0 /* fågel.m4a */,
+				F5AEF9CE26220C1A00E0B1B0 /* spindel.m4a */,
+				F5AEF9CF26220C1A00E0B1B0 /* varg.m4a */,
+				F5AEF9BC2622088700E0B1B0 /* får.m4a */,
+				F5AEF9BA2622088600E0B1B0 /* fisk.m4a */,
+				F5AEF9C02622088700E0B1B0 /* gris.m4a */,
+				F5AEF9BE2622088700E0B1B0 /* häst.m4a */,
+				F5AEF9BD2622088700E0B1B0 /* hund.m4a */,
+				F5AEF9BB2622088700E0B1B0 /* katt.m4a */,
+				F5AEF9BF2622088700E0B1B0 /* ko.m4a */,
+			);
+			path = "Lesson 4 Voice Samples";
 			sourceTree = "<group>";
 		};
 		F5D5A1B72583F9A7008CA8F3 /* Lesson 1 */ = {
@@ -360,8 +493,8 @@
 				F599BC882585299700F85829 /* Lesson 1 Voice Samples */,
 				F5367EE725697FE800E4E06F /* Lesson1.storyboard */,
 				F5367EEB2569828900E4E06F /* Lesson1ViewController.swift */,
-				F5D5A1B92583FAAF008CA8F3 /* Lesson1EndViewController.swift */,
 				F5C0E77D257411A9002C6E39 /* Lesson1Part1ViewController.swift */,
+				F5D5A1B92583FAAF008CA8F3 /* Lesson1EndViewController.swift */,
 			);
 			path = "Lesson 1";
 			sourceTree = "<group>";
@@ -373,9 +506,13 @@
 				F5A1A58E25A080F10073091C /* Lesson1SwedishData.txt */,
 				F5D66199257C14A800303BA9 /* Lesson2SlovakData.txt */,
 				F5A1A58825A07D510073091C /* Lesson2SwedishData.txt */,
-				F5CFDA0625A36F0400C9B0C6 /* lessonCompletion.txt */,
 				F50FE0BB25BF1D4800B81122 /* Lesson3SlovakData.txt */,
 				F50FE0BF25BF1D5E00B81122 /* Lesson3SwedishData.txt */,
+				F59E846C2606644D007F1B57 /* Lesson4SlovakData.txt */,
+				F59E847026066466007F1B57 /* Lesson4SwedishData.txt */,
+				F59E84732606657F007F1B57 /* Lesson5SlovakData.txt */,
+				F59E8476260665C4007F1B57 /* Lesson5SwedishData.txt */,
+				F5CFDA0625A36F0400C9B0C6 /* lessonCompletion.txt */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -403,6 +540,16 @@
 		F5EB671C25AB123D00A8A1B6 /* Lesson 3 Voice Samples */ = {
 			isa = PBXGroup;
 			children = (
+				F5AEF98E2621F4E900E0B1B0 /* blå.m4a */,
+				F5AEF9932621F4E900E0B1B0 /* grå.m4a */,
+				F5AEF9B32621FA1400E0B1B0 /* gul.m4a */,
+				F5AEF9A72621F89300E0B1B0 /* orange.m4a */,
+				F5AEF98F2621F4E900E0B1B0 /* grön.m4a */,
+				F5AEF9AF2621F98F00E0B1B0 /* lila.m4a */,
+				F5AEF9AB2621F93B00E0B1B0 /* brun.m4a */,
+				F5AEF9A32621F82B00E0B1B0 /* röd.m4a */,
+				F5AEF9952621F4E900E0B1B0 /* svart.m4a */,
+				F5AEF9902621F4E900E0B1B0 /* vit.m4a */,
 			);
 			path = "Lesson 3 Voice Samples";
 			sourceTree = "<group>";
@@ -482,56 +629,92 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5CE6CC526062E950068ACE2 /* README!.txt in Resources */,
+				F5AEF9E32622103E00E0B1B0 /* Polisstation.m4a in Resources */,
 				F5EB672225AB12A000A8A1B6 /* Notes.storyboard in Resources */,
 				F599BC98258529B400F85829 /* Hej!.m4a in Resources */,
 				F576E5CE25A8CBD000CD97FD /* Tjeckien.m4a in Resources */,
 				F599BC93258529B400F85829 /* Varsagod.m4a in Resources */,
 				F5A2424D2559B06D00BBE672 /* LaunchScreen.storyboard in Resources */,
 				F576E5D225A8CBD000CD97FD /* Ryssland.m4a in Resources */,
+				F5CE6CBB260616DE0068ACE2 /* Lesson4.storyboard in Resources */,
 				F554370B258E5F0A0058758E /* AnimationSuccess.json in Resources */,
+				F5AEF9A82621F89300E0B1B0 /* orange.m4a in Resources */,
 				F50C76A8257E966B00750E69 /* SwipeNextSoundEffect.mp3 in Resources */,
 				F599BC9C258529B400F85829 /* GodMorgon!.m4a in Resources */,
+				F5AEF9B02621F98F00E0B1B0 /* lila.m4a in Resources */,
 				F5A28025256AB3E0001B9C8F /* Instructions.storyboard in Resources */,
 				F599BC95258529B400F85829 /* GodAfton!.m4a in Resources */,
 				F588B1FD2598C1C0005FA233 /* startupSoundEffect.wav in Resources */,
 				F599BC97258529B400F85829 /* GodDag!.m4a in Resources */,
+				F5AEF9992621F4E900E0B1B0 /* grön.m4a in Resources */,
+				F5CE6CB6260615AF0068ACE2 /* VideoBG.mp4 in Resources */,
+				F5AEF9C62622088700E0B1B0 /* får.m4a in Resources */,
 				F576E5CC25A8CBD000CD97FD /* Sverige.m4a in Resources */,
-				F5C0E77B2573F6EF002C6E39 /* VideoBG.mp4 in Resources */,
+				F5AEF9C82622088700E0B1B0 /* häst.m4a in Resources */,
 				F5A2424A2559B06D00BBE672 /* Assets.xcassets in Resources */,
 				F50FE0C025BF1D5E00B81122 /* Lesson3SwedishData.txt in Resources */,
+				F5AEF9DD2622103E00E0B1B0 /* Strand.m4a in Resources */,
 				F599BC99258529B400F85829 /* Adjo!.m4a in Resources */,
+				F5AEF9CA2622088700E0B1B0 /* gris.m4a in Resources */,
+				F5AEF9E62622103E00E0B1B0 /* Sjukhus.m4a in Resources */,
+				F5AEF9C42622088700E0B1B0 /* fisk.m4a in Resources */,
 				F5C6B4A025949B6B009F7ADB /* AnimatedIcon.gif in Resources */,
+				F5AEF9C52622088700E0B1B0 /* katt.m4a in Resources */,
 				F576E5D725A8DAC400CD97FD /* Finland.m4a in Resources */,
+				F5AEF9E22622103E00E0B1B0 /* Mataffär.m4a in Resources */,
+				F5AEF9982621F4E900E0B1B0 /* blå.m4a in Resources */,
+				F5AEF9AC2621F93B00E0B1B0 /* brun.m4a in Resources */,
 				F5D6EEC425978B06006A1382 /* successSoundEffect.wav in Resources */,
+				F5AEF99A2621F4E900E0B1B0 /* vit.m4a in Resources */,
+				F59E847126066466007F1B57 /* Lesson4SwedishData.txt in Resources */,
+				F5AEF9E42622103E00E0B1B0 /* Bibliotek.m4a in Resources */,
 				F577C35D259A2E6D00A2322E /* Lesson2.storyboard in Resources */,
+				F5AEF9EA262211A400E0B1B0 /* Djurpark.m4a in Resources */,
 				F576E5CF25A8CBD000CD97FD /* Ungern.m4a in Resources */,
+				F5AEF99F2621F4E900E0B1B0 /* svart.m4a in Resources */,
 				F5D6619A257C14A800303BA9 /* Lesson2SlovakData.txt in Resources */,
 				F5A1A58F25A080F10073091C /* Lesson1SwedishData.txt in Resources */,
 				F576E5D125A8CBD000CD97FD /* Frankrike.m4a in Resources */,
+				F59E8477260665C4007F1B57 /* Lesson5SwedishData.txt in Resources */,
+				F5AEF9C32622088700E0B1B0 /* fågel.m4a in Resources */,
 				F599BC9B258529B400F85829 /* Tack!.m4a in Resources */,
 				F50FE0BC25BF1D4800B81122 /* Lesson3SlovakData.txt in Resources */,
+				F5AEF9C72622088700E0B1B0 /* hund.m4a in Resources */,
 				F599BC96258529B400F85829 /* Tjäna!.m4a in Resources */,
 				F5E693922597BBAA0083B1DC /* popSoundEffect.wav in Resources */,
 				F5A1A58C25A080A50073091C /* Lesson1SlovakData.txt in Resources */,
 				F5B79E58258F645A00AFEC40 /* SuccessSoundEffect.mp3 in Resources */,
+				F5AEF9D026220C1A00E0B1B0 /* spindel.m4a in Resources */,
+				F5AEF9C92622088700E0B1B0 /* ko.m4a in Resources */,
 				F51D6660256A7C4E002BB749 /* Library.storyboard in Resources */,
+				F5AEF9E52622103E00E0B1B0 /* Posten.m4a in Resources */,
 				F5CFDA0A25A3756600C9B0C6 /* lessonCompletion.txt in Resources */,
+				F5AEF9DF2622103E00E0B1B0 /* Tågstation.m4a in Resources */,
 				F5367EE825697FE800E4E06F /* Lesson1.storyboard in Resources */,
 				F5A242482559B06A00BBE672 /* Main.storyboard in Resources */,
 				F528588A2592101A0095C169 /* correctAnswerSoundEffect.wav in Resources */,
 				F50C76A7257E966B00750E69 /* SwipeBackSoundEffect.mp3 in Resources */,
 				F576E5CB25A8CBD000CD97FD /* Slovakien.m4a in Resources */,
 				F5661DD52590DF710030F8F4 /* CelebrationEmoji.gif in Resources */,
+				F5AEF9E02622103E00E0B1B0 /* Skola.m4a in Resources */,
+				F5AEF9B42621FA1400E0B1B0 /* gul.m4a in Resources */,
+				F5AEF9DE2622103E00E0B1B0 /* Kyrka.m4a in Resources */,
 				F5DFE6C8258FD16300CE6950 /* Quiz.storyboard in Resources */,
+				F59E84742606657F007F1B57 /* Lesson5SlovakData.txt in Resources */,
 				F5A1A58925A07D510073091C /* Lesson2SwedishData.txt in Resources */,
 				F576E5CD25A8CBD000CD97FD /* Norge.m4a in Resources */,
 				F5EB671E25AB125B00A8A1B6 /* Lesson3.storyboard in Resources */,
 				F5341A9725E2C0A200897ACE /* empty.mp3 in Resources */,
+				F59E846D2606644D007F1B57 /* Lesson4SlovakData.txt in Resources */,
+				F5AEF9A42621F82B00E0B1B0 /* röd.m4a in Resources */,
 				F576E5D625A8DAC400CD97FD /* Polen.m4a in Resources */,
 				F599BC9A258529B400F85829 /* Hejda!.m4a in Resources */,
 				F599BC94258529B400F85829 /* GodNatt!.m4a in Resources */,
 				F5E6938F2597B39D0083B1DC /* successAnimation.gif in Resources */,
+				F5AEF99D2621F4E900E0B1B0 /* grå.m4a in Resources */,
 				F576E5D025A8CBD000CD97FD /* Tyskland.m4a in Resources */,
+				F5AEF9D126220C1A00E0B1B0 /* varg.m4a in Resources */,
 				F528588B2592101A0095C169 /* wrongAnswerSoundEffect.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -552,23 +735,28 @@
 				F5661DDA2590F0BB0030F8F4 /* QuizLibraryGradientView.swift in Sources */,
 				F52A797A259F415D00C9F967 /* Lesson2EndViewController.swift in Sources */,
 				F50FE0B925BF155200B81122 /* Lesson3Part1ViewController.swift in Sources */,
+				F56FB512261A0E54004E5E65 /* instViewController.swift in Sources */,
 				F5A242412559B06A00BBE672 /* AppDelegate.swift in Sources */,
 				F517881D25D9A54C006209BC /* coreDataModel.xcdatamodeld in Sources */,
 				F577C360259A400300A2322E /* Lesson2ViewController.swift in Sources */,
 				F50FE0B225BEFD0F00B81122 /* Lesson3ViewController.swift in Sources */,
 				F5661DDF259108F60030F8F4 /* Lesson1Quiz.swift in Sources */,
 				F5728A67259DF01D00467A49 /* Lesson2Part1ViewController.swift in Sources */,
+				F5CE6CC1260617820068ACE2 /* GradientViewLesson4.swift in Sources */,
 				F5341A9425E27D4600897ACE /* ToDoDetailsViewController.swift in Sources */,
 				F52A797D259F6ECF00C9F967 /* Lesson2Quiz.swift in Sources */,
 				F5341A9A25E2CEFB00897ACE /* NotesGradientView.swift in Sources */,
 				F5DA674025D04B7000A1D8BC /* NotesToDoViewController.swift in Sources */,
 				F5661DD12590DF4E0030F8F4 /* SwiftGif.swift in Sources */,
 				F5DA673D25D0456400A1D8BC /* NotesTableViewController.swift in Sources */,
+				F59E847A2606685D007F1B57 /* Lesson4Part1ViewController.swift in Sources */,
+				F561E3C726077B310017414B /* Lesson4EndViewController.swift in Sources */,
 				F5D5A1BA2583FAAF008CA8F3 /* Lesson1EndViewController.swift in Sources */,
 				F56C163525ED419A0035BF3B /* Lesson3EndViewController.swift in Sources */,
 				F5D5A1B12583E860008CA8F3 /* GradientView.swift in Sources */,
 				F5EB672825AB155100A8A1B6 /* NotesViewController.swift in Sources */,
 				F5367EEC2569828900E4E06F /* Lesson1ViewController.swift in Sources */,
+				F5CE6CBE260617500068ACE2 /* Lesson4ViewController.swift in Sources */,
 				F588B2052598C9A3005FA233 /* QuizLibraryViewController.swift in Sources */,
 				F5A242432559B06A00BBE672 /* SceneDelegate.swift in Sources */,
 			);

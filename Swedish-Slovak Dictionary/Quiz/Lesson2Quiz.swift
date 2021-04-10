@@ -14,6 +14,9 @@ class Lesson2Quiz: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var libraryButton: UIButton!
     @IBOutlet weak var arrowIcon: UIImageView!
     
+    var lessonIdentifier = String()
+    var id = Int()
+    
     var questions: [String] = []
     var answers: [String] = []
     
@@ -37,6 +40,8 @@ class Lesson2Quiz: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        checkMode()
+        lessonAssets()
         textField.delegate = self
         editElements()
         initialDisplacement()
@@ -65,11 +70,11 @@ class Lesson2Quiz: UIViewController, UITextFieldDelegate {
         
         //read from local txt files from dataStructure
         do {
-            let directory1: String = Bundle.main.path(forResource: "Lesson2SlovakData", ofType: "txt")!
+            let directory1: String = Bundle.main.path(forResource: "Lesson\(id)SlovakData", ofType: "txt")!
             let file1 = try String(contentsOfFile: directory1)
             questions = file1.components(separatedBy: "\n")
             
-            let directory2: String = Bundle.main.path(forResource: "Lesson2SwedishData", ofType: "txt")!
+            let directory2: String = Bundle.main.path(forResource: "Lesson\(id)SwedishData", ofType: "txt")!
             let file2 = try String(contentsOfFile: directory2)
             answers = file2.components(separatedBy: "\n")
             
@@ -78,9 +83,6 @@ class Lesson2Quiz: UIViewController, UITextFieldDelegate {
         //remove index 10 for "" -> prevent error
         questions.remove(at: 10)
         answers.remove(at: 10)
-        
-        print(questions)
-        print(answers)
         
         //create array for amount of questions
         for i in 0..<Int(questions.count) {
@@ -91,12 +93,33 @@ class Lesson2Quiz: UIViewController, UITextFieldDelegate {
 
     }
     
+    func checkMode() {
+        if UserDefaults.standard.bool(forKey: "darkMode") == true {
+            overrideUserInterfaceStyle = .dark
+        }
+        else {
+            overrideUserInterfaceStyle = .light
+        }
+    }
+    
+    func lessonAssets() {
+        switch lessonIdentifier {
+        case "Lesson2":
+            id = 2
+        case "Lesson4":
+            id = 4
+        default:
+            break
+        }
+        mainLabel.text = "Lesson \(id) Quiz"
+    }
+    
     // use UserDefault to present global variablie
-    func writeToTextFile() {
+    /* func writeToTextFile() {
        
         UserDefaults.standard.setValue("2", forKey: "lesson2Completion")
         
-    }
+    } */
     func animateArrowIcon() {
         if Int(blueColorAmount) == Int(1.0) {
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.01, execute: {
@@ -274,7 +297,7 @@ class Lesson2Quiz: UIViewController, UITextFieldDelegate {
     func checkScore(){
         if Int(score) <= 5 {
             scoreTextLabel = "Try again!"
-            writeToTextFile()
+            //writeToTextFile()
         }
         if Int(score) > 5 && Int(score) < 8 {
             scoreTextLabel = "Not bad!"
@@ -287,17 +310,17 @@ class Lesson2Quiz: UIViewController, UITextFieldDelegate {
     //to instantiate segue to end VC
     func moveToEndViewController(){
         checkScore()
-        guard let lesson2QuizEndVC = storyboard?.instantiateViewController(identifier: "QuizLesson2EndVC") as? Lesson2QuizEndViewController else {
+        guard let lessonQuizEndVC = storyboard?.instantiateViewController(identifier: "QuizLesson2EndVC") as? Lesson2QuizEndViewController else {
             return
         }
-        lesson2QuizEndVC.finalScore = String(score)
-        lesson2QuizEndVC.finalScoreTextLabel = scoreTextLabel
-        
-        lesson2QuizEndVC.modalPresentationStyle = .fullScreen
-        lesson2QuizEndVC.modalTransitionStyle = .crossDissolve
+        lessonQuizEndVC.finalScore = String(score)
+        lessonQuizEndVC.finalScoreTextLabel = scoreTextLabel
+        lessonQuizEndVC.identifier = id + 1
+        lessonQuizEndVC.modalPresentationStyle = .fullScreen
+        lessonQuizEndVC.modalTransitionStyle = .crossDissolve
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.01, execute: {
-            self.present(lesson2QuizEndVC, animated: false, completion: nil)
+            self.present(lessonQuizEndVC, animated: false, completion: nil)
         })
     }
     func animateTransitionViewController(){
@@ -333,14 +356,11 @@ class Lesson2Quiz: UIViewController, UITextFieldDelegate {
             
             //updates QuestionLabel
             questionLabel.text = questions[QuestionNumber]
-            print(index)
-
         }
         else {
             dismissKeyboard()
             
             //to do when no questions are left
-            print("No more questions")
             animateTransitionViewController()
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5, execute: {
                 self.successSoundEffect.play()
@@ -352,7 +372,6 @@ class Lesson2Quiz: UIViewController, UITextFieldDelegate {
         
         //set up correction method
         if self.textField.text == answers[QuestionNumber] {
-            print("Correct")
             score += 1
             correctSoundEffect.play()
             didTypeCorrectAnswer()
@@ -361,7 +380,6 @@ class Lesson2Quiz: UIViewController, UITextFieldDelegate {
             updateColorForQuestionLabel()
         }
         else {
-            print("Incorrect")
             wrongSoundEffect.play()
             didTypeWrongAnswer()
             

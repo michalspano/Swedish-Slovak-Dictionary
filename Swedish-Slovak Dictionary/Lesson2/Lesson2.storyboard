@@ -160,9 +160,11 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="fU4-QT-xG3">
                                         <variation key="heightClass=compact-widthClass=regular" constant="150"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="500"/>
                                     </constraint>
                                     <constraint firstAttribute="height" constant="250" id="yIJ-at-nYa">
                                         <variation key="heightClass=compact-widthClass=regular" constant="150"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="500"/>
                                     </constraint>
                                 </constraints>
                             </imageView>
@@ -243,6 +245,7 @@
                             <constraint firstItem="i9p-5d-QsI" firstAttribute="centerX" secondItem="ftc-vX-y3i" secondAttribute="centerX" constant="310" id="3Of-qx-x4A"/>
                             <constraint firstItem="wX7-Kd-xGF" firstAttribute="bottom" secondItem="WPN-pz-6Ml" secondAttribute="bottom" constant="12" id="9g2-3I-78E">
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
                             </constraint>
                             <constraint firstItem="Gfa-fL-jc3" firstAttribute="top" secondItem="6Mr-uA-GDC" secondAttribute="bottom" constant="20" id="A03-0l-gzn">
                                 <variation key="heightClass=compact-widthClass=regular" constant="100"/>
@@ -398,7 +401,7 @@
                                 </state>
                                 <connections>
                                     <action selector="didTapButtonToLesson1Quiz:" destination="8a0-aX-bI3" eventType="touchUpInside" id="FyT-N8-Ml9"/>
-                                    <segue destination="5eS-pw-y80" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Opg-cH-p0e"/>
+                                    <action selector="didTapQuizButton:" destination="8a0-aX-bI3" eventType="touchUpInside" id="SyS-Lb-pb6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -445,6 +448,7 @@
                         <outlet property="label2" destination="gCo-UH-Qoo" id="mps-VQ-6xE"/>
                         <outlet property="libraryButton" destination="Kyf-76-ZMs" id="M2V-OX-VdT"/>
                         <outlet property="quizButton" destination="AEk-mi-Yz7" id="bwe-8U-4T7"/>
+                        <segue destination="5eS-pw-y80" kind="presentation" identifier="QuizLesson2" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="12o-jw-scV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WzS-NI-feb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -488,7 +492,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Lzo-c4-23s"/>
+        <segue reference="Mim-ZY-S4s"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Lesson2Icon" width="100" height="100"/>

@@ -18,6 +18,8 @@ class Lesson1EndViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        checkMode()
         //declare alpha stat
         self.congratsLabel.alpha = 1.0
         self.congratulationsLabel.alpha = 0.0
@@ -39,6 +41,14 @@ class Lesson1EndViewController: UIViewController {
         view.addSubview(congratulationsLabel)
         view.addSubview(label2)
         view.addSubview(gifView)
+    }
+    func checkMode() {
+        if UserDefaults.standard.bool(forKey: "darkMode") == true {
+            overrideUserInterfaceStyle = .dark
+        }
+        else {
+            overrideUserInterfaceStyle = .light
+        }
     }
     func loadGifView(){
         gifView.loadGif(name: "CelebrationEmoji")
@@ -80,7 +90,6 @@ class Lesson1EndViewController: UIViewController {
             
         }
         else {
-            print("Animation is being disabled")
             UIView.animate(withDuration: 0.3, delay: 0.2, options: UIView.AnimationOptions.curveEaseOut, animations: {
                 self.continueTapLabel.alpha = 0.0
             })
@@ -88,7 +97,6 @@ class Lesson1EndViewController: UIViewController {
     }
     
     @IBAction func didTapContinue(_ sender: Any) {
-        print("Continue")
         toDisableLoopedAnimation = true
         UIView.animate(withDuration: 1.5, delay: 0.2, options: UIView.AnimationOptions.curveEaseOut, animations: {
             self.gradientView.alpha = 1.0
@@ -114,5 +122,14 @@ class Lesson1EndViewController: UIViewController {
         UIView.animate(withDuration: 0.05, delay: 0.05, options: UIView.AnimationOptions.curveEaseIn, animations: {
             self.quizButton.backgroundColor = #colorLiteral(red: 0, green: 0.2705882353, blue: 0.4509803922, alpha: 1)
         })
+    }
+    @IBAction func didTapQuizButton(_ sender: Any) {
+        performSegue(withIdentifier: "QuizLesson1", sender: (Any).self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "QuizLesson1") {
+            let lesson1Quiz = segue.destination as! Lesson1Quiz
+            lesson1Quiz.lessonIdentifier = "Lesson1"
+        }
     }
 }

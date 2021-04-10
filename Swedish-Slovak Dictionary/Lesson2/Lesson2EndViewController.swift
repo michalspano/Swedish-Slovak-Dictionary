@@ -19,6 +19,8 @@ class Lesson2EndViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        checkMode()
+        
         //declare alpha stat
         self.congratsLabel.alpha = 0.0
         self.label2.alpha = 0.0
@@ -41,6 +43,14 @@ class Lesson2EndViewController: UIViewController {
         view.addSubview(label2)
         view.addSubview(gifView)
         
+    }
+    func checkMode() {
+        if UserDefaults.standard.bool(forKey: "darkMode") == true {
+            overrideUserInterfaceStyle = .dark
+        }
+        else {
+            overrideUserInterfaceStyle = .light
+        }
     }
     func loadGifView(){
         gifView.loadGif(name: "CelebrationEmoji")
@@ -100,7 +110,6 @@ class Lesson2EndViewController: UIViewController {
     }
 
     @IBAction func didTapContinue(_ sender: Any) {
-        print("Continue")
         
         toDisableLoopedAnimation = true
         UIView.animate(withDuration: 1.5, delay: 0.2, options: UIView.AnimationOptions.curveEaseOut, animations: {
@@ -127,7 +136,13 @@ class Lesson2EndViewController: UIViewController {
             self.quizButton.backgroundColor = #colorLiteral(red: 0, green: 0.2705882353, blue: 0.4509803922, alpha: 1)
         })
     }
-    
-
-
+    @IBAction func didTapQuizButton(_ sender: Any) {
+        performSegue(withIdentifier: "QuizLesson2", sender: (Any).self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "QuizLesson2") {
+            let lesson2Quiz = segue.destination as! Lesson2Quiz
+            lesson2Quiz.lessonIdentifier = "Lesson2"
+        }
+    }
 }

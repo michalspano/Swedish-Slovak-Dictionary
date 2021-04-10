@@ -22,11 +22,20 @@ class LibraryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        checkAssets()
         
         initialDisplacement()
         playVideo()
         editButtons()
         editlessonLabel()
+    }
+    func checkAssets() {
+        if UserDefaults.standard.bool(forKey: "darkMode") == true {
+            overrideUserInterfaceStyle = .dark
+        }
+        else {
+            overrideUserInterfaceStyle = .light
+        }
     }
     func editButtons(){
         //editButton1
@@ -302,6 +311,7 @@ class LibraryViewController: UIViewController {
     }
     //to do when lesson4Button is pressed (Button-action)
     @IBAction func didTapLesson4Button(_ sender: Any) {
+        performSegue(withIdentifier: "fromLibraryToLesson4", sender: Any?.self)
         UILabel.animate(withDuration: 0.5, animations: {
             
             //animate Button
@@ -328,6 +338,8 @@ class LibraryViewController: UIViewController {
     
     //to do when lesson5Button is pressed (Button-action)
     @IBAction func didTapLesson5Button(_ sender: Any) {
+        performSegue(withIdentifier: "fromLibraryToLesson5", sender: Any?.self)
+    
         UILabel.animate(withDuration: 0.5, animations: {
             
             //animate Button
@@ -350,5 +362,18 @@ class LibraryViewController: UIViewController {
                 translationX: 20,
                 y: 0)
         })
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "fromLibraryToLesson5") {
+            let pathVC = segue.destination as! Lesson4ViewController
+            pathVC.lessonIdentifier = "Lesson 5"
+        }
+        else if(segue.identifier == "fromLibraryToLesson4") {
+            let pathVC = segue.destination as! Lesson4ViewController
+            pathVC.lessonIdentifier = "Lesson 4"
+        }
+        else {
+            return
+        }
     }
 }

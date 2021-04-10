@@ -9,9 +9,19 @@ class NotesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        checkMode()
+        
         //loads Gif to UIView and animates it
         gifView.loadGif(name: "AnimatedIcon")
         animation()
+    }
+    func checkMode() {
+        if UserDefaults.standard.bool(forKey: "darkMode") == true {
+            overrideUserInterfaceStyle = .dark
+        }
+        else {
+            overrideUserInterfaceStyle = .light
+        }
     }
     //animation for GifView
     func animation() {

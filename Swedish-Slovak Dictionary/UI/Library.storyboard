@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="ipad10_5" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,22 +13,22 @@
             <objects>
                 <viewController storyboardIdentifier="LibraryVC" id="kxE-PD-ZY3" customClass="LibraryViewController" customModule="Swedish_Slovak_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kdy-K5-avG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SiD-8S-gDw" userLabel="videoBackground">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <view clipsSubviews="YES" alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7r-Zb-zqs" userLabel="dimView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="PKC-J2-J55" userLabel="lessonLabelsStackView">
-                                <rect key="frame" x="195" y="213" width="159" height="500"/>
+                                <rect key="frame" x="429" y="169" width="155" height="500"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Greetings!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z45-3y-98c" userLabel="Lesson1Label">
-                                        <rect key="frame" x="0.0" y="0.0" width="159" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Greetings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z45-3y-98c" userLabel="Lesson1Label">
+                                        <rect key="frame" x="0.0" y="0.0" width="150.5" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
@@ -45,14 +45,14 @@
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. Lesson 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1A-3g-U6P" userLabel="lesson4Label">
-                                        <rect key="frame" x="0.0" y="348" width="148.5" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. Animals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1A-3g-U6P" userLabel="lesson4Label">
+                                        <rect key="frame" x="0.0" y="348" width="134" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5. Lesson 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0u-X2-EWe" userLabel="lesson5Label">
-                                        <rect key="frame" x="0.0" y="464" width="147.5" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5. Places" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0u-X2-EWe" userLabel="lesson5Label">
+                                        <rect key="frame" x="0.0" y="464" width="115.5" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
@@ -61,13 +61,13 @@
                                 <variation key="heightClass=compact-widthClass=regular" axis="horizontal" spacing="15"/>
                             </stackView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Library" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjD-j0-XaR" userLabel="mainLabel">
-                                <rect key="frame" x="141" y="74" width="132.5" height="54"/>
+                                <rect key="frame" x="351" y="30" width="132.5" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="H3B-33-SfQ" userLabel="CH1LessonsStackView">
-                                <rect key="frame" x="60" y="183" width="100" height="560"/>
+                                <rect key="frame" x="250" y="139" width="100" height="560"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPv-7i-cRc">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -100,7 +100,7 @@
                                         <connections>
                                             <action selector="didTapLesson3Button:" destination="kxE-PD-ZY3" eventType="touchDragInside" id="rFn-Cz-Ss4"/>
                                             <action selector="didTapLesson3Button:" destination="kxE-PD-ZY3" eventType="touchUpInside" id="vQJ-J2-KJh"/>
-                                            <segue destination="w4q-3r-lat" kind="presentation" identifier="fromLibraryToLesson3" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="MdF-5r-I8G"/>
+                                            <segue destination="X4y-mc-BNQ" kind="presentation" identifier="fromLibraryToLesson3" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Zw9-EQ-8Ju"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTo-kB-eH4">
@@ -124,10 +124,10 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal" spacing="50"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trb-91-6cl">
-                                <rect key="frame" x="173.5" y="820" width="67.5" height="22"/>
+                                <rect key="frame" x="383.5" y="1070" width="67.5" height="22"/>
                                 <state key="normal" title="Home" image="chevron.backward.square.fill" catalog="system"/>
                                 <connections>
                                     <segue destination="aYJ-6l-Zai" kind="presentation" identifier="fromLibraryToMenu" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="HOb-Oi-h5t"/>
@@ -150,6 +150,7 @@
                             <constraint firstItem="SiD-8S-gDw" firstAttribute="top" secondItem="h7r-Zb-zqs" secondAttribute="top" id="Ho4-k5-Acr"/>
                             <constraint firstItem="tYz-Pc-WiD" firstAttribute="trailing" secondItem="PKC-J2-J55" secondAttribute="trailing" constant="60" id="KSI-5D-HSp">
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="250"/>
                             </constraint>
                             <constraint firstAttribute="trailing" secondItem="SiD-8S-gDw" secondAttribute="trailing" id="SMu-ac-hkT"/>
                             <constraint firstItem="h7r-Zb-zqs" firstAttribute="top" secondItem="Kdy-K5-avG" secondAttribute="top" id="Vv7-pS-dDQ"/>
@@ -159,7 +160,9 @@
                             </constraint>
                             <constraint firstAttribute="bottom" secondItem="h7r-Zb-zqs" secondAttribute="bottom" id="cbP-UZ-d7e"/>
                             <constraint firstItem="Trb-91-6cl" firstAttribute="centerX" secondItem="Kdy-K5-avG" secondAttribute="centerX" id="ecT-db-AhT"/>
-                            <constraint firstItem="H3B-33-SfQ" firstAttribute="leading" secondItem="tYz-Pc-WiD" secondAttribute="leading" constant="60" id="j2G-wT-AW5"/>
+                            <constraint firstItem="H3B-33-SfQ" firstAttribute="leading" secondItem="tYz-Pc-WiD" secondAttribute="leading" constant="60" id="j2G-wT-AW5">
+                                <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                            </constraint>
                             <constraint firstItem="mjD-j0-XaR" firstAttribute="centerX" secondItem="Kdy-K5-avG" secondAttribute="centerX" id="kjW-47-0HG"/>
                             <constraint firstItem="SiD-8S-gDw" firstAttribute="top" secondItem="Kdy-K5-avG" secondAttribute="top" id="pg5-1o-EsD"/>
                             <constraint firstItem="h7r-Zb-zqs" firstAttribute="trailing" secondItem="Kdy-K5-avG" secondAttribute="trailing" id="qKS-sI-j3g"/>
@@ -202,6 +205,8 @@
                         <outlet property="libraryLabel" destination="mjD-j0-XaR" id="e1z-32-IcM"/>
                         <outlet property="mainView" destination="Kdy-K5-avG" id="u2Q-7R-s3S"/>
                         <outlet property="videoLayer" destination="SiD-8S-gDw" id="yPW-xG-RCA"/>
+                        <segue destination="CLh-tJ-VzB" kind="presentation" identifier="fromLibraryToLesson5" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Qq0-8B-dw9"/>
+                        <segue destination="qjl-x6-q4H" kind="presentation" identifier="fromLibraryToLesson4" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="9BA-Tm-6nk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="buc-nP-2WC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -226,7 +231,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7eX-Lb-Ipv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="681" y="62"/>
+            <point key="canvasLocation" x="687" y="-96"/>
         </scene>
         <!--Lesson2Lobby-->
         <scene sceneID="Caa-6d-bmz">
@@ -234,17 +239,37 @@
                 <viewControllerPlaceholder storyboardName="Lesson2" referencedIdentifier="Lesson2Lobby" id="8oa-OE-E7m" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uKi-bi-vM8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="765" y="175"/>
+            <point key="canvasLocation" x="767" y="158"/>
         </scene>
         <!--Lesson3Lobby-->
-        <scene sceneID="ymj-vY-IrQ">
+        <scene sceneID="ss9-cc-R4M">
             <objects>
-                <viewControllerPlaceholder storyboardName="Lesson3" referencedIdentifier="Lesson3Lobby" id="w4q-3r-lat" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="p9q-K0-gAG"/>
+                <viewControllerPlaceholder storyboardName="Lesson3" referencedIdentifier="Lesson3Lobby" id="X4y-mc-BNQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="KPs-7S-oLS"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0px-Bz-AwL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2tJ-aK-1lB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="684" y="283"/>
+            <point key="canvasLocation" x="846" y="224"/>
+        </scene>
+        <!--Lesson4Lobby-->
+        <scene sceneID="6OS-n4-4Fd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Lesson4" referencedIdentifier="Lesson4Lobby" id="qjl-x6-q4H" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="DTK-bu-s8A"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fCr-fS-Nts" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="703" y="346"/>
+        </scene>
+        <!--Lesson4Lobby-->
+        <scene sceneID="keU-M2-HIo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Lesson4" referencedIdentifier="Lesson4Lobby" id="CLh-tJ-VzB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0Jv-9e-aJb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kCK-XI-pYs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="703" y="428"/>
         </scene>
     </scenes>
     <resources>

@@ -9,7 +9,7 @@ struct Question {
 }
 
 class Lesson1Quiz: UIViewController {
-
+    
     @IBOutlet weak var QLabel: UILabel!
     //an array of buttons in IBOutlets
     @IBOutlet var Buttons: [UIButton]!
@@ -33,12 +33,13 @@ class Lesson1Quiz: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var successView: UIView!
+    @IBOutlet var secondaryLabel: UILabel!
     @IBOutlet weak var successGifImageView: UIImageView!
     @IBOutlet weak var scoreView: UIView!
     @IBOutlet weak var finalScoreLabel: UILabel!
     @IBOutlet weak var wellDoneLabel: UILabel!
     @IBOutlet weak var retryButton: UIButton!
-    @IBOutlet weak var lesson2Button: UIButton!
+    @IBOutlet weak var lessonButton: UIButton!
     @IBOutlet weak var menuButton: UIButton!
     
     var wrongSoundEffect = AVAudioPlayer()
@@ -46,15 +47,20 @@ class Lesson1Quiz: UIViewController {
     var successSoundEffect = AVAudioPlayer()
     var popSoundEffect = AVAudioPlayer()
     
+    var lessonIdentifier = String()
+    var id = Int()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("Lesson1 Quiz")
+        checkMode()
+        lessonAssets()
         editButtons()
         editWellDoneLabel()
         editRetryButton()
         editLesson2Button()
         editMenuButton()
+        initialDisplacement()
         
         //declare and prepare sound effect to play
         do {
@@ -77,21 +83,63 @@ class Lesson1Quiz: UIViewController {
             
         }
         
-        //declare Questions with possible answers and index value of the correct answer as Int!
-        Questions = [Question(Question: "God morgon!", Answers: ["Dobré ráno!", "Dobrý deň!", "Dobrý večer!", "Dovidenia!"], Answer: 0),
-            Question(Question: "God dag!", Answers: ["Ďakujem", "Dobrú noc!", "Dovidenia!", "Dobrý deň!"], Answer: 3),
-            Question(Question: "God afton!", Answers: ["Dovidenia!", "Dobrý deň!", "Dobrý večer!", "Dobré ráno!"], Answer: 2),
-            Question(Question: "God natt!", Answers: ["Dobrú noc!", "Dovidenia!", "Dobrý večer!", "Ďakujem!"], Answer: 0),
-            Question(Question: "Hej! / Hallå!", Answers: ["Dobré ráno!", "Dobrú noc!", "Dobrý deň!", "Ahoj!"], Answer: 3),
-            Question(Question: "Tjäna!", Answers: ["Ahoj!", "Rado sa stalo.", "Čau!", "Zbohom!"], Answer: 2),
-            Question(Question: "Tack!", Answers: ["Dobrý deň!", "Ďakujem!", "Zbohom!", "Ahoj"], Answer: 1),
-            Question(Question: "Varsågod.", Answers: ["Ahoj!", "Rado sa stalo.", "Dobrý deň!", "Ďakujem!"], Answer: 1),
-            Question(Question: "Hejdå!", Answers: ["Dovidenia!", "Dobrú noc!", "Zbohom!", "Čau!"], Answer: 0),
-            Question(Question: "Adjö!", Answers: ["Dovidenia!", "Ďakujem!", "Rado sa stalo.", "Zbohom!"], Answer: 3)]
-        
         QuestionPick()
         updateScoreLabel()
         updateColorForQuestionLabel()
+    }
+    func checkMode() {
+        if UserDefaults.standard.bool(forKey: "darkMode") == true {
+            overrideUserInterfaceStyle = .dark
+        }
+        else {
+            overrideUserInterfaceStyle = .light
+        }
+    }
+    func lessonAssets(){
+        //declare Questions with possible answers and index value of the correct answer as Int!
+        
+        switch lessonIdentifier {
+        case "Lesson1":
+            id = 1
+            Questions = [Question(Question: "God morgon!", Answers: ["Dobré ráno!", "Dobrý deň!", "Dobrý večer!", "Dovidenia!"], Answer: 0),
+                Question(Question: "God dag!", Answers: ["Ďakujem", "Dobrú noc!", "Dovidenia!", "Dobrý deň!"], Answer: 3),
+                Question(Question: "God afton!", Answers: ["Dovidenia!", "Dobrý deň!", "Dobrý večer!", "Dobré ráno!"], Answer: 2),
+                Question(Question: "God natt!", Answers: ["Dobrú noc!", "Dovidenia!", "Dobrý večer!", "Ďakujem!"], Answer: 0),
+                Question(Question: "Hej! / Hallå!", Answers: ["Dobré ráno!", "Dobrú noc!", "Dobrý deň!", "Ahoj!"], Answer: 3),
+                Question(Question: "Tjäna!", Answers: ["Ahoj!", "Rado sa stalo.", "Čau!", "Zbohom!"], Answer: 2),
+                Question(Question: "Tack!", Answers: ["Dobrý deň!", "Ďakujem!", "Zbohom!", "Ahoj"], Answer: 1),
+                Question(Question: "Varsågod.", Answers: ["Ahoj!", "Rado sa stalo.", "Dobrý deň!", "Ďakujem!"], Answer: 1),
+                Question(Question: "Hejdå!", Answers: ["Dovidenia!", "Dobrú noc!", "Zbohom!", "Čau!"], Answer: 0),
+                Question(Question: "Adjö!", Answers: ["Dovidenia!", "Ďakujem!", "Rado sa stalo.", "Zbohom!"], Answer: 3)]
+        case "Lesson3":
+            id = 3
+            Questions = [Question(Question: "röd", Answers: ["červená", "oranžová", "biela", "hnedá"], Answer: 0),
+                Question(Question: "gul", Answers: ["hnedá", "zelená", "fialová", "žltá"], Answer: 3),
+                Question(Question: "orange", Answers: ["červená", "modrá", "oranžová", "čierna"], Answer: 2),
+                Question(Question: "grön", Answers: ["zelená", "žltá", "sivá", "oranžová"], Answer: 0),
+                Question(Question: "blå", Answers: ["zelená", "fialová", "sivá", "modrá"], Answer: 3),
+                Question(Question: "lila", Answers: ["biela", "hnedá", "fialová", "červená"], Answer: 2),
+                Question(Question: "brun", Answers: ["modrá", "hnedá", "žltá", "biela"], Answer: 1),
+                Question(Question: "svart", Answers: ["fialová", "čierna", "modrá", "zelená"], Answer: 1),
+                Question(Question: "vit", Answers: ["biela", "červená", "oranžová", "hnedá"], Answer: 0),
+                Question(Question: "grå", Answers: ["čierna", "zelená", "hnedá", "sivá"], Answer: 3)]
+        case "Lesson5":
+            id = 5
+            Questions = [Question(Question: "Djurpark", Answers: ["ZOO", "Policajná stanica", "Pláž", "Supermarket"], Answer: 0),
+                Question(Question: "Skola", Answers: ["Knižnica", "Pošta", "Nemocnica", "Škola"], Answer: 3),
+                Question(Question: "Polisstation", Answers: ["Vlaková stanica", "Pláž", "Policajná stanica", "ZOO"], Answer: 2),
+                Question(Question: "Tågstation", Answers: ["Vlaková stanica", "Supermarket", "Pošta", "Nemocnica"], Answer: 0),
+                Question(Question: "Bibliotek", Answers: ["Kostol", "Pošta", "Supermarket", "Knižnica"], Answer: 3),
+                Question(Question: "Sjukhus", Answers: ["ZOO", "Vlaková stanica", "Nemocnica", "Kostol"], Answer: 2),
+                Question(Question: "Strand", Answers: ["Supermarket", "Pláž", "Policajná stanica", "Škola"], Answer: 1),
+                Question(Question: "Kyrka", Answers: ["Knižnica", "Kostol", "Škola", "Vlaková stanica"], Answer: 1),
+                Question(Question: "Posten", Answers: ["Pošta", "Policajná stanica", "Kostol", "Knižnica"], Answer: 0),
+                Question(Question: "Mataffär", Answers: ["Nemocnica", "Pláž", "Pošta", "Supermarket"], Answer: 3)]
+            
+        default:
+            break
+        }
+        mainLabel.text = "Quiz Lesson \(id)"
     }
     
     //check score from quiz
@@ -113,18 +161,77 @@ class Lesson1Quiz: UIViewController {
         self.wellDoneLabel.text = finalScoreTextLabel
     }
     func initialDisplacement(){
-        self.wellDoneLabel.transform = CGAffineTransform(
-            translationX: 0,
-            y: -30)
-        self.retryButton.transform = CGAffineTransform(
-            translationX: 0,
-            y: 50)
-        self.lesson2Button.transform = CGAffineTransform(
-            translationX: 0,
-            y: 50)
-        self.menuButton.transform = CGAffineTransform(
-            translationX: 0,
-            y: 50)
+        mainLabel.alpha = 0.0
+        mainLabel.transform = CGAffineTransform(translationX: 0, y: -20)
+        secondaryLabel.alpha = 0.0
+        secondaryLabel.transform = CGAffineTransform(translationX: 0, y: -10)
+        QLabel.alpha = 0.0
+        animateElements()
+        Button1.alpha = 0.0
+        Button2.alpha = 0.0
+        Button3.alpha = 0.0
+        Button4.alpha = 0.0
+        Button1.transform = CGAffineTransform(translationX: -30, y: 0)
+        Button2.transform = CGAffineTransform(translationX: -30, y: 0)
+        Button3.transform = CGAffineTransform(translationX: -30, y: 0)
+        Button4.transform = CGAffineTransform(translationX: -30, y: 0)
+        scoreLabel.alpha = 0.0
+        scoreLabel.transform = CGAffineTransform(translationX: 0, y: -20)
+    }
+    func animateElements() {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1, execute: {
+            UILabel.animate(withDuration: 0.5, delay: 0.2, animations: {
+                self.mainLabel.transform = CGAffineTransform(translationX: 0.0, y: 0.0)
+                self.mainLabel.alpha = 1.0
+                self.secondaryLabelDidAppear()
+                self.questionLabelDidAppear()
+            })
+        })
+    }
+    func secondaryLabelDidAppear() {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.01, execute: {
+            UILabel.animate(withDuration: 0.4, delay: 0.1, animations: {
+                self.secondaryLabel.alpha = 1.0
+                self.secondaryLabel.transform = CGAffineTransform(translationX: 0, y: 0)
+            })
+        })
+    }
+    func questionLabelDidAppear() {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.01, execute: {
+            UILabel.animate(withDuration: 0.5, delay: 0.2, animations: {
+                self.QLabel.alpha = 1.0
+                self.buttonsDidAppear()
+            })
+        })
+    }
+    func buttonsDidAppear() {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.02, execute: {
+            UIButton.animate(withDuration: 0.5, delay: 0.2, options: UIButton.AnimationOptions.curveEaseOut, animations: {
+                self.Button1.alpha = 1.0
+                self.Button1.transform = CGAffineTransform(translationX: 0, y: 0)
+            })
+            UIButton.animate(withDuration: 0.5, delay: 0.4, options: UIButton.AnimationOptions.curveEaseOut, animations: {
+                self.Button2.alpha = 1.0
+                self.Button2.transform = CGAffineTransform(translationX: 0, y: 0)
+            })
+            UIButton.animate(withDuration: 0.5, delay: 0.6, options: UIButton.AnimationOptions.curveEaseOut, animations: {
+                self.Button3.alpha = 1.0
+                self.Button3.transform = CGAffineTransform(translationX: 0, y: 0)
+            })
+            UIButton.animate(withDuration: 0.5, delay: 0.8, options: UIButton.AnimationOptions.curveEaseOut, animations: {
+                self.Button4.alpha = 1.0
+                self.Button4.transform = CGAffineTransform(translationX: 0, y: 0)
+                self.scoreLabelDidAppear()
+            })
+        })
+    }
+    func scoreLabelDidAppear() {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.01, execute: {
+            UILabel.animate(withDuration: 0.3, animations: {
+                self.scoreLabel.alpha = 1.0
+                self.scoreLabel.transform = CGAffineTransform(translationX: 0, y: 0)
+            })
+        })
     }
     func editWellDoneLabel(){
         
@@ -133,9 +240,6 @@ class Lesson1Quiz: UIViewController {
         wellDoneLabel.layer.shadowOpacity = 0.35
         wellDoneLabel.layer.shadowOffset = CGSize(width: -1, height: 1)
         wellDoneLabel.layer.shadowRadius = 3.5
-        
-        //to instantiate initial displacement
-        initialDisplacement()
     }
     func editRetryButton(){
         
@@ -150,12 +254,12 @@ class Lesson1Quiz: UIViewController {
     func editLesson2Button(){
         
         //to edit lesson2Button
-        lesson2Button.backgroundColor = #colorLiteral(red: 0.1333333333, green: 0.2823529412, blue: 0.9490196078, alpha: 1)
-        lesson2Button.layer.shadowColor = UIColor.black.cgColor
-        lesson2Button.layer.shadowOpacity = 0.35
-        lesson2Button.layer.shadowOffset = CGSize(width: -1, height: 1)
-        lesson2Button.layer.shadowRadius = 5.0
-        lesson2Button.layer.cornerRadius = 20.0
+        lessonButton.backgroundColor = #colorLiteral(red: 0.1333333333, green: 0.2823529412, blue: 0.9490196078, alpha: 1)
+        lessonButton.layer.shadowColor = UIColor.black.cgColor
+        lessonButton.layer.shadowOpacity = 0.35
+        lessonButton.layer.shadowOffset = CGSize(width: -1, height: 1)
+        lessonButton.layer.shadowRadius = 5.0
+        lessonButton.layer.cornerRadius = 20.0
     }
     func editMenuButton(){
         
@@ -264,8 +368,8 @@ class Lesson1Quiz: UIViewController {
                 y: -50)
             
             //animate Lesson2Button
-            self.lesson2Button.alpha = 1.0
-            self.lesson2Button.transform = CGAffineTransform(
+            self.lessonButton.alpha = 1.0
+            self.lessonButton.transform = CGAffineTransform(
                 translationX: 0,
                 y: -50)
             
@@ -311,21 +415,21 @@ class Lesson1Quiz: UIViewController {
                 self.showScore()
             })
         })
-        
     }
 
     func updateScoreLabel(){
         
         //update text according to the picked answers
         scoreLabel.text = "\(String(score))/10"
-        
     }
     //declare a function that picks a random question
     func QuestionPick(){
+        
     //start if questions are available
         if Questions.count > 0 {
             //pick up random question number
             QuestionNumber = Int(arc4random_uniform(UInt32(Questions.count)))
+            
             //changes QLabel aaccordingly
             QLabel.text = Questions[QuestionNumber].Question
             
@@ -335,15 +439,14 @@ class Lesson1Quiz: UIViewController {
             for i in 0..<Buttons.count {
                 
                 Buttons[i].setTitle(Questions[QuestionNumber].Answers[i], for: UIControl.State.normal)
-                
             }
+            
             //if a question was used, delete it from the list
             Questions.remove(at: QuestionNumber)
             
         }
         //if no questions are available
         else {
-            print("Done")
             let seconds = 1.25
             let when = DispatchTime.now() + seconds
             
@@ -352,10 +455,16 @@ class Lesson1Quiz: UIViewController {
                 self.successSoundEffect.play()
                 self.successSoundEffect.volume = 0.75
             }
+            
+            //Change lessonButton title after quiz completion for following lesson (id + 1);
+            if id < 5 {
+                lessonButton.setTitle("Lesson \(id + 1)", for: .normal)
+            }
+            else {
+                lessonButton.setTitle("Finish", for: .normal)
+            }
             animateSuccessView()
-
         }
-        
     }
     
     //event if Button1 is clicked
@@ -364,7 +473,6 @@ class Lesson1Quiz: UIViewController {
         updateColorForQuestionLabel()
         if AnswerNumber == 0{
             correctSoundEffect.play()
-            print("Correct")
             score += 1
             //if the correct answer is selected do;
             QuestionPick()
@@ -382,7 +490,6 @@ class Lesson1Quiz: UIViewController {
         }
         else {
             //if the wrong answer is selected;
-            print("Wrong")
             wrongSoundEffect.play()
             QuestionPick()
             
@@ -402,7 +509,6 @@ class Lesson1Quiz: UIViewController {
         updateColorForQuestionLabel()
         if AnswerNumber == 1{
             correctSoundEffect.play()
-            print("Correct")
             score += 1
             QuestionPick()
             updateScoreLabel()
@@ -417,7 +523,6 @@ class Lesson1Quiz: UIViewController {
             })
         }
         else {
-            print("Wrong")
             wrongSoundEffect.play()
             QuestionPick()
             
@@ -437,7 +542,6 @@ class Lesson1Quiz: UIViewController {
         updateColorForQuestionLabel()
         if AnswerNumber == 2{
             correctSoundEffect.play()
-            print("Correct")
             score += 1
             QuestionPick()
             updateScoreLabel()
@@ -452,7 +556,6 @@ class Lesson1Quiz: UIViewController {
             })
         }
         else {
-            print("Wrong")
             wrongSoundEffect.play()
             QuestionPick()
             
@@ -472,7 +575,6 @@ class Lesson1Quiz: UIViewController {
         updateColorForQuestionLabel()
         if AnswerNumber == 3{
             correctSoundEffect.play()
-            print("Correct")
             score += 1
             QuestionPick()
             updateScoreLabel()
@@ -485,10 +587,8 @@ class Lesson1Quiz: UIViewController {
                     self.Button4.backgroundColor = #colorLiteral(red: 0.1333333333, green: 0.3803921569, blue: 0.9490196078, alpha: 1)
                 })
             })
-            
         }
         else {
-            print("Wrong")
             wrongSoundEffect.play()
             QuestionPick()
             
@@ -518,5 +618,14 @@ class Lesson1Quiz: UIViewController {
             })
         })
         
+    }
+    @IBAction func didTapLessonButton(_ sender: Any) {
+        performSegue(withIdentifier: "fromLesson\(id)QuizToLesson\(id+1)", sender: (Any).self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "fromLesson3QuizToLesson4") {
+            let lessonVC = segue.destination as! Lesson4ViewController
+            lessonVC.lessonIdentifier = "Lesson 4"
+        }
     }
 }

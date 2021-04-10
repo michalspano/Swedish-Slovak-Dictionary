@@ -9,7 +9,6 @@ class QuizLibraryViewController: UIViewController {
     @IBOutlet var mainScene: UIView!
     @IBOutlet var lessonButton: UIButton!
     @IBOutlet var backButton: UIButton!
-    @IBOutlet var tapArea: UIView!
     
     var swipeCount = 1
     var colorChange = UIColor()
@@ -22,6 +21,8 @@ class QuizLibraryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        checkMode()
         detectOrientation()
         editElements()
         initialDisplacement()
@@ -33,6 +34,14 @@ class QuizLibraryViewController: UIViewController {
             modeSwitch = false
         }
         updateBG()
+    }
+    func checkMode() {
+        if UserDefaults.standard.bool(forKey: "darkMode") == true {
+            overrideUserInterfaceStyle = .dark
+        }
+        else {
+            overrideUserInterfaceStyle = .light
+        }
     }
     
     func editElements() {
@@ -112,7 +121,6 @@ class QuizLibraryViewController: UIViewController {
         detectOrientation()
         lessonInfoLabel.alpha = 0.0
         lessonButton.transform = CGAffineTransform(translationX: 0, y: 0)
-        tapArea.alpha = 0.0
         if swipeCount > 5 {
             swipeCount = 5
         }
@@ -174,7 +182,6 @@ class QuizLibraryViewController: UIViewController {
             })
             
             UIImageView.animate(withDuration: 0.4, animations: {
-                self.tapArea.alpha = 0
                 self.lessonIconView.alpha = 0
                 self.lessonLabel.alpha = 0
                 self.lessonIconView.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
@@ -186,7 +193,6 @@ class QuizLibraryViewController: UIViewController {
                     //Updates image icon
                     self.lessonIconView.image = UIImage(named: "Lesson\(self.swipeCount)Icon")
                     self.lessonIconView.alpha = 1.0
-                    self.tapArea.alpha = 0.05
                     
                     //Updates Lesson label
                     self.lessonLabel.text = ("L\(self.swipeCount)")
@@ -203,13 +209,11 @@ class QuizLibraryViewController: UIViewController {
     func detectOrientation() {
         switch UIDevice.current.orientation {
         case .landscapeLeft, .landscapeRight:
-            print("Landscape")
             landscapeSwitch = true
         case .portrait, .portraitUpsideDown:
             landscapeSwitch = false
-            print("Portrait")
         default:
-            print("Default")
+            break
         }
         
     }
@@ -259,7 +263,6 @@ class QuizLibraryViewController: UIViewController {
     }
 
     @IBAction func didTapInfo(_ sender: UITapGestureRecognizer) {
-        print("info")
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.01, execute: {
             UIImageView.animate(withDuration: 0.5, animations: {
                 self.lessonIconView.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
@@ -279,5 +282,28 @@ class QuizLibraryViewController: UIViewController {
                 })
             })
         })
+    }
+    //Modular dif.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "QuizLesson1":
+            let quizType1 = segue.destination as! Lesson1Quiz
+            quizType1.lessonIdentifier = "Lesson1"
+        case "QuizLesson2":
+            let quizType2 = segue.destination as! Lesson2Quiz
+            quizType2.lessonIdentifier = "Lesson2"
+        case "QuizLesson3":
+            let quizType1 = segue.destination as!
+            Lesson1Quiz
+            quizType1.lessonIdentifier = "Lesson3"
+        case "QuizLesson4":
+            let quizType2 = segue.destination as! Lesson2Quiz
+            quizType2.lessonIdentifier = "Lesson4"
+        case "QuizLesson5":
+            let quizType1 = segue.destination as! Lesson1Quiz
+            quizType1.lessonIdentifier = "Lesson5"
+        default:
+            break
+        }
     }
 }

@@ -1,0 +1,10 @@
+ovca
+prasa
+krava
+pavúk
+mačka
+pes
+ryba
+vták
+kôň
+vlk

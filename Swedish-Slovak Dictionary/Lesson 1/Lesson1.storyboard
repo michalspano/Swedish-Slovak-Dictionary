@@ -114,15 +114,20 @@
                             <outletCollection property="gestureRecognizers" destination="WeF-Br-FJX" appends="YES" id="15y-XY-NHX"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="tL2-yz-jQQ"/>
                     <connections>
-                        <outlet property="L1Label" destination="dCV-Zp-aAF" id="n9X-n7-a3p"/>
-                        <outlet property="lbl" destination="Pru-OE-XhT" id="plX-ga-XWk"/>
+                        <outlet property="lesson1Label" destination="dCV-Zp-aAF" id="B3m-hd-lfc"/>
+                        <outlet property="lesson1View" destination="fM0-H3-Lcc" id="TDQ-eq-Gs5"/>
+                        <outlet property="libraryButton" destination="5fC-El-xYQ" id="VSD-8Z-69e"/>
+                        <outlet property="lowerLabel" destination="TA6-lJ-xP7" id="q6Q-0S-tTk"/>
+                        <outlet property="mainLabel" destination="WdB-nH-IEJ" id="gMi-Nr-hqw"/>
+                        <outlet property="swipeUpLabel" destination="Pru-OE-XhT" id="vfD-5F-E9I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xv4-dg-RlD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="up" id="WeF-Br-FJX" userLabel="GestureEventRecognise">
                     <connections>
-                        <segue destination="QwM-ob-uRS" kind="show" identifier="swipefromLMenutoL1Part1" id="nj0-Yu-VuF"/>
+                        <segue destination="QwM-ob-uRS" kind="presentation" identifier="swipefromLMenutoL1Part1" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="nj0-Yu-VuF"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -133,32 +138,42 @@
             <objects>
                 <viewController storyboardIdentifier="Lesson1Part1" id="QwM-ob-uRS" customClass="Lesson1Part1ViewController" customModule="Swedish_Slovak_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qwE-fF-gQI" userLabel="BackgroundView" customClass="GradientView" customModule="Swedish_Slovak_Dictionary" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wtE-2j-4cN" userLabel="loadingView">
+                                <rect key="frame" x="107" y="697" width="200" height="14"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="dgK-Qh-pPg"/>
+                                    <constraint firstAttribute="height" constant="14" id="xKw-6d-czb"/>
+                                </constraints>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lesson 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVl-o5-guo">
-                                <rect key="frame" x="132.5" y="40" width="149.5" height="48"/>
+                                <rect key="frame" x="132.5" y="69" width="149.5" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="roG-sx-VEf" userLabel="RoundView">
-                                <rect key="frame" x="57" y="246" width="300" height="350"/>
+                                <rect key="frame" x="57" y="254" width="300" height="388"/>
                                 <color key="backgroundColor" name="darkModeLessonRoundView"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P6x-om-EJH" userLabel="PhotoView">
-                                <rect key="frame" x="82" y="296" width="250" height="250"/>
+                                <rect key="frame" x="82" y="323" width="250" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="1VE-93-Dkl">
                                         <variation key="heightClass=compact-widthClass=regular" constant="150"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="500"/>
                                     </constraint>
                                     <constraint firstAttribute="width" constant="250" id="Wll-Mn-9wJ">
                                         <variation key="heightClass=compact-widthClass=regular" constant="150"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="500"/>
                                     </constraint>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRC-vM-yM9" userLabel="playSoundButton">
-                                <rect key="frame" x="172" y="621" width="70" height="70"/>
+                                <rect key="frame" x="172" y="667" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="ToR-e1-leT"/>
                                     <constraint firstAttribute="height" constant="70" id="gH2-Eh-xIF"/>
@@ -173,25 +188,31 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVT-iS-vTw" userLabel="Label1">
-                                <rect key="frame" x="176" y="258" width="62" height="26.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <rect key="frame" x="164.5" y="272" width="85" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" name="darkModeLessonText"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDT-Cu-8aZ" userLabel="Label2">
-                                <rect key="frame" x="174.5" y="558" width="65" height="26.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <rect key="frame" x="163" y="585" width="88.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" name="darkModeLessonText"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISJ-Fm-Qry" userLabel="wordCount">
-                                <rect key="frame" x="176" y="108" width="62" height="30"/>
+                                <rect key="frame" x="176" y="137" width="62" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swipeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ie6-cD-GaK">
-                                <rect key="frame" x="147" y="691" width="120" height="105"/>
+                                <rect key="frame" x="147" y="745" width="120" height="105"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="F0a-fR-gF2">
                                         <variation key="heightClass=compact-widthClass=regular" constant="100"/>
@@ -202,7 +223,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y74-Rh-6fc" userLabel="animationLabel">
-                                <rect key="frame" x="138.5" y="800" width="137" height="21"/>
+                                <rect key="frame" x="138.5" y="854" width="137" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" name="darkModeSwipeText"/>
                                 <nil key="highlightedColor"/>
@@ -212,6 +233,9 @@
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="wtE-2j-4cN" firstAttribute="centerX" secondItem="qwE-fF-gQI" secondAttribute="centerX" id="2OE-R7-c1d">
+                                <variation key="heightClass=compact-widthClass=regular" constant="310"/>
+                            </constraint>
                             <constraint firstItem="BRC-vM-yM9" firstAttribute="top" secondItem="roG-sx-VEf" secondAttribute="bottom" constant="25" id="3XL-Zu-9fA">
                                 <variation key="heightClass=compact-widthClass=regular" constant="-130"/>
                             </constraint>
@@ -219,21 +243,24 @@
                                 <variation key="heightClass=compact-widthClass=regular" constant="-300"/>
                             </constraint>
                             <constraint firstItem="hVl-o5-guo" firstAttribute="centerX" secondItem="qwE-fF-gQI" secondAttribute="centerX" id="BFN-In-UHt"/>
-                            <constraint firstItem="E8a-df-Ira" firstAttribute="bottom" secondItem="roG-sx-VEf" secondAttribute="bottom" constant="212" id="KDJ-OV-T1w">
+                            <constraint firstItem="P6x-om-EJH" firstAttribute="top" secondItem="cVT-iS-vTw" secondAttribute="bottom" constant="12" id="Bc7-S0-fAd"/>
+                            <constraint firstItem="E8a-df-Ira" firstAttribute="bottom" secondItem="roG-sx-VEf" secondAttribute="bottom" constant="220" id="KDJ-OV-T1w">
                                 <variation key="heightClass=compact-widthClass=regular" constant="85"/>
                             </constraint>
                             <constraint firstItem="Y74-Rh-6fc" firstAttribute="top" secondItem="ie6-cD-GaK" secondAttribute="bottom" constant="4" id="KmH-ng-wT1">
                                 <variation key="heightClass=compact-widthClass=regular" constant="-10"/>
                             </constraint>
+                            <constraint firstItem="wtE-2j-4cN" firstAttribute="top" secondItem="roG-sx-VEf" secondAttribute="bottom" constant="55" id="NoE-cu-WWE"/>
                             <constraint firstItem="roG-sx-VEf" firstAttribute="leading" secondItem="E8a-df-Ira" secondAttribute="leading" constant="57" id="Pqw-mA-gsV">
                                 <variation key="heightClass=compact-widthClass=regular" constant="220"/>
                             </constraint>
+                            <constraint firstItem="wtE-2j-4cN" firstAttribute="centerY" secondItem="qwE-fF-gQI" secondAttribute="centerY" id="QdN-9a-4Yl"/>
                             <constraint firstItem="roG-sx-VEf" firstAttribute="centerX" secondItem="qwE-fF-gQI" secondAttribute="centerX" id="WwF-eG-qgI"/>
                             <constraint firstItem="P6x-om-EJH" firstAttribute="centerY" secondItem="qwE-fF-gQI" secondAttribute="centerY" id="dVt-EW-Gt9"/>
                             <constraint firstItem="aDT-Cu-8aZ" firstAttribute="centerX" secondItem="qwE-fF-gQI" secondAttribute="centerX" id="fIv-jO-FX4"/>
                             <constraint firstItem="P6x-om-EJH" firstAttribute="centerX" secondItem="qwE-fF-gQI" secondAttribute="centerX" id="heM-rS-cjF"/>
                             <constraint firstItem="cVT-iS-vTw" firstAttribute="centerX" secondItem="qwE-fF-gQI" secondAttribute="centerX" id="jau-uX-64i"/>
-                            <constraint firstItem="hVl-o5-guo" firstAttribute="top" secondItem="qwE-fF-gQI" secondAttribute="topMargin" constant="40" id="k6v-HL-ypo"/>
+                            <constraint firstItem="hVl-o5-guo" firstAttribute="top" secondItem="qwE-fF-gQI" secondAttribute="topMargin" constant="25" id="k6v-HL-ypo"/>
                             <constraint firstItem="ie6-cD-GaK" firstAttribute="centerX" secondItem="qwE-fF-gQI" secondAttribute="centerX" id="nLg-YQ-43S"/>
                             <constraint firstItem="ISJ-Fm-Qry" firstAttribute="top" secondItem="hVl-o5-guo" secondAttribute="bottom" constant="20" id="nif-HG-Q8T">
                                 <variation key="heightClass=compact-widthClass=regular" constant="100"/>
@@ -242,31 +269,62 @@
                                 <variation key="heightClass=compact-widthClass=regular" constant="300"/>
                             </constraint>
                             <constraint firstItem="Y74-Rh-6fc" firstAttribute="centerX" secondItem="qwE-fF-gQI" secondAttribute="centerX" id="oCS-jj-OJW"/>
-                            <constraint firstItem="cVT-iS-vTw" firstAttribute="top" secondItem="hVl-o5-guo" secondAttribute="bottom" constant="170" id="oLt-u0-qia">
-                                <variation key="heightClass=compact-widthClass=regular" constant="18"/>
+                            <constraint firstItem="cVT-iS-vTw" firstAttribute="top" secondItem="hVl-o5-guo" secondAttribute="bottom" constant="155" id="oLt-u0-qia">
+                                <variation key="heightClass=compact-widthClass=regular" constant="35"/>
                             </constraint>
                             <constraint firstItem="E8a-df-Ira" firstAttribute="bottom" secondItem="ie6-cD-GaK" secondAttribute="bottom" constant="12" id="sZQ-Fv-gLC">
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
                             </constraint>
                             <constraint firstItem="roG-sx-VEf" firstAttribute="centerY" secondItem="qwE-fF-gQI" secondAttribute="centerY" id="u3V-oB-Wod"/>
                             <constraint firstItem="aDT-Cu-8aZ" firstAttribute="top" secondItem="P6x-om-EJH" secondAttribute="bottom" constant="12" id="uLu-fC-grO">
                                 <variation key="heightClass=compact-widthClass=regular" constant="2"/>
                             </constraint>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Bc7-S0-fAd"/>
+                                <exclude reference="QdN-9a-4Yl"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="NoE-cu-WWE"/>
+                                <include reference="QdN-9a-4Yl"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="oLt-u0-qia"/>
+                                <include reference="Bc7-S0-fAd"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="2Mm-8f-wrz" appends="YES" id="6Dd-yY-xSp"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="hoS-B9-V0p"/>
                     <connections>
                         <outlet property="animationLabel" destination="Y74-Rh-6fc" id="6zd-w3-rc7"/>
                         <outlet property="label1" destination="cVT-iS-vTw" id="bGy-01-qJJ"/>
                         <outlet property="label2" destination="aDT-Cu-8aZ" id="jNX-Fa-OpA"/>
+                        <outlet property="loaderView" destination="wtE-2j-4cN" id="Exk-QP-7my"/>
+                        <outlet property="mainLabel" destination="hVl-o5-guo" id="IWr-ZR-47g"/>
                         <outlet property="photoView" destination="P6x-om-EJH" id="JE2-o2-QB5"/>
                         <outlet property="playSoundButton" destination="BRC-vM-yM9" id="qsv-bN-T0v"/>
                         <outlet property="roundViewBox" destination="roG-sx-VEf" id="9ni-V7-GaP"/>
                         <outlet property="swipeIcon" destination="ie6-cD-GaK" id="9EH-bw-AJv"/>
-                        <outlet property="wordCount" destination="ISJ-Fm-Qry" id="KDp-rh-A0r"/>
+                        <outlet property="wordCountLabel" destination="ISJ-Fm-Qry" id="ZEe-5A-ybe"/>
+                        <segue destination="Pol-DO-Py3" kind="presentation" identifier="finishLesson1" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="50j-H6-pBf"/>
+                        <segue destination="mUM-nw-Eqs" kind="presentation" identifier="retreatFromLesson1InitialToLesson1" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="K6B-ik-KCF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBe-65-itV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="2Mm-8f-wrz">
+                    <connections>
+                        <action selector="didSwipeRetreat:" destination="QwM-ob-uRS" id="Xfv-LE-kc8"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="721.73913043478262" y="129.91071428571428"/>
         </scene>
@@ -334,7 +392,7 @@
                                 </state>
                                 <connections>
                                     <action selector="didTapButtonToLesson1Quiz:" destination="Pol-DO-Py3" eventType="touchUpInside" id="LiT-AE-27c"/>
-                                    <segue destination="zp1-Ia-TMR" kind="presentation" identifier="fromLesson1EndVCToLesson1Quiz" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="7nd-FM-mMi"/>
+                                    <action selector="didTapQuizButton:" destination="Pol-DO-Py3" eventType="touchUpInside" id="hrG-Uz-xdc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -357,7 +415,9 @@
                             <constraint firstItem="rYc-E2-QMI" firstAttribute="top" secondItem="eG4-Qe-CDu" secondAttribute="bottom" constant="125" id="fOt-Sq-vv4">
                                 <variation key="heightClass=compact-widthClass=regular" constant="20"/>
                             </constraint>
-                            <constraint firstItem="SOL-kJ-aWk" firstAttribute="bottom" secondItem="sN9-BA-LRy" secondAttribute="bottom" constant="-15" id="hGn-uo-PlB"/>
+                            <constraint firstItem="SOL-kJ-aWk" firstAttribute="bottom" secondItem="sN9-BA-LRy" secondAttribute="bottom" constant="-15" id="hGn-uo-PlB">
+                                <variation key="heightClass=regular-widthClass=regular" constant="5"/>
+                            </constraint>
                             <constraint firstItem="GTa-L3-Qty" firstAttribute="top" secondItem="SOL-kJ-aWk" secondAttribute="top" constant="30" id="jBB-bu-YNc">
                                 <variation key="heightClass=compact-widthClass=regular" constant="10"/>
                             </constraint>
@@ -373,6 +433,7 @@
                             <outletCollection property="gestureRecognizers" destination="RHU-Mv-Xe0" appends="YES" id="jMB-Dr-cA7"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="ofn-aB-Ini"/>
                     <connections>
                         <outlet property="congratsLabel" destination="GTa-L3-Qty" id="ewa-7c-pTG"/>
                         <outlet property="congratulationsLabel" destination="GTa-L3-Qty" id="E0t-nn-Xof"/>
@@ -382,6 +443,7 @@
                         <outlet property="label2" destination="eG4-Qe-CDu" id="wgm-MO-98i"/>
                         <outlet property="libraryButton" destination="pbb-G4-NFe" id="UiO-Jj-yhH"/>
                         <outlet property="quizButton" destination="JkR-93-5tB" id="Vc6-eg-3CI"/>
+                        <segue destination="zp1-Ia-TMR" kind="presentation" identifier="QuizLesson1" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="84r-oU-E29"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yvk-Vn-gOj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -424,6 +486,9 @@
             <point key="canvasLocation" x="307" y="256"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="K6B-ik-KCF"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Lesson1Icon" width="100" height="100"/>
         <image name="chevron.backward.square.fill" catalog="system" width="128" height="114"/>

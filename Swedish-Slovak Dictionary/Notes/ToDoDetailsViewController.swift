@@ -12,6 +12,8 @@ class ToDoDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        checkMode()
         loadNotesData()
         editElements()
         initialDisplacement()
@@ -23,6 +25,14 @@ class ToDoDetailsViewController: UIViewController {
             completeSoundEffect.prepareToPlay()
         } catch let error {
             print(error.localizedDescription)
+        }
+    }
+    func checkMode() {
+        if UserDefaults.standard.bool(forKey: "darkMode") == true {
+            overrideUserInterfaceStyle = .dark
+        }
+        else {
+            overrideUserInterfaceStyle = .light
         }
     }
     

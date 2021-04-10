@@ -7,7 +7,16 @@ class NotesTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        checkMode()
 
+    }
+    func checkMode() {
+        if UserDefaults.standard.bool(forKey: "darkMode") == true {
+            overrideUserInterfaceStyle = .dark
+        }
+        else {
+            overrideUserInterfaceStyle = .light
+        }
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

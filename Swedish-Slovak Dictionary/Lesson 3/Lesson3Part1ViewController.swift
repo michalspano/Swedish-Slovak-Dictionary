@@ -25,12 +25,25 @@ class Lesson3Part1ViewController: UIViewController {
     @IBOutlet weak var loaderView: UIView!
     
     //Declare SoundUI var
+     var SwipeNextSound = AVAudioPlayer()
+     var SwipeBackSound = AVAudioPlayer()
+     var Lesson3Sound1 = AVAudioPlayer()
+     var Lesson3Sound2 = AVAudioPlayer()
+     var Lesson3Sound3 = AVAudioPlayer()
+     var Lesson3Sound4 = AVAudioPlayer()
+     var Lesson3Sound5 = AVAudioPlayer()
+     var Lesson3Sound6 = AVAudioPlayer()
+     var Lesson3Sound7 = AVAudioPlayer()
+     var Lesson3Sound8 = AVAudioPlayer()
+     var Lesson3Sound9 = AVAudioPlayer()
+     var Lesson3Sound10 = AVAudioPlayer()
+     var SuccessSoundEffect = AVAudioPlayer()
     
-    /* */
     var soundSampleDuration = Double()
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        checkMode()
         initilDisplacement()
         editLoadingBar()
         editElements()
@@ -52,10 +65,44 @@ class Lesson3Part1ViewController: UIViewController {
         //Add recognizers to view
         view.addGestureRecognizer(rightSwipe)
         view.addGestureRecognizer(leftSwipe)
-        
         do {
-            //load UISound
+            SwipeNextSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "SwipeNextSoundEffect", ofType: "mp3")!))
+            SwipeBackSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "SwipeBackSoundEffect", ofType: "mp3")!))
+            SuccessSoundEffect = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "SuccessSoundEffect", ofType: "mp3")!))
+            
+            SwipeNextSound.prepareToPlay()
+            SwipeBackSound.prepareToPlay()
+            SuccessSoundEffect.prepareToPlay()
+            
+            Lesson3Sound1 = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "röd", ofType: "m4a")!))
+            Lesson3Sound2 = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "gul", ofType: "m4a")!))
+            Lesson3Sound3 = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "orange", ofType: "m4a")!))
+            Lesson3Sound4 = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "grön", ofType: "m4a")!))
+            Lesson3Sound5 = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "blå", ofType: "m4a")!))
+            Lesson3Sound6 = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "lila", ofType: "m4a")!))
+            Lesson3Sound7 = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "brun", ofType: "m4a")!))
+            Lesson3Sound8 = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "svart", ofType: "m4a")!))
+            Lesson3Sound9 = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "vit", ofType: "m4a")!))
+            Lesson3Sound10 = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "grå", ofType: "m4a")!))
+            Lesson3Sound1.prepareToPlay()
+            Lesson3Sound2.prepareToPlay()
+            Lesson3Sound3.prepareToPlay()
+            Lesson3Sound4.prepareToPlay()
+            Lesson3Sound5.prepareToPlay()
+            Lesson3Sound6.prepareToPlay()
+            Lesson3Sound7.prepareToPlay()
+            Lesson3Sound8.prepareToPlay()
+            Lesson3Sound9.prepareToPlay()
+            Lesson3Sound10.prepareToPlay()
         } catch {}
+    }
+    func checkMode() {
+        if UserDefaults.standard.bool(forKey: "darkMode") == true {
+            overrideUserInterfaceStyle = .dark
+        }
+        else {
+            overrideUserInterfaceStyle = .light
+        }
     }
     //to move to EndViewController
     func moveToEndViewController() {
@@ -267,7 +314,7 @@ class Lesson3Part1ViewController: UIViewController {
                 SwedishDataCount -= 1
                 PhotoViewCount -= 1
                 SoundSampleCount -= 1
-                //SwipeBackSound.play()
+                SwipeBackSound.play()
                 rightSwipeAnimation()
                 animateDidSwipeRight()
             
@@ -276,7 +323,7 @@ class Lesson3Part1ViewController: UIViewController {
                 SwedishDataCount += 1
                 PhotoViewCount += 1
                 SoundSampleCount += 1
-                //SwipeNextSound.play()
+                SwipeNextSound.play()
                 leftSwipeAnimation()
                 animateDidSwipeLeft()
                 
@@ -290,7 +337,6 @@ class Lesson3Part1ViewController: UIViewController {
             }
             
             if SlovakDataCount >= 10 && SwedishDataCount >= 10 && PhotoViewCount >= 11 {
-                print("You passed Lesson 3.")
                 SlovakDataCount = 9
                 SwedishDataCount = 9
                 PhotoViewCount = 10
@@ -306,7 +352,7 @@ class Lesson3Part1ViewController: UIViewController {
                     
                 })
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.2, execute: {
-                    //self.SuccessSoundEffect.play()
+                    self.SuccessSoundEffect.play()
                 })
                 moveToEndViewController()
             }
@@ -335,15 +381,55 @@ class Lesson3Part1ViewController: UIViewController {
     }
     
     @IBAction func didTapPlaySoundButton(_ sender: Any) {
-        /*
-         Switch for UISound value
-         */
+        switch SoundSampleCount {
+        case 0:
+            Lesson3Sound1.play()
+            soundSampleDuration = Lesson3Sound1.duration
+            animateDurationForSoundSample()
+        case 1:
+            Lesson3Sound2.play()
+            soundSampleDuration = Lesson3Sound2.duration
+            animateDurationForSoundSample()
+        case 2:
+            Lesson3Sound3.play()
+            soundSampleDuration = Lesson3Sound3.duration
+            animateDurationForSoundSample()
+        case 3:
+            Lesson3Sound4.play()
+            soundSampleDuration = Lesson3Sound4.duration
+            animateDurationForSoundSample()
+        case 4:
+            Lesson3Sound5.play()
+            soundSampleDuration = Lesson3Sound5.duration
+            animateDurationForSoundSample()
+        case 5:
+            Lesson3Sound6.play()
+            soundSampleDuration = Lesson3Sound6.duration
+            animateDurationForSoundSample()
+        case 6:
+            Lesson3Sound7.play()
+            soundSampleDuration = Lesson3Sound7.duration
+            animateDurationForSoundSample()
+        case 7:
+            Lesson3Sound8.play()
+            soundSampleDuration = Lesson3Sound8.duration
+            animateDurationForSoundSample()
+        case 8:
+            Lesson3Sound9.play()
+            soundSampleDuration = Lesson3Sound9.duration
+            animateDurationForSoundSample()
+        case 9:
+            Lesson3Sound10.play()
+            soundSampleDuration = Lesson3Sound10.duration
+            animateDurationForSoundSample()
+        default:
+            break
+        }
     }
     
     func animateDurationForSoundSample() {
         loaderView.frame.size.width = 0.0
         loaderView.alpha = 0.5
-        print(soundSampleDuration)
         UIButton.animate(withDuration: soundSampleDuration, delay: 0.5, animations: {
             self.playSoundButton.transform = CGAffineTransform(scaleX: 0, y: 0)
         })

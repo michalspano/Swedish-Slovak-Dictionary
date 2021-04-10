@@ -11,8 +11,18 @@ class Lesson3ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        checkMode()
         initialDisplacement()
  
+    }
+    func checkMode() {
+        if UserDefaults.standard.bool(forKey: "darkMode") == true {
+            overrideUserInterfaceStyle = .dark
+        }
+        else {
+            overrideUserInterfaceStyle = .light
+        }
     }
     func initialDisplacement(){
         self.mainLabel.alpha = 0.0

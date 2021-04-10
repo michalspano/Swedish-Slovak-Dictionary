@@ -8,16 +8,21 @@ class Lesson2QuizEndViewController: UIViewController {
     @IBOutlet weak var scoreView: UIView!
     @IBOutlet weak var wellDoneLabel: UILabel!
     @IBOutlet weak var retryButton: UIButton!
-    @IBOutlet weak var lesson2Button: UIButton!
+    @IBOutlet weak var lessonButton: UIButton!
     @IBOutlet weak var menuButton: UIButton!
     
     var finalScore = String()
     var finalScoreTextLabel = String()
+    var identifier = Int()
     
     var popSoundEffect = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        checkMode()
+        
+        updateLessonButton()
         animateSuccessView()
         editRetryButton()
         editWellDoneLabel()
@@ -25,22 +30,32 @@ class Lesson2QuizEndViewController: UIViewController {
         editMenuButton()
         initialDisplacement()
         
-        
         do {
             popSoundEffect = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "popSoundEffect", ofType: "wav")!))
             popSoundEffect.prepareToPlay()
         } catch {}
-        
-        print(finalScore)
-        print(finalScoreTextLabel)
-
     }
-    override func viewDidAppear(_ animated: Bool) {
+    func checkMode() {
+        if UserDefaults.standard.bool(forKey: "darkMode") == true {
+            overrideUserInterfaceStyle = .dark
+        }
+        else {
+            overrideUserInterfaceStyle = .light
+        }
+    }
+    func updateLessonButton() {
+        lessonButton.setTitle("Lesson \(identifier)", for: .normal)
+        
+    }
+    
+    //Previous Core Data Model, implemeted Dec 2020, depricated as of March 2021
+    
+    /* override func viewDidAppear(_ animated: Bool) {
         if let text = UserDefaults.standard.object(forKey: "lesson2Completion") as? String {
             print("Lesson \(text) was completed.")
             
         } else {}
-    }
+    } */
     func editWellDoneLabel(){
         
         //editWellDoneLabel
@@ -65,12 +80,12 @@ class Lesson2QuizEndViewController: UIViewController {
     func editLesson2Button(){
         
         //to edit lesson2Button
-        lesson2Button.backgroundColor = #colorLiteral(red: 0.1333333333, green: 0.2823529412, blue: 0.9490196078, alpha: 1)
-        lesson2Button.layer.shadowColor = UIColor.black.cgColor
-        lesson2Button.layer.shadowOpacity = 0.35
-        lesson2Button.layer.shadowOffset = CGSize(width: -1, height: 1)
-        lesson2Button.layer.shadowRadius = 5.0
-        lesson2Button.layer.cornerRadius = 20.0
+        lessonButton.backgroundColor = #colorLiteral(red: 0.1333333333, green: 0.2823529412, blue: 0.9490196078, alpha: 1)
+        lessonButton.layer.shadowColor = UIColor.black.cgColor
+        lessonButton.layer.shadowOpacity = 0.35
+        lessonButton.layer.shadowOffset = CGSize(width: -1, height: 1)
+        lessonButton.layer.shadowRadius = 5.0
+        lessonButton.layer.cornerRadius = 20.0
     }
     func editMenuButton(){
         
@@ -96,7 +111,7 @@ class Lesson2QuizEndViewController: UIViewController {
         self.scoreView.alpha = 0.0
         self.finalScoreLabel.alpha = 0.0
         self.retryButton.alpha = 0.0
-        self.lesson2Button.alpha = 0.0
+        self.lessonButton.alpha = 0.0
         self.menuButton.alpha = 0.0
         self.wellDoneLabel.transform = CGAffineTransform(
             translationX: 0,
@@ -104,7 +119,7 @@ class Lesson2QuizEndViewController: UIViewController {
         self.retryButton.transform = CGAffineTransform(
             translationX: 0,
             y: 50)
-        self.lesson2Button.transform = CGAffineTransform(
+        self.lessonButton.transform = CGAffineTransform(
             translationX: 0,
             y: 50)
         self.menuButton.transform = CGAffineTransform(
@@ -168,8 +183,8 @@ class Lesson2QuizEndViewController: UIViewController {
                 y: -50)
             
             //animate Lesson2Button
-            self.lesson2Button.alpha = 1.0
-            self.lesson2Button.transform = CGAffineTransform(
+            self.lessonButton.alpha = 1.0
+            self.lessonButton.transform = CGAffineTransform(
                 translationX: 0,
                 y: -50)
             
@@ -192,6 +207,15 @@ class Lesson2QuizEndViewController: UIViewController {
                 Void in self.updateScoreViewColor()
             })
         })
+    }
+    @IBAction func didTapLessonButton(_ sender: Any) {
+        performSegue(withIdentifier: "fromLesson\(identifier-1)QuizToLesson\(identifier)", sender: (Any).self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "fromLesson4QuizToLesson5") {
+            let targetVC = segue.destination as! Lesson4ViewController
+            targetVC.lessonIdentifier = "Lesson 5"
+        }
     }
     
 }

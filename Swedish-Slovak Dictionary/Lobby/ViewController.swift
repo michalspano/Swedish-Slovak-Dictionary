@@ -14,18 +14,31 @@ class ViewController: UIViewController {
     @IBOutlet weak var fadeOutView: UIView!
     @IBOutlet weak var fadeOutLogo: UIImageView!
     @IBOutlet weak var fadeOutLabel: UILabel!
+    @IBOutlet var settingsButton: UIButton!
+    @IBOutlet var settingsView: UIView!
+    @IBOutlet var settingsMenuBar: UIView!
+    @IBOutlet var darkModeOptionSwitch: UISwitch!
+    @IBOutlet var modeCircle: UIImageView!
+    @IBOutlet var statusLabel: UILabel!
+    @IBOutlet var versionLabel: UILabel!
     
     var startupSoundEffect = AVAudioPlayer()
     
     var toHandleSound = true
+    var gearAnimation = true
+    var darkMode = false
+    var shift = CGFloat()
+    
+    let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        changeAssets()
         
-        self.fadeOutView.alpha = 1.0
-        self.fadeOutLogo.alpha = 1.0
-        self.fadeOutLabel.alpha = 1.0
-        self.thankYouLabel.alpha = 0.0
+        shift = 75
+        fadeOutView.alpha = 1.0
+        fadeOutLogo.alpha = 1.0
+        fadeOutLabel.alpha = 1.0
         
         toPerfromFadeOut()
         
@@ -35,14 +48,13 @@ class ViewController: UIViewController {
         editQuizButton()
         editNotesButton()
         editMainElemnt()
+        editSettingsButton()
         
         initialDisplacement()
         
     }
-
     //start up animation from launchscreen
     func toPerfromFadeOut(){
-        print(toHandleSound)
         do {
             startupSoundEffect = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "startupSoundEffect", ofType: "wav")!))
             startupSoundEffect.prepareToPlay()
@@ -70,22 +82,40 @@ class ViewController: UIViewController {
         
     }
     func initialDisplacement(){
-        self.mainTitle.transform = CGAffineTransform(
+        settingsView.alpha = 0.0
+        settingsView.transform = CGAffineTransform(translationX: 0, y: -50)
+        settingsButton.alpha = 0.0
+        settingsButton.transform = CGAffineTransform(translationX: 0, y: -50)
+        versionLabel.transform = CGAffineTransform(translationX: -shift, y: 0)
+        settingsMenuBar.transform = CGAffineTransform(translationX: -shift, y: 0)
+        darkModeOptionSwitch.transform = CGAffineTransform(translationX: -shift, y: 0)
+        modeCircle.transform = CGAffineTransform(scaleX: 0, y: 0)
+        statusLabel.transform = CGAffineTransform(translationX: -shift, y: 0)
+        thankYouLabel.alpha = 0.0
+        mainTitle.transform = CGAffineTransform(
             translationX: 0,
             y: -50)
-        self.instagramButton.transform = CGAffineTransform(
+        instagramButton.transform = CGAffineTransform(
             translationX: 0,
             y: 50)
-        self.startNowButton.alpha = 0.0
-        self.startNowButton.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+        startNowButton.alpha = 0.0
+        startNowButton.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
         
-        self.instructionsButton.alpha = 0.0
-        self.instructionsButton.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+        instructionsButton.alpha = 0.0
+        instructionsButton.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
         
-        self.quizButton.alpha = 0.0
-        self.quizButton.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-        self.notesButton.alpha = 0.0
-        self.notesButton.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+        quizButton.alpha = 0.0
+        quizButton.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+        notesButton.alpha = 0.0
+        notesButton.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+        settingsMenuBar.alpha = 0.0
+        darkModeOptionSwitch.alpha = 0.0
+        statusLabel.alpha = 0.0
+        versionLabel.alpha = 0.0
+        
+        //change version label according to current version;
+        versionLabel.text = "Version \n \(version)"
+        
         toAnimateElements()
     }
     func toAnimateElements(){
@@ -114,6 +144,12 @@ class ViewController: UIViewController {
         UIButton.animate(withDuration: 0.8, delay: 0.9, options: UIButton.AnimationOptions.curveEaseOut, animations: {
             self.notesButton.alpha = 1.0
             self.notesButton.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+        })
+        UIView.animate(withDuration: 0.8, delay: 1.1, options: UIView.AnimationOptions.curveEaseOut, animations: {
+            self.settingsView.alpha = 1.0
+            self.settingsButton.alpha = 1.0
+            self.settingsView.transform = .identity
+            self.settingsButton.transform = .identity
         })
         
     }
@@ -172,6 +208,98 @@ class ViewController: UIViewController {
         instagramButton.layer.shadowRadius = 1.5
         
     }
+    func editSettingsButton() {
+        editSettingsView()
+        editSettigsMenubar()
+        notesButton.layer.shadowColor = UIColor.black.cgColor
+        settingsButton.layer.shadowOpacity = 0.5
+        settingsButton.layer.shadowOffset = CGSize(width: -1, height: 1)
+        settingsButton.layer.shadowRadius = 2.5
+    }
+    func editSettingsView() {
+        settingsView.backgroundColor = #colorLiteral(red: 0.1333333333, green: 0.4549019608, blue: 0.8431372549, alpha: 1)
+        settingsView.layer.shadowColor = UIColor.black.cgColor
+        settingsView.layer.shadowOpacity = 0.5
+        settingsView.layer.shadowOffset = CGSize(width: -1, height: 1)
+        settingsView.layer.shadowRadius = 5.0
+        settingsView.layer.cornerRadius = 25.0
+    }
+    func editSettigsMenubar() {
+        settingsMenuBar.layer.shadowColor = UIColor.black.cgColor
+        settingsMenuBar.layer.shadowOpacity = 0.5
+        settingsMenuBar.layer.shadowOffset = CGSize(width: -1, height: 1)
+        settingsMenuBar.layer.shadowRadius = 5.0
+        settingsMenuBar.layer.cornerRadius = 25.0
+    }
+    func animateMenuBar() {
+        if gearAnimation {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.2, execute: {
+                UIView.animate(withDuration: 0.75, animations: {
+                    self.settingsMenuBar.alpha = 1.0
+                    self.settingsMenuBar.transform = CGAffineTransform(translationX: 0, y: 0)
+                    self.darkModeOptionSwitch.alpha = 1.0
+                    self.darkModeOptionSwitch.transform = CGAffineTransform(translationX: 0, y: 0)
+                    self.statusLabel.alpha = 1.0
+                    self.statusLabel.transform = .identity
+                    self.versionLabel.alpha = 1.0
+                    self.versionLabel.transform = .identity
+                }, completion: {
+                    Void in UIImageView.animate(withDuration: 0.5, animations: {
+                        self.modeCircle.transform = .identity
+                        self.modeCircle.alpha = 1.0
+                        if UserDefaults.standard.bool(forKey: "darkMode") == true {
+                            self.modeCircle.transform = CGAffineTransform(rotationAngle: -0.999*CGFloat.pi)
+                        }
+                    })
+                })
+            })
+        }
+        else {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.2, execute: {
+                UIView.animate(withDuration: 0.25, animations: {
+                    self.modeCircle.alpha = 0.0
+                }, completion: {
+                    Void in UIImageView.animate(withDuration: 0.75, animations: {
+                        self.settingsMenuBar.alpha = 0.0
+                        self.settingsMenuBar.transform = CGAffineTransform(translationX: -self.shift, y: 0)
+                        self.darkModeOptionSwitch.alpha = 0.0
+                        self.darkModeOptionSwitch.transform = CGAffineTransform(translationX: -self.shift, y: 0)
+                        self.statusLabel.alpha = 0.0
+                        self.statusLabel.transform = CGAffineTransform(translationX: -self.shift, y: 0)
+                        self.versionLabel.alpha = 0.0
+                        self.versionLabel.transform = CGAffineTransform(translationX: -self.shift, y: 0)
+                        
+                    })
+                })
+            })
+        }
+    }
+    func checkStatusLabel() {
+        if UserDefaults.standard.bool(forKey: "darkMode") == true {
+            statusLabel.text = "Dark"
+        }
+        else {
+            statusLabel.text = "Light"
+        }
+    }
+    func writeToNSDefault() {
+        if darkMode {
+            UserDefaults.standard.set(true, forKey: "darkMode")
+        }
+        else {
+            UserDefaults.standard.set(false, forKey: "darkMode")
+        }
+        changeAssets()
+        checkStatusLabel()
+    }
+    func changeAssets() {
+        if UserDefaults.standard.bool(forKey: "darkMode") == true {
+            overrideUserInterfaceStyle = .dark
+        }
+        else {
+            overrideUserInterfaceStyle = .light
+        }
+    }
     
     //open Instagram profile on button click
     @IBAction func didTapInstagramLink(_ sender: Any) {
@@ -200,5 +328,35 @@ class ViewController: UIViewController {
         })
     }
     
+    @IBAction func didTapSettingsButton(_ sender: Any) {
+        checkStatusLabel()
+        animateMenuBar()
+        if gearAnimation {
+            gearAnimation = false
+            UIButton.animate(withDuration: 0.5, delay: 0.2, animations: {
+                self.settingsButton.transform = CGAffineTransform(rotationAngle: 360)
+            })
+        }
+        else {
+            gearAnimation = true
+            UIButton.animate(withDuration: 0.5, delay: 0.2, animations: {
+                self.settingsButton.transform = .identity
+            })
+        }
+    }
+    @IBAction func optionSwitch(_ sender: UISwitch) {
+        if sender.isOn {
+            darkMode = true
+            UIImageView.animate(withDuration: 0.35, animations: {
+                self.modeCircle.transform = CGAffineTransform(rotationAngle: -0.999*CGFloat.pi)
+            })
+        }
+        else {
+            darkMode = false
+            UIImageView.animate(withDuration: 0.35, animations: {
+                self.modeCircle.transform = .identity
+            })
+        }
+        writeToNSDefault()
+    }
 }
-

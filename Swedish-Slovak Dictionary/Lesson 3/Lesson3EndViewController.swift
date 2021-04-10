@@ -18,6 +18,7 @@ class Lesson3EndViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        checkMode()
         SuccessAnimation()
         editQuizButton()
         initialDisplacement()
@@ -31,7 +32,14 @@ class Lesson3EndViewController: UIViewController {
         view.addSubview(label2)
         view.addSubview(gifView)
     }
-    
+    func checkMode() {
+        if UserDefaults.standard.bool(forKey: "darkMode") == true {
+            overrideUserInterfaceStyle = .dark
+        }
+        else {
+            overrideUserInterfaceStyle = .light
+        }
+    }
     func loadGifView(){
         gifView.loadGif(name: "CelebrationEmoji")
     }
@@ -87,7 +95,6 @@ class Lesson3EndViewController: UIViewController {
                     })
                 })
             }
-            
         }
         else {
             UIView.animate(withDuration: 0.3, delay: 0.2, options: UIView.AnimationOptions.curveEaseOut, animations: {
@@ -95,10 +102,7 @@ class Lesson3EndViewController: UIViewController {
             })
         }
     }
-
     @IBAction func didTapContinue(_ sender: Any) {
-        print("Continue")
-        
         toDisableLoopedAnimation = true
         UIView.animate(withDuration: 1.5, delay: 0.2, options: UIView.AnimationOptions.curveEaseOut, animations: {
             self.gradientView.alpha = 1.0
@@ -118,5 +122,14 @@ class Lesson3EndViewController: UIViewController {
             self.gifView.alpha = 1.0
             self.gifView.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
         })
+    }
+    @IBAction func didTapQuizButton(_ sender: Any) {
+        performSegue(withIdentifier: "QuizLesson3", sender: (Any).self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "QuizLesson3") {
+            let lesson3Quiz = segue.destination as! Lesson1Quiz
+            lesson3Quiz.lessonIdentifier = "Lesson3"
+        }
     }
 }
