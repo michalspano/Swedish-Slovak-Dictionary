@@ -1,2 +1,2 @@
-# Swedish-Slovak-Dictionary for iOS and iPadOS
+# Swedish-Slovak-Dictionary for iOS and iPadOS 1.0
 @michalspano
