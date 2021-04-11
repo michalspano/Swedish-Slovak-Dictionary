@@ -1,3 +1,4 @@
+//Ref: https://github.com/kiritmodi2702/GIF-Swift/blob/master/GIF-Swift/iOSDevCenters%2BGIF.swift
 import UIKit
 import ImageIO
 
