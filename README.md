@@ -1,6 +1,7 @@
 # Swedish-Slovak-Dictionary for iOS and iPadOS 1.0
 
-![Model-presentation](https://user-images.githubusercontent.com/71947840/115242278-03d23580-a122-11eb-95a6-e9ccec1ef73b.png)
+![model-presentation-final](https://user-images.githubusercontent.com/71947840/115242860-94a91100-a122-11eb-8c3e-78b260d199d0.png)
+
 
 Swedish-Swedish Dictionary - brief description
 
