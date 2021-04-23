@@ -2,29 +2,30 @@
 
 ![model-presentation-final](https://user-images.githubusercontent.com/71947840/115242860-94a91100-a122-11eb-8c3e-78b260d199d0.png)
 
+⮕ | [YouTube Code Breakthrough](https://youtu.be/0wsg6nyJWmA)
 
-Swedish-Swedish Dictionary - brief description
+⮕ | Swedish-Swedish Dictionary - brief description
 
 An application that lets you learn Swedish vocabulary seamlessly (for Slovak speakers) available for iOS (9.0+) and iPadOS (9.0+).
 It tests your skills with 2 different Quiz prototypes supported with task randomisation for endless fun. It supports an adjustable user interface to fit all your needs.
 Moreover, this application lets you record your new words and phrases to the “Notes” mini-application, using CoreData for further data storage.
 Lastly, enjoy the brilliant user experience with sleek sound integrations and seamless animations.
 
-Input
+⮕ | Input
 
 User input based on device controls (further as UIGesturerecognizers) data to be stored via custom CoreDala model for Notes mini-application, user input for specific quizzes.
 
-Output
+⮕ | Output
 
 Elegant UI experience with seamless transitions and animations, dedicated dictionary content with audio recording. Settings with adjustable user interface environment.
 Persistent data containers for the user dedicated input, i.e. the Notes mini-application.
 
-Client and/or advisor
+⮕ | Client and/or advisor
 Client: Any individual who is a Slovak speaker willing to learn something new about the Swedish language.
 
-Advisor: Assistance with translations, i.e. the lesson content itself. Assistance with sound design.
+⮕ | Advisor: Assistance with translations, i.e. the lesson content itself. Assistance with sound design.
 
-Stages of development of the product - what are the most significant steps in making the product?
+⮕ | Stages of development of the product - what are the most significant steps in making the product?
 - Step 1: Creation of the application’s environment for easier visual execution in the earliest stages and for consistent data planning;
 - Step 2: Consideration of the specific programming language in order to achieve the desired outcome;
 - Step 3: Swift is declared to be the main programming language  for the application, consideration of potential pros and cons;
@@ -39,13 +40,13 @@ Stages of development of the product - what are the most significant steps in ma
 - Step 12: Stages of Beta testing on iOS and iPadOS devices;
 - Step 13: Publication of the application on the AppStore, interconnection with application’s website.
 
-Language to be used - with justification
+⮕ | Language to be used - with justification
 Swift via Xcode - a programming language dedicated to multi-platform iOS and iPadOS software development.
 
-Justification: Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns. The goal of the Swift project is to create
+⮕ | Justification: Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns. The goal of the Swift project is to create
 the best available language for uses ranging from systems programming, to mobile and desktop apps, scaling up to cloud services.
 
-Reasons for choosing this product:
+⮕ | Reasons for choosing this product:
 - This product shall support the multi-platform to attract more users;
 - It shall profit the user with valuable knowledge implemented via seamless user environment;
 - It benefits the user with accessible controls and seamless reactive elements;
