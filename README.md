@@ -1,4 +1,4 @@
-# Swedish-Slovak-Dictionary for iOS and iPadOS 1.0
+# Swedish-Slovak-Dictionary for iOS and iPadOS | Version 1.0
 
 ![model-presentation-final](https://user-images.githubusercontent.com/71947840/115242860-94a91100-a122-11eb-8c3e-78b260d199d0.png)
 
@@ -11,15 +11,18 @@ Moreover, this application lets you record your new words and phrases to the “
 Lastly, enjoy the brilliant user experience with sleek sound integrations and seamless animations.
 
 Input
+
 User input based on device controls (further as UIGesturerecognizers) data to be stored via custom CoreDala model for Notes mini-application, user input for specific quizzes.
+
 Output
+
 Elegant UI experience with seamless transitions and animations, dedicated dictionary content with audio recording. Settings with adjustable user interface environment.
 Persistent data containers for the user dedicated input, i.e. the Notes mini-application.
 
 Client and/or advisor
 Client: Any individual who is a Slovak speaker willing to learn something new about the Swedish language.
 
-Advisor: Assistance translations, i.e. the lesson content itself. Assistance with sound design.
+Advisor: Assistance with translations, i.e. the lesson content itself. Assistance with sound design.
 
 Stages of development of the product - what are the most significant steps in making the product?
 - Step 1: Creation of the application’s environment for easier visual execution in the earliest stages and for consistent data planning;
@@ -43,9 +46,9 @@ Justification: Swift is a general-purpose programming language built using a mod
 the best available language for uses ranging from systems programming, to mobile and desktop apps, scaling up to cloud services.
 
 Reasons for choosing this product:
-— This product shall support the multi-platform to attract more users;
-— It shall profit the user with valuable knowledge implemented via seamless user environment;
-— It benefits the user with accessible controls and seamless reactive elements;
-— This product shall support the latest security standards.
+- This product shall support the multi-platform to attract more users;
+- It shall profit the user with valuable knowledge implemented via seamless user environment;
+- It benefits the user with accessible controls and seamless reactive elements;
+- This product shall support the latest security standards.
 
 @michalspano
