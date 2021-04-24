@@ -379,7 +379,6 @@ class Lesson1Quiz: UIViewController {
                 translationX: 0,
                 y: -50)
         })
-        
     }
     func updateScoreViewColor(){
         self.scoreView.backgroundColor = UIColor(red: 0.05, green: 0.05, blue: 0.15, alpha: 1.0)

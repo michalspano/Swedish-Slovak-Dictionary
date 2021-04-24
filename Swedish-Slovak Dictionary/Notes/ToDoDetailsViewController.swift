@@ -56,7 +56,6 @@ class ToDoDetailsViewController: UIViewController {
                 }
             }
         }
-        
     }
     func editElements() {
         //to edit doneButton

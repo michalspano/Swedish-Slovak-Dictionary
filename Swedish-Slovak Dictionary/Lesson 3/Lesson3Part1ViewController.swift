@@ -326,7 +326,6 @@ class Lesson3Part1ViewController: UIViewController {
                 SwipeNextSound.play()
                 leftSwipeAnimation()
                 animateDidSwipeLeft()
-                
             default:
                 break
             }
@@ -482,7 +481,6 @@ class Lesson3Part1ViewController: UIViewController {
                 })
             }
         }
-        
         
     }
     @IBAction func didSwipeRetreat(_ sender: Any) {

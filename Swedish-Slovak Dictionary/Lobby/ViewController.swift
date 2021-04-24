@@ -151,7 +151,6 @@ class ViewController: UIViewController {
             self.settingsView.transform = .identity
             self.settingsButton.transform = .identity
         })
-        
     }
     func editMainElemnt(){
         mainTitle.layer.shadowColor = UIColor.black.cgColor
@@ -268,7 +267,6 @@ class ViewController: UIViewController {
                         self.statusLabel.transform = CGAffineTransform(translationX: -self.shift, y: 0)
                         self.versionLabel.alpha = 0.0
                         self.versionLabel.transform = CGAffineTransform(translationX: -self.shift, y: 0)
-                        
                     })
                 })
             })

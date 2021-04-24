@@ -103,7 +103,6 @@ class LibraryViewController: UIViewController {
         
         
     }
-
     func playVideo(){
         guard let path = Bundle.main.path(forResource: "VideoBG", ofType: "mp4") else {
             return

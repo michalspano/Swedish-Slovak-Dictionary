@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="ipad10_5" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,17 +14,17 @@
             <objects>
                 <viewController storyboardIdentifier="QuizVC" id="cM3-aO-g3Y" customClass="QuizLibraryViewController" customModule="Swedish_Slovak_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8kA-9J-o1a">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz Library" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6f-cv-YlD">
-                                <rect key="frame" x="314" y="40" width="206" height="48"/>
+                                <rect key="frame" x="104" y="84" width="206" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6I5-qW-xJK">
-                                <rect key="frame" x="367" y="728.5" width="100" height="37.5"/>
+                                <rect key="frame" x="157" y="620.5" width="100" height="37.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="8yt-O7-QLo">
                                         <variation key="heightClass=compact-widthClass=regular" constant="100"/>
@@ -40,7 +40,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c91-cK-UEE">
-                                <rect key="frame" x="317" y="618.5" width="200" height="75"/>
+                                <rect key="frame" x="107" y="510.5" width="200" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="NyG-6T-Euk"/>
                                     <constraint firstAttribute="height" constant="75" id="vOo-Zh-HdO"/>
@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lesson1Icon" translatesAutoresizingMaskIntoConstraints="NO" id="V7w-0g-xYe">
-                                <rect key="frame" x="279.5" y="318.5" width="275" height="275"/>
+                                <rect key="frame" x="69.5" y="210.5" width="275" height="275"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="275" id="2wG-dX-XLb">
@@ -66,7 +66,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0KZ-mv-X2d">
-                                <rect key="frame" x="342" y="381" width="150" height="150"/>
+                                <rect key="frame" x="132" y="273" width="150" height="150"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="3kS-wj-c7Q"/>
@@ -83,7 +83,7 @@
                                 </connections>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHd-KN-40I">
-                                <rect key="frame" x="384" y="418" width="66.5" height="33.5"/>
+                                <rect key="frame" x="174" y="322" width="66.5" height="33.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
@@ -191,11 +191,11 @@
             <objects>
                 <viewController storyboardIdentifier="QuizLesson2" id="KrX-zG-zum" customClass="Lesson2Quiz" customModule="Swedish_Slovak_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E82-UR-E3q" customClass="GradientViewLesson2" customModule="Swedish_Slovak_Dictionary" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0K-OO-0mv" userLabel="ScoreLabel">
-                                <rect key="frame" x="377" y="499" width="80" height="80"/>
+                                <rect key="frame" x="167" y="543" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="GJ8-88-5HR"/>
                                     <constraint firstAttribute="width" constant="80" id="cVN-a1-v9c"/>
@@ -205,7 +205,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQw-De-sbD" userLabel="QuestionLabel">
-                                <rect key="frame" x="292" y="204" width="250" height="50"/>
+                                <rect key="frame" x="82" y="248" width="250" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="o0z-p8-bz0"/>
                                     <constraint firstAttribute="width" constant="250" id="zSt-e7-Egc"/>
@@ -215,7 +215,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write your answer here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ksz-6f-q3n">
-                                <rect key="frame" x="307" y="294" width="220" height="55"/>
+                                <rect key="frame" x="97" y="338" width="220" height="55"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -227,7 +227,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uQ-6P-P1G">
-                                <rect key="frame" x="379.5" y="1080" width="75" height="22"/>
+                                <rect key="frame" x="169.5" y="830" width="75" height="22"/>
                                 <state key="normal" title="Library" image="chevron.backward.square.fill" catalog="system">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
@@ -236,26 +236,26 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz Type 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Em-IR-RJO" userLabel="mainLabel">
-                                <rect key="frame" x="304.5" y="30" width="225" height="54"/>
+                                <rect key="frame" x="94.5" y="74" width="225" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Kze-Lu-qB1" userLabel="arrowIcon">
-                                <rect key="frame" x="252" y="299" width="40" height="40"/>
+                                <rect key="frame" x="42" y="343" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="gTL-l0-eLx"/>
                                     <constraint firstAttribute="height" constant="40" id="vgd-mQ-iVS"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Translate to Swedish!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yf1-oL-T4u">
-                                <rect key="frame" x="339.5" y="124" width="155" height="20"/>
+                                <rect key="frame" x="129.5" y="168" width="155" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1F-ns-EBf" userLabel="doneButton">
-                                <rect key="frame" x="354.5" y="389" width="125" height="50"/>
+                                <rect key="frame" x="144.5" y="433" width="125" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="C6j-Qq-XxB"/>
                                     <constraint firstAttribute="height" constant="50" id="zk4-cZ-0eu"/>
@@ -269,7 +269,7 @@
                                 </connections>
                             </button>
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZU-Yo-UeG" userLabel="transitionView" customClass="QuizLibraryGradientView" customModule="Swedish_Slovak_Dictionary" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
@@ -353,17 +353,17 @@
             <objects>
                 <viewController storyboardIdentifier="QuizLesson2EndVC" id="5vQ-vK-eXs" customClass="Lesson2QuizEndViewController" customModule="Swedish_Slovak_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uvO-f9-XbM" customClass="QuizLibraryGradientView" customModule="Swedish_Slovak_Dictionary" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmN-Tc-ZuZ" userLabel="wellDoneLabel">
-                                <rect key="frame" x="347.5" y="30" width="139" height="72"/>
+                                <rect key="frame" x="137.5" y="74" width="139" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IrA-Lh-Pup" userLabel="scoreView">
-                                <rect key="frame" x="329.5" y="468.5" width="175" height="175"/>
+                                <rect key="frame" x="119.5" y="360.5" width="175" height="175"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="175" id="azB-jz-yIQ"/>
@@ -371,7 +371,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sc3-X6-kfL" userLabel="finalScoreLabel">
-                                <rect key="frame" x="342" y="481" width="150" height="150"/>
+                                <rect key="frame" x="132" y="373" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="AOK-6Z-uN5"/>
                                     <constraint firstAttribute="height" constant="150" id="AgK-yX-IFh"/>
@@ -381,14 +381,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OaX-vt-OM0">
-                                <rect key="frame" x="279.5" y="418.5" width="275" height="275"/>
+                                <rect key="frame" x="69.5" y="310.5" width="275" height="275"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="275" id="7HO-LM-erP"/>
                                     <constraint firstAttribute="height" constant="275" id="NzH-pT-Hl5"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ee1-E4-gDh" userLabel="retryButton">
-                                <rect key="frame" x="354.5" y="810.5" width="125" height="50"/>
+                                <rect key="frame" x="144.5" y="702.5" width="125" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4mG-WW-CTL"/>
                                     <constraint firstAttribute="width" constant="125" id="qi2-Bb-MI2"/>
@@ -402,7 +402,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvX-GE-XsM" userLabel="LessonButton">
-                                <rect key="frame" x="354.5" y="875.5" width="125" height="50"/>
+                                <rect key="frame" x="144.5" y="767.5" width="125" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ULw-Bc-zge"/>
                                     <constraint firstAttribute="width" constant="125" id="cua-lC-1X9"/>
@@ -416,7 +416,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIp-Xa-F02" userLabel="menuButton">
-                                <rect key="frame" x="354.5" y="940.5" width="125" height="50"/>
+                                <rect key="frame" x="144.5" y="832.5" width="125" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="1c2-6p-eRG"/>
                                     <constraint firstAttribute="width" constant="125" id="Ffv-B2-1h6"/>
@@ -539,17 +539,17 @@
             <objects>
                 <viewController storyboardIdentifier="QuizLesson1" id="kpQ-Es-2jj" customClass="Lesson1Quiz" customModule="Swedish_Slovak_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BhA-V3-Q2S" customClass="GradientView" customModule="Swedish_Slovak_Dictionary" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz Type 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raQ-6b-hdZ">
-                                <rect key="frame" x="307" y="30" width="220" height="54"/>
+                                <rect key="frame" x="97" y="74" width="220" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCd-or-R5O">
-                                <rect key="frame" x="379.5" y="1080" width="75" height="22"/>
+                                <rect key="frame" x="169.5" y="830" width="75" height="22"/>
                                 <state key="normal" title="Library" image="chevron.backward.square.fill" catalog="system">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
@@ -558,7 +558,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upu-B3-wPT" userLabel="QuestionLabel">
-                                <rect key="frame" x="292" y="158.5" width="250" height="50"/>
+                                <rect key="frame" x="82" y="202.5" width="250" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="3WL-kM-WOm"/>
                                     <constraint firstAttribute="height" constant="50" id="Mu4-Mc-aBa"/>
@@ -568,7 +568,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0l9-jh-5e5" userLabel="Button1">
-                                <rect key="frame" x="304.5" y="248.5" width="225" height="60"/>
+                                <rect key="frame" x="94.5" y="292.5" width="225" height="60"/>
                                 <color key="backgroundColor" red="0.18416010129999999" green="0.44839941820000001" blue="0.66069162439999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="225" id="TRa-2C-WD6"/>
@@ -583,7 +583,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lts-Nc-00Z" userLabel="Button2">
-                                <rect key="frame" x="304.5" y="348.5" width="225" height="60"/>
+                                <rect key="frame" x="94.5" y="392.5" width="225" height="60"/>
                                 <color key="backgroundColor" red="0.18416010129999999" green="0.44839941820000001" blue="0.66069162439999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="225" id="NXj-5O-JCJ"/>
@@ -598,7 +598,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnD-Ac-VaI" userLabel="Button3">
-                                <rect key="frame" x="304.5" y="448.5" width="225" height="60"/>
+                                <rect key="frame" x="94.5" y="492.5" width="225" height="60"/>
                                 <color key="backgroundColor" red="0.18416010129999999" green="0.44839941820000001" blue="0.66069162439999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="225" id="83X-No-JA9"/>
@@ -613,7 +613,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuF-OT-RX1" userLabel="Button4">
-                                <rect key="frame" x="304.5" y="548.5" width="225" height="60"/>
+                                <rect key="frame" x="94.5" y="592.5" width="225" height="60"/>
                                 <color key="backgroundColor" red="0.18416010129999999" green="0.44839941820000001" blue="0.66069162439999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="CUI-ov-07b"/>
@@ -628,13 +628,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose one correct answer!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrx-W7-5dI">
-                                <rect key="frame" x="315" y="99" width="204" height="19.5"/>
+                                <rect key="frame" x="105" y="143" width="204" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfE-5C-7Jv" userLabel="ScoreLabel">
-                                <rect key="frame" x="384.5" y="668.5" width="65" height="65"/>
+                                <rect key="frame" x="174.5" y="712.5" width="65" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="65" id="7lj-MM-VDr"/>
                                     <constraint firstAttribute="height" constant="65" id="hlW-Pp-xoS"/>
@@ -644,19 +644,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Fb-Xs-O4U" userLabel="successView" customClass="QuizLibraryGradientView" customModule="Swedish_Slovak_Dictionary" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <gestureRecognizers/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="erB-Pf-dJy">
-                                <rect key="frame" x="292" y="431" width="250" height="250"/>
+                                <rect key="frame" x="82" y="323" width="250" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="6Iw-D8-tmW"/>
                                     <constraint firstAttribute="height" constant="250" id="SKZ-zd-OOf"/>
                                 </constraints>
                             </imageView>
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NM9-qU-PW9" userLabel="scoreView">
-                                <rect key="frame" x="329.5" y="468.5" width="175" height="175"/>
+                                <rect key="frame" x="119.5" y="360.5" width="175" height="175"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="mFH-Zr-f8i"/>
@@ -664,13 +664,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mG-hK-fnM" userLabel="wellDoneLabel">
-                                <rect key="frame" x="347.5" y="30" width="139" height="72"/>
+                                <rect key="frame" x="137.5" y="74" width="139" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qo-Hh-NKi" userLabel="finalScoreLabel">
-                                <rect key="frame" x="342" y="481" width="150" height="150"/>
+                                <rect key="frame" x="132" y="373" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="jRZ-vb-DlX"/>
                                     <constraint firstAttribute="height" constant="150" id="ya3-7e-Qh3"/>
@@ -680,7 +680,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgR-Vg-igw" userLabel="retryButton">
-                                <rect key="frame" x="354.5" y="808.5" width="125" height="50"/>
+                                <rect key="frame" x="144.5" y="702.5" width="125" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="cYt-SG-PzL"/>
                                     <constraint firstAttribute="height" constant="50" id="uhE-7r-NJL"/>
@@ -694,7 +694,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4q-5n-6bZ" userLabel="LessonButton">
-                                <rect key="frame" x="354.5" y="873.5" width="125" height="50"/>
+                                <rect key="frame" x="144.5" y="767.5" width="125" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="FgZ-2Z-hFB"/>
                                     <constraint firstAttribute="height" constant="50" id="XXB-v0-Oc8"/>
@@ -708,7 +708,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgY-4n-flf" userLabel="menuButton">
-                                <rect key="frame" x="354.5" y="938.5" width="125" height="50"/>
+                                <rect key="frame" x="144.5" y="832.5" width="125" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="cpn-74-uqa"/>
                                     <constraint firstAttribute="width" constant="125" id="vuF-Yu-New"/>
@@ -818,10 +818,10 @@
                                 <exclude reference="Crl-l2-kP1"/>
                                 <exclude reference="VQh-gu-9ls"/>
                                 <exclude reference="pSa-Ex-xbF"/>
-                                <exclude reference="EAH-hA-Prp"/>
                                 <exclude reference="Fa5-sz-CKM"/>
                                 <exclude reference="kBS-8j-XLt"/>
                                 <exclude reference="ySa-tn-Y50"/>
+                                <exclude reference="EAH-hA-Prp"/>
                                 <exclude reference="2ul-eT-eXZ"/>
                             </mask>
                         </variation>
@@ -837,11 +837,11 @@
                                 <include reference="VQh-gu-9ls"/>
                                 <exclude reference="WF9-Wq-0KL"/>
                                 <include reference="pSa-Ex-xbF"/>
-                                <include reference="EAH-hA-Prp"/>
-                                <exclude reference="WBl-xI-GJC"/>
                                 <exclude reference="E98-XD-2C2"/>
                                 <include reference="Fa5-sz-CKM"/>
                                 <exclude reference="ySa-tn-Y50"/>
+                                <include reference="EAH-hA-Prp"/>
+                                <exclude reference="WBl-xI-GJC"/>
                                 <include reference="2ul-eT-eXZ"/>
                                 <exclude reference="TSI-1a-fqo"/>
                             </mask>
