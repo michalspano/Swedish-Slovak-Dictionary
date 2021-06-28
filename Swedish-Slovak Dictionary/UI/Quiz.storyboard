@@ -818,10 +818,10 @@
                                 <exclude reference="Crl-l2-kP1"/>
                                 <exclude reference="VQh-gu-9ls"/>
                                 <exclude reference="pSa-Ex-xbF"/>
+                                <exclude reference="EAH-hA-Prp"/>
                                 <exclude reference="Fa5-sz-CKM"/>
                                 <exclude reference="kBS-8j-XLt"/>
                                 <exclude reference="ySa-tn-Y50"/>
-                                <exclude reference="EAH-hA-Prp"/>
                                 <exclude reference="2ul-eT-eXZ"/>
                             </mask>
                         </variation>
@@ -837,11 +837,11 @@
                                 <include reference="VQh-gu-9ls"/>
                                 <exclude reference="WF9-Wq-0KL"/>
                                 <include reference="pSa-Ex-xbF"/>
+                                <include reference="EAH-hA-Prp"/>
+                                <exclude reference="WBl-xI-GJC"/>
                                 <exclude reference="E98-XD-2C2"/>
                                 <include reference="Fa5-sz-CKM"/>
                                 <exclude reference="ySa-tn-Y50"/>
-                                <include reference="EAH-hA-Prp"/>
-                                <exclude reference="WBl-xI-GJC"/>
                                 <include reference="2ul-eT-eXZ"/>
                                 <exclude reference="TSI-1a-fqo"/>
                             </mask>
@@ -876,7 +876,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jYt-aG-o6y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1088" y="-17"/>
+            <point key="canvasLocation" x="1090" y="112"/>
         </scene>
         <!--Lesson2Lobby-->
         <scene sceneID="ToE-9z-Rft">

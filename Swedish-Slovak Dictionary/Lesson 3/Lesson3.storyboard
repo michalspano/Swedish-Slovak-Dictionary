@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -35,7 +35,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1na-2z-NsM">
-                                <rect key="frame" x="162.66666666666666" y="402" width="89" height="92"/>
+                                <rect key="frame" x="162.5" y="402" width="89" height="92"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="K1K-fO-6Zf">
                                         <variation key="heightClass=compact-widthClass=regular" constant="89"/>
@@ -61,13 +61,13 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Lesson 3! In this lesson you will learn colours in Swedish." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6h-9O-V0k">
-                                <rect key="frame" x="39" y="164" width="336.33333333333331" height="38.333333333333343"/>
+                                <rect key="frame" x="39" y="164" width="336.5" height="38.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2N2-ho-nwL">
-                                <rect key="frame" x="169.66666666666666" y="820" width="75" height="22"/>
+                                <rect key="frame" x="169.5" y="820" width="75" height="22"/>
                                 <state key="normal" title="Library" image="chevron.backward.square.fill" catalog="system">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
@@ -76,7 +76,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to start!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuq-Dm-qHn" userLabel="SwipeUptoStart">
-                                <rect key="frame" x="73.666666666666686" y="727" width="267" height="43"/>
+                                <rect key="frame" x="73.5" y="727" width="267" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
@@ -219,7 +219,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qia-cc-SLF" userLabel="Label1">
-                                <rect key="frame" x="164.66666666666666" y="268" width="85" height="36"/>
+                                <rect key="frame" x="164.5" y="268" width="85" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" name="darkModeLessonText"/>
                                 <nil key="highlightedColor"/>
@@ -239,13 +239,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63P-ep-CIO" userLabel="animationLabel">
-                                <rect key="frame" x="138.66666666666666" y="840" width="136.99999999999997" height="20.666666666666629"/>
+                                <rect key="frame" x="138.5" y="840" width="137" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" name="darkModeSwipeText"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aW-G1-gpm" userLabel="Label2">
-                                <rect key="frame" x="162.66666666666666" y="585" width="88.666666666666657" height="36"/>
+                                <rect key="frame" x="163" y="585" width="88.5" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" name="darkModeLessonText"/>
                                 <nil key="highlightedColor"/>
@@ -356,10 +356,12 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="constraints">
+                                <exclude reference="mSV-y1-GMq"/>
                                 <include reference="7Ka-fW-Asl"/>
                                 <include reference="ViI-Mb-Gjy"/>
                                 <exclude reference="cO7-NP-jrV"/>
                                 <exclude reference="lG4-Rh-KaH"/>
+                                <exclude reference="UhS-up-5Rl"/>
                             </mask>
                         </variation>
                         <connections>
@@ -400,7 +402,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ujk-yw-1ku">
-                                <rect key="frame" x="65.666666666666686" y="74" width="283" height="48"/>
+                                <rect key="frame" x="65.5" y="74" width="283" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
@@ -415,13 +417,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zag-dT-hB1" userLabel="continueLabel">
-                                <rect key="frame" x="145" y="855.66666666666663" width="124" height="21.333333333333371"/>
+                                <rect key="frame" x="145" y="855.5" width="124" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lesson 3 was completed." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qef-3S-9Up" userLabel="passLabel">
-                                <rect key="frame" x="105.66666666666669" y="140" width="203" height="22"/>
+                                <rect key="frame" x="105.5" y="140" width="203" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>

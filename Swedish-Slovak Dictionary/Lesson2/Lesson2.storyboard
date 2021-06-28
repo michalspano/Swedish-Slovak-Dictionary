@@ -243,6 +243,7 @@
                                 <variation key="heightClass=compact-widthClass=regular" constant="-10"/>
                             </constraint>
                             <constraint firstItem="i9p-5d-QsI" firstAttribute="centerX" secondItem="ftc-vX-y3i" secondAttribute="centerX" constant="310" id="3Of-qx-x4A"/>
+                            <constraint firstItem="i9p-5d-QsI" firstAttribute="centerX" secondItem="ftc-vX-y3i" secondAttribute="centerX" id="4Za-Aj-L7e"/>
                             <constraint firstItem="wX7-Kd-xGF" firstAttribute="bottom" secondItem="WPN-pz-6Ml" secondAttribute="bottom" constant="12" id="9g2-3I-78E">
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="30"/>
@@ -256,11 +257,13 @@
                             <constraint firstItem="HQC-cP-QIg" firstAttribute="centerX" secondItem="ftc-vX-y3i" secondAttribute="centerX" id="EAf-bx-jo4"/>
                             <constraint firstItem="Loi-yj-02n" firstAttribute="top" secondItem="TUb-JK-iZm" secondAttribute="bottom" constant="25" id="HCP-13-dy5"/>
                             <constraint firstItem="6Mr-uA-GDC" firstAttribute="top" secondItem="ftc-vX-y3i" secondAttribute="topMargin" constant="25" id="IBr-9D-cHC"/>
+                            <constraint firstItem="TUb-JK-iZm" firstAttribute="leading" secondItem="wX7-Kd-xGF" secondAttribute="leading" constant="57" id="Ikw-FD-pBp"/>
                             <constraint firstItem="Loi-yj-02n" firstAttribute="centerX" secondItem="ftc-vX-y3i" secondAttribute="centerX" constant="300" id="N8X-lp-8su"/>
                             <constraint firstItem="WPN-pz-6Ml" firstAttribute="centerX" secondItem="ftc-vX-y3i" secondAttribute="centerX" id="TUa-63-CSU"/>
                             <constraint firstItem="bMB-jZ-Xsa" firstAttribute="top" secondItem="aru-4E-Aq4" secondAttribute="bottom" constant="20" id="U5i-Io-SLp">
                                 <variation key="heightClass=compact-widthClass=regular" constant="2"/>
                             </constraint>
+                            <constraint firstItem="aru-4E-Aq4" firstAttribute="leading" secondItem="wX7-Kd-xGF" secondAttribute="leading" constant="167" id="UJz-gh-eZE"/>
                             <constraint firstItem="i9p-5d-QsI" firstAttribute="centerY" secondItem="ftc-vX-y3i" secondAttribute="centerY" id="Vex-f8-9g9"/>
                             <constraint firstItem="Loi-yj-02n" firstAttribute="centerX" secondItem="ftc-vX-y3i" secondAttribute="centerX" id="WhQ-Kd-HvC">
                                 <variation key="heightClass=compact-widthClass=regular" constant="300"/>
@@ -279,32 +282,40 @@
                             </constraint>
                             <constraint firstItem="aru-4E-Aq4" firstAttribute="centerX" secondItem="ftc-vX-y3i" secondAttribute="centerX" id="tVO-nK-MkY"/>
                             <constraint firstItem="i9p-5d-QsI" firstAttribute="leading" secondItem="wX7-Kd-xGF" secondAttribute="leading" constant="107" id="tdb-3e-Kzt"/>
-                            <constraint firstItem="TUb-JK-iZm" firstAttribute="leading" secondItem="wX7-Kd-xGF" secondAttribute="leading" constant="57" id="yDy-FD-aDc"/>
                             <constraint firstItem="6Mr-uA-GDC" firstAttribute="centerX" secondItem="ftc-vX-y3i" secondAttribute="centerX" id="yae-mN-AVB"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="eZT-LO-7ed"/>
                                 <exclude reference="sOf-m3-MXh"/>
+                                <exclude reference="UJz-gh-eZE"/>
+                                <exclude reference="eZT-LO-7ed"/>
+                                <exclude reference="3Of-qx-x4A"/>
+                                <exclude reference="4Za-Aj-L7e"/>
+                                <exclude reference="Vex-f8-9g9"/>
                                 <exclude reference="1AH-19-gQA"/>
                                 <exclude reference="N8X-lp-8su"/>
-                                <exclude reference="3Of-qx-x4A"/>
-                                <exclude reference="Vex-f8-9g9"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
                             <mask key="constraints">
                                 <exclude reference="gOc-1J-vrb"/>
+                                <exclude reference="Ikw-FD-pBp"/>
+                                <include reference="sOf-m3-MXh"/>
                                 <include reference="eZT-LO-7ed"/>
                                 <exclude reference="ewg-kB-UGb"/>
-                                <include reference="sOf-m3-MXh"/>
-                                <exclude reference="yDy-FD-aDc"/>
-                                <include reference="1AH-19-gQA"/>
-                                <exclude reference="HCP-13-dy5"/>
-                                <exclude reference="N8X-lp-8su"/>
                                 <include reference="3Of-qx-x4A"/>
                                 <include reference="Vex-f8-9g9"/>
                                 <exclude reference="oIH-hX-Pyh"/>
+                                <exclude reference="tdb-3e-Kzt"/>
+                                <include reference="1AH-19-gQA"/>
+                                <exclude reference="HCP-13-dy5"/>
+                                <exclude reference="N8X-lp-8su"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="gOc-1J-vrb"/>
+                                <include reference="4Za-Aj-L7e"/>
                                 <exclude reference="tdb-3e-Kzt"/>
                             </mask>
                         </variation>
