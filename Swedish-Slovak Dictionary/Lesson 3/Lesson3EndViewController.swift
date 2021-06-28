@@ -57,7 +57,7 @@ class Lesson3EndViewController: UIViewController {
         
     }
     func editQuizButton(){
-        self.quizButton.backgroundColor = #colorLiteral(red: 0.1333333333, green: 0.4588235294, blue: 0.9490196078, alpha: 1)
+        quizButton.backgroundColor = #colorLiteral(red: 0.1333333333, green: 0.4588235294, blue: 0.9490196078, alpha: 1)
         quizButton.layer.shadowColor = UIColor.black.cgColor
         quizButton.layer.shadowOpacity = 0.5
         quizButton.layer.shadowOffset = CGSize(width: -1, height: 1)

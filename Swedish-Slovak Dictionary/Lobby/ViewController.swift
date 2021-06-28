@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         fadeOutLogo.alpha = 1.0
         fadeOutLabel.alpha = 1.0
         
-        toPerfromFadeOut()
+        toPerformFadeOut()
         
         editThankYouLabel()
         editStartNowButton()
@@ -53,8 +53,8 @@ class ViewController: UIViewController {
         initialDisplacement()
         
     }
-    //start up animation from launchscreen
-    func toPerfromFadeOut(){
+    //start up animation from launch Screen
+    func toPerformFadeOut(){
         do {
             startupSoundEffect = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "startupSoundEffect", ofType: "wav")!))
             startupSoundEffect.prepareToPlay()
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
         
         //play startup Sound
         if toHandleSound == true {
-            self.startupSoundEffect.play()
+            startupSoundEffect.play()
             startupSoundEffect.volume = 0.5
         }
         //proceed to animations
