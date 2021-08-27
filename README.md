@@ -11,11 +11,8 @@ Ref: https://stackoverflow.com/questions/29368902/how-can-i-wrap-my-markdown-in-
 <div class="badge">
 -->
 
-<h1 style="text-align: center;">
-
 [![Contributors][contributors-shield]][contributors-url] [![Forks][forks-shield]][forks-url] [![Stargazers][stars-shield]][stars-url] [![Issues][issues-shield]][issues-url] [![License][license-shield]][license-url]
 
-</h1>
 <!--
 </div>
 -->
@@ -42,7 +39,7 @@ h1, h2, h3, h4
 -->
 
 ## Code Introduction Video
-Would you like to see snippets of the code and their representation on a platform? <br> Check out [__YouTube Code Breakthrough__][YT]!
+Would you like to see snippets of the code and their representation on a platform? <br> Check out [__YouTube Code Breakthrough__][YT]
 
 ## Swedish-Swedish Dictionary - Summary
 
@@ -66,7 +63,7 @@ Client: Any individual who is a Slovak speaker willing to learn something new ab
 ### Advisor 
 Assistance with translations, i.e. the lesson content itself. Optional assistance with sound design.
 
-### Stages of development of the product - what are the most significant steps in making the product?
+## Stages of development of the product - what are the most significant steps in making the product?
 - Step 1: Creation of the application’s environment for easier visual execution in the earliest stages and for consistent data planning;
 - Step 2: Consideration of the specific programming language in order to achieve the desired outcome;
 - Step 3: Swift is declared to be the main programming language  for the application, consideration of potential pros and cons;
@@ -89,9 +86,9 @@ Swift is a general-purpose programming language built using a modern approach to
 the best available language for uses ranging from systems programming, to mobile and desktop apps, scaling up to cloud services.
 
 ### Reasons for choosing this product
-- This product shall support the multi-platform to attract more users;
-- It shall profit the user with valuable knowledge implemented via seamless user environment;
-- It benefits the user with accessible controls and seamless reactive elements;
+- This product shall support multiple platforms to attract more users;
+- It shall profit the user with valuable knowledge implemented using seamless user environment;
+- It benefits the user with accessible controls and plausible reactive elements;
 - This product shall support the latest security standards.
 
 #### Managed by [@michalspano][GIT]
