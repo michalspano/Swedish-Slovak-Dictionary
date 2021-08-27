@@ -11,7 +11,7 @@ Ref: https://stackoverflow.com/questions/29368902/how-can-i-wrap-my-markdown-in-
 <div class="badge">
 -->
 
-[![Contributors][contributors-shield]][contributors-url] [![Forks][forks-shield]][forks-url] [![Stargazers][stars-shield]][stars-url] [![Issues][issues-shield]][issues-url] [![License][license-shield]][license-url]
+[![Contributors][contributors-shield]][contributors-url] [![Forks][forks-shield]][forks-url] [![Stargazers][stars-shield]][stars-url] [![Issues][issues-shield]][issues-url] [![License][license-shield]][license-url] [![Release][release-shield]][release-url]
 
 <!--
 </div>
@@ -110,3 +110,6 @@ the best available language for uses ranging from systems programming, to mobile
 [issues-url]: https://github.com/michalspano/Swedish-Slovak-Dictionary/issues
 [license-shield]: https://img.shields.io/github/license/michalspano/Swedish-Slovak-Dictionary.svg?style=for-the-badge
 [license-url]: https://github.com/michalspano/Swedish-Slovak-Dictionary/blob/main/LICENSE.txt
+
+[release-shield]: https://img.shields.io/github/v/release/michalspano/Swedish-Slovak-Dictionary.svg?style=for-the-badge
+[release-url]: https://github.com/michalspano/Swedish-Slovak-Dictionary/releases
