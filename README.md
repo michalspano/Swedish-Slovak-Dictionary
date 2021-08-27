@@ -7,19 +7,28 @@ DECORATIVE SHIELD (with a custom class)
 Ref: https://stackoverflow.com/questions/29368902/how-can-i-wrap-my-markdown-in-an-html-div
 -->
 
+<!--
 <div class="badge">
+-->
+
+<h1 style="text-align: center;">
 
 [![Contributors][contributors-shield]][contributors-url] [![Forks][forks-shield]][forks-url] [![Stargazers][stars-shield]][stars-url] [![Issues][issues-shield]][issues-url] [![License][license-shield]][license-url]
 
+</h1>
+<!--
 </div>
-
+-->
+<!--
 <div class="model">
+-->
 
 ![model][MODEL]
 
+<!--
 </div>
-
-<!-- Create custom (global) styles -->
+-->
+<!-- GITHUB UNSUPPORTED
 <style> 
 h1, h2, h3, h4
 {
@@ -30,6 +39,7 @@ h1, h2, h3, h4
     text-align: center;
 }
 </style>
+-->
 
 ## Code Introduction Video
 Would you like to see snippets of the code and their representation on a platform? <br> Check out [__YouTube Code Breakthrough__][YT]!
