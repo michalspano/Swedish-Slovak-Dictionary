@@ -1,3 +1,6 @@
+# GitHub Pages config file
+
 theme: jekyll-theme-leap-day
 title: The Swedish Slovak Dictionary
 description: Swedish for everyone!
+show_downloads: true
