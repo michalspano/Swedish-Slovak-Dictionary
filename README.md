@@ -109,7 +109,7 @@ the best available language for uses ranging from systems programming, to mobile
 [issues-shield]: https://img.shields.io/github/issues/michalspano/Swedish-Slovak-Dictionary.svg?style=for-the-badge
 [issues-url]: https://github.com/michalspano/Swedish-Slovak-Dictionary/issues
 [license-shield]: https://img.shields.io/github/license/michalspano/Swedish-Slovak-Dictionary.svg?style=for-the-badge
-[license-url]: https://github.com/michalspano/Swedish-Slovak-Dictionary/blob/main/LICENSE.txt
+[license-url]: https://github.com/michalspano/Swedish-Slovak-Dictionary/blob/main/LICENSE
 
 [release-shield]: https://img.shields.io/github/v/release/michalspano/Swedish-Slovak-Dictionary.svg?style=for-the-badge
 [release-url]: https://github.com/michalspano/Swedish-Slovak-Dictionary/releases
